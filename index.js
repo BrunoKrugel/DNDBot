@@ -1,6 +1,5 @@
 //http request https://snekfetch.js.org/
 //Dank memer https://github.com/IamTails/Dank-Memer-1\
-//Jamelao https://github.com/mathbastian/jamelao_bot/blob/master/index.js
 
 const Discord = require("discord.js");
 const client = new Discord.Client();
