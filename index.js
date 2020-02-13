@@ -1,13 +1,17 @@
 //http request https://snekfetch.js.org/
 //Dank memer https://github.com/IamTails/Dank-Memer-1\
 
+//Tips
+//https://gist.github.com/eslachance/3349734a98d30011bb202f47342601d3
+//https://github.com/AnIdiotsGuide/discordjs-bot-guide/blob/master/frequently-asked-questions.md
+
 const Discord = require("discord.js");
 const client = new Discord.Client();
 const {
     prefix
 } = require('./config.json');
 const config = require('./config.json');
-const snek = require('snekfetch');
+const snek = require('node-fetch');
 const randomPuppy = require('random-puppy');
 
 //Roubei do muller fodasi
@@ -98,16 +102,20 @@ client.on('message', (message) => {
                 const res = snek.get('https://www.reddit.com/r/Jokes/top/.json?sort=top&t=day&limit=400');
                 const posts = res.body.data.children.filter(post => !post.data.preview && post.data.selftext.length <= 550 && post.data.title.length <= 256);
                 break;
+            case "roll":
+                message.channel.send("Rolled dice");
+                message.channel.send(message.author.toString() + ", rolled a dice and got a " + Math.floor((Math.random() * 20) + 1));
+                break;
             default:
-                message.channel.send(`Command name: ${command}\nArguments: ${args}`);
+                //message.channel.send(`Command name: ${command}\nArguments: ${args}`);
                 //message.channel.send("Vai toma no cu");
-                console.log(args[0]);
-                console.log(args[1]);0
-                randomPuppy(command).then(url => {
+                //console.log(args[0]);
+                //console.log(args[1]);0
+                //randomPuppy(command).then(url => {
                     //url retorna a URL da uma imagem aleatoria do r/funny, porém queria enviar ela como anexo no discord, e naoc omo um link
-                    message.channel.send(url);
+                //    message.channel.send(url);
                     //   message.channel.send("My Bot's message", {files: {url}});
-                });
+                //});
                 break;
         }
     };
