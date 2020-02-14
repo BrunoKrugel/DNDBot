@@ -64,8 +64,8 @@ async function getImages(url) {
 
 //Logs
 client.once('ready', () => {
-    console.log('Ready!');
-    client.user.setActivity('D&D 5e');
+    console.log("Bot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.");     
+    client.user.setActivity("D&D 5e");
 });
 client.once('reconnecting', () => {
     console.log('Reconnecting!');
@@ -82,13 +82,11 @@ client.on('message', (message) => {
     //Salva os parametros em ARGS    
     const args = message.content.slice(prefix.length).split(' ');
     const command = args.shift().toLowerCase();
-    
+
     if (message.content.startsWith(prefix)) {
-        let prim = args[0];
+        let param = args[0];
         let seco = args[1];
-        console.log("let"+prim);
-        console.log("let"+seco);
-        switch (prim) {
+        switch (param) {
             case "peixe":
                 message.channel.send({ files: [peixes[Math.floor(Math.random() * peixes.length)].toString()] });
                 break;
@@ -106,7 +104,46 @@ client.on('message', (message) => {
                 const posts = res.body.data.children.filter(post => !post.data.preview && post.data.selftext.length <= 550 && post.data.title.length <= 256);
                 break;
             case "roll":
-                message.channel.send(message.author.toString() + ", rolled a dice and got a " + Math.floor((Math.random() * 20) + 1));
+                switch (seco) {
+                    case "d4":
+                        message.channel.send(message.author.toString() + ", rolled a " + seco + " and got a " + Math.floor((Math.random() * 4) + 1));
+                        break;
+                    case "d6":
+                        message.channel.send(message.author.toString() + ", rolled a " + seco + " and got a " + Math.floor((Math.random() * 6) + 1));
+                        break;
+                    case "d8":
+                        message.channel.send(message.author.toString() + ", rolled a " + seco + " and got a " + Math.floor((Math.random() * 8) + 1));
+                        break;
+                    case "d10":
+                        message.channel.send(message.author.toString() + ", rolled a " + seco + "and got a " + Math.floor((Math.random() * 10) + 1));
+                        break;
+                    case "d12":
+                        message.channel.send(message.author.toString() + ", rolled a " + seco + " and got a " + Math.floor((Math.random() * 12) + 1));
+                        break;
+                    case "d20":
+                        var dice = Math.floor((Math.random() * 20) + 1);
+                        message.channel.send(message.author.toString() + ", rolled a " + seco + " and got a " + dice);
+                        if (dice = '20') message.channel.send("Congratulations, you got a critical hit!");
+                        break;
+                    case "d100":
+                        message.channel.send(message.author.toString() + ", rolled a " + seco + " and got a " + Math.floor((Math.random() * 100) + 1));
+                        break;
+                    default:
+                        message.channel.send("Specify a dice value");
+                        break;
+                }
+                break;
+
+
+            case "say":
+                // makes the bot say something and delete the message. As an example, it's open to anyone to use. 
+                // To get the "message" itself we join the `args` back into a string with spaces: 
+                const sayMessage = args.join(" ");
+                // Then we delete the command message (sneaky, right?). The catch just ignores the error with a cute smiley thing.
+                message.delete().catch(O_o => { });
+                // And we get the bot to say the thing: 
+                message.channel.send(sayMessage);
+
                 break;
             default:
                 //message.channel.send(`Command name: ${command}\nArguments: ${args}`);
@@ -114,12 +151,15 @@ client.on('message', (message) => {
                 //console.log(args[0]);
                 //console.log(args[1]);0
                 //randomPuppy(command).then(url => {
-                    //url retorna a URL da uma imagem aleatoria do r/funny, porém queria enviar ela como anexo no discord, e naoc omo um link
+                //url retorna a URL da uma imagem aleatoria do r/funny, porém queria enviar ela como anexo no discord, e naoc omo um link
                 //    message.channel.send(url);
-                    //   message.channel.send("My Bot's message", {files: {url}});
+                //   message.channel.send("My Bot's message", {files: {url}});
                 //});
                 break;
         }
     };
 });
 client.login(config.token);
+
+//// Get a Member from message Mention
+//message.mentions.members.first();
