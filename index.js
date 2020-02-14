@@ -65,7 +65,7 @@ async function getImages(url) {
 //Logs
 client.once('ready', () => {
     console.log('Ready!');
-    client.user.setActivity('Dota 2');
+    client.user.setActivity('D&D 5e');
 });
 client.once('reconnecting', () => {
     console.log('Reconnecting!');
@@ -82,10 +82,13 @@ client.on('message', (message) => {
     //Salva os parametros em ARGS    
     const args = message.content.slice(prefix.length).split(' ');
     const command = args.shift().toLowerCase();
-
+    
     if (message.content.startsWith(prefix)) {
         let prim = args[0];
-        switch (command) {
+        let seco = args[1];
+        console.log("let"+prim);
+        console.log("let"+seco);
+        switch (prim) {
             case "peixe":
                 message.channel.send({ files: [peixes[Math.floor(Math.random() * peixes.length)].toString()] });
                 break;
@@ -103,7 +106,6 @@ client.on('message', (message) => {
                 const posts = res.body.data.children.filter(post => !post.data.preview && post.data.selftext.length <= 550 && post.data.title.length <= 256);
                 break;
             case "roll":
-                message.channel.send("Rolled dice");
                 message.channel.send(message.author.toString() + ", rolled a dice and got a " + Math.floor((Math.random() * 20) + 1));
                 break;
             default:
