@@ -115,7 +115,7 @@ client.on('message', (message) => {
                         message.channel.send(message.author.toString() + ", rolled a " + seco + " and got a " + Math.floor((Math.random() * 8) + 1));
                         break;
                     case "d10":
-                        message.channel.send(message.author.toString() + ", rolled a " + seco + "and got a " + Math.floor((Math.random() * 10) + 1));
+                        message.channel.send(message.author.toString() + ", rolled a " + seco + " and got a " + Math.floor((Math.random() * 10) + 1));
                         break;
                     case "d12":
                         message.channel.send(message.author.toString() + ", rolled a " + seco + " and got a " + Math.floor((Math.random() * 12) + 1));
@@ -123,7 +123,7 @@ client.on('message', (message) => {
                     case "d20":
                         var dice = Math.floor((Math.random() * 20) + 1);
                         message.channel.send(message.author.toString() + ", rolled a " + seco + " and got a " + dice);
-                        if (dice = '20') message.channel.send("Congratulations, you got a critical hit!");
+                        if ( parseInt(dice) == parseInt(20)) message.channel.send("Congratulations, you got a critical hit!");
                         break;
                     case "d100":
                         message.channel.send(message.author.toString() + ", rolled a " + seco + " and got a " + Math.floor((Math.random() * 100) + 1));
