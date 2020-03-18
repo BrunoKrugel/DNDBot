@@ -162,13 +162,13 @@ client.on('message', (message) => {
     const serverQueue = queue.get(message.guild.id);
     const voiceChannel = message.author.voiceChannel;
     //Ignora o proprio bot e mensagens q n sejam para o bot
-    if (!message.content.startsWith(prefix) || message.author.bot) return;
+    if (!message.content.toLowerCase().startsWith(prefix) || message.author.bot) return;
 
     //Salva os parametros em ARGS    
     const args = message.content.slice(prefix.length).split(' ');
     const command = args.shift().toLowerCase();
 
-    if (message.content.startsWith(prefix)) {
+    if (message.content.toLowerCase().startsWith(prefix)) {
         let param = args[0];
         let seco = args[1];
         switch (param) {
@@ -202,6 +202,11 @@ client.on('message', (message) => {
                         message.channel.send("Specify a dice value");
                         break;
                 }
+                break;
+            case "map":
+                message.channel.send({files: ["https://i.imgur.com/Xd0ABTq.jpg"]});
+                break;
+            case "names":
                 break;
             //============== Fun Section
             case "say":
@@ -239,8 +244,11 @@ client.on('message', (message) => {
             case "stop":
                 stop(message, serverQueue);
                 break;
+            case "help":
+                message.channel.send("> Here is what I can do: <:peepoPANTIES:684752251738128425> \npls map - show the current campaign map\npls roll dice - roll a dice for you\npls names - show the characters names");
+                break;
             default:
-                message.channel.send('You need to enter a valid command!');
+                //message.channel.send('You need to enter a valid command!');
                 //message.channel.send(`Command name: ${command}\nArguments: ${args}`);
                 //message.channel.send("Vai toma no cu");
                 //console.log(args[0]);
