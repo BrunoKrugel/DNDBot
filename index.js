@@ -237,10 +237,10 @@ client.on('message', (message) => {
                         message.channel.send({ embed: ficha.StatSeph });
                         break;
                     case "max":
-                        message.channel.send({ embed: ficha.Max });
+                        message.channel.send({ embed: ficha.StatMax });
                         break;
                     case "sauer":
-                        message.channel.send({ embed: ficha.Sauer });
+                        message.channel.send({ embed: ficha.StatSauer });
                         break;
                     //============ outro RPG
                     case "randal":
@@ -251,29 +251,29 @@ client.on('message', (message) => {
                         break;
                 }
                 break;
-                case "spell":
-                    switch (seco) {
-                        case "bruce":
-                            message.channel.send({ embed: ficha.SpellBruce });
-                            break;
-                        case "seph":
-                            message.channel.send({ embed: ficha.StatSeph });
-                            break;
-                        case "max":
-                            message.channel.send({ embed: ficha.Max });
-                            break;
-                        case "sauer":
-                            message.channel.send({ embed: ficha.Sauer });
-                            break;
-                        //============ outro RPG
-                        case "randal":
-                            message.channel.send({ embed: ficha.Randal });
-                            break;
-                        default:
-                            message.channel.send("Specify a name.");
-                            break;
-                    }
-                    break;                
+            case "spell":
+                switch (seco) {
+                    case "bruce":
+                        message.channel.send({ embed: ficha.SpellBruce });
+                        break;
+                    case "seph":
+                        message.channel.send({ embed: ficha.SpellSeph });
+                        break;
+                    case "max":
+                        message.channel.send({ embed: ficha.SpellMax });
+                        break;
+                    case "sauer":
+                        message.channel.send({ embed: ficha.SpellSauer });
+                        break;
+                    //============ outro RPG
+                    case "randal":
+                        message.channel.send({ embed: ficha.Randal });
+                        break;
+                    default:
+                        message.channel.send("Specify a name.");
+                        break;
+                }
+                break;
             case "map":
                 message.channel.send({
                     embed: {
