@@ -4,7 +4,6 @@
 //Tips
 //https://gist.github.com/eslachance/3349734a98d30011bb202f47342601d3
 //https://github.com/AnIdiotsGuide/discordjs-bot-guide/blob/master/frequently-asked-questions.md
-
 const Discord = require("discord.js");
 const client = new Discord.Client();
 const {
@@ -15,6 +14,8 @@ const snek = require('node-fetch');
 const randomPuppy = require('random-puppy');
 const ytdl = require('ytdl-core');
 const queue = new Map();
+
+var ficha = require('./Constante.js');
 
 //Roubei do muller fodasi
 const peixes = [
@@ -193,7 +194,8 @@ client.on('message', (message) => {
                     case "d20":
                         var dice = Math.floor((Math.random() * 20) + 1);
                         message.channel.send(message.author.toString() + ", rolled a " + seco + " and got a " + dice);
-                        if (parseInt(dice) == parseInt(20)) message.channel.send("Congratulations, you got a critical hit!");
+                        if (parseInt(dice) == parseInt(20)) message.channel.send("Congratulations, you got a critical hit! <:7980_joker:689262799179743257>");
+                        if (parseInt(dice) == parseInt(1)) message.channel.send("Congratulations, you fucked up <:8440_vergonha:689946168553504807>");
                         break;
                     case "d100":
                         message.channel.send(message.author.toString() + ", rolled a " + seco + " and got a " + Math.floor((Math.random() * 100) + 1));
@@ -203,10 +205,91 @@ client.on('message', (message) => {
                         break;
                 }
                 break;
+            case "ficha":
+                switch (seco) {
+                    case "bruce":
+                        message.channel.send({ embed: ficha.Bruce });
+                        break;
+                    case "seph":
+                        message.channel.send({ embed: ficha.Seph });
+                        break;
+                    case "max":
+                        message.channel.send({ embed: ficha.Max });
+                        break;
+                    case "sauer":
+                        message.channel.send({ embed: ficha.Sauer });
+                        break;
+                    //============ outro RPG
+                    case "randal":
+                        message.channel.send({ embed: ficha.Randal });
+                        break;
+                    default:
+                        message.channel.send("Specify a name.");
+                        break;
+                }
+                break;
+            case "stats":
+                switch (seco) {
+                    case "bruce":
+                        message.channel.send({ embed: ficha.StatBruce });
+                        break;
+                    case "seph":
+                        message.channel.send({ embed: ficha.StatSeph });
+                        break;
+                    case "max":
+                        message.channel.send({ embed: ficha.Max });
+                        break;
+                    case "sauer":
+                        message.channel.send({ embed: ficha.Sauer });
+                        break;
+                    //============ outro RPG
+                    case "randal":
+                        message.channel.send({ embed: ficha.Randal });
+                        break;
+                    default:
+                        message.channel.send("Specify a name.");
+                        break;
+                }
+                break;
+                case "spell":
+                    switch (seco) {
+                        case "bruce":
+                            message.channel.send({ embed: ficha.SpellBruce });
+                            break;
+                        case "seph":
+                            message.channel.send({ embed: ficha.StatSeph });
+                            break;
+                        case "max":
+                            message.channel.send({ embed: ficha.Max });
+                            break;
+                        case "sauer":
+                            message.channel.send({ embed: ficha.Sauer });
+                            break;
+                        //============ outro RPG
+                        case "randal":
+                            message.channel.send({ embed: ficha.Randal });
+                            break;
+                        default:
+                            message.channel.send("Specify a name.");
+                            break;
+                    }
+                    break;                
             case "map":
-                message.channel.send({files: ["https://i.imgur.com/Xd0ABTq.jpg"]});
+                message.channel.send({
+                    embed: {
+                        color: 3447003,
+                        image: { url: 'https://i.imgur.com/Xd0ABTq.jpg', }
+                    }
+                });
                 break;
             case "names":
+                message.channel.send("Players atualmente vivos:");
+                message.channel.send("Mestre, o <:2216_mouse_Dorime:689946165092810762>");
+                message.channel.send("Seph, o cara das musiquinhas");
+                message.channel.send("Sauer, o anão careca");
+                message.channel.send("Bruce, um druida alcoolatra");
+                message.channel.send("Max, o veio ranzinza 🧙‍♂️");
+                message.channel.send("Djohnson, o cara que a gente tocou fogo na casa 🔥");
                 break;
             //============== Fun Section
             case "say":
@@ -216,23 +299,39 @@ client.on('message', (message) => {
                 // Then we delete the command message (sneaky, right?). The catch just ignores the error with a cute smiley thing.
                 message.delete().catch(O_o => { });
                 // And we get the bot to say the thing: 
-                message.channel.send(sayMessage.slice(3));
+                message.channel.send("<:9311_BOT:689946783945981990> " + sayMessage.slice(3));
                 break;
             case "peixe":
-                message.channel.send({ files: [peixes[Math.floor(Math.random() * peixes.length)].toString()] });
+                //message.channel.send({ files: [peixes[Math.floor(Math.random() * peixes.length)].toString()] });
+                message.channel.send({
+                    embed: {
+                        color: 3447003,
+                        image: {
+                            url: peixes[Math.floor(Math.random() * peixes.length)].toString(),
+                        },
+                    }
+                });
                 break;
             case "funny":
                 //Narnia
                 randomPuppy('funny').then(url => {
                     //url retorna a URL da uma imagem aleatoria do r/funny, porém queria enviar ela como anexo no discord, e naoc omo um link
-                    message.channel.send(url);
+                    //message.channel.send(url);
+                    message.channel.send({
+                        embed: {
+                            color: 3447003,
+                            image: {
+                                url: url,
+                            },
+                        }
+                    });
                     //message.channel.send("My Bot's message", {files: {url}});
                 });
                 break;
             case "joke":
                 //Need to check how snek.get work
-                const res = snek.get('https://www.reddit.com/r/Jokes/top/.json?sort=top&t=day&limit=400');
-                const posts = res.body.data.children.filter(post => !post.data.preview && post.data.selftext.length <= 550 && post.data.title.length <= 256);
+                //  const res = snek.get('https://www.reddit.com/r/Jokes/top/.json?sort=top&t=day&limit=400');
+                //  const posts = res.body.data.children.filter(post => !post.data.preview && post.data.selftext.length <= 550 && post.data.title.length <= 256);
                 break;
             //=============== Music section
             case "play":
@@ -245,7 +344,7 @@ client.on('message', (message) => {
                 stop(message, serverQueue);
                 break;
             case "help":
-                message.channel.send("> Here is what I can do: <:peepoPANTIES:684752251738128425> \npls map - show the current campaign map\npls roll dice - roll a dice for you\npls names - show the characters names");
+                message.channel.send("<:peepoPANTIES:684752251738128425>\n\nHere is what I can do:\n*pls map* - show the current campaign map\n*pls roll dice* - roll a dice\n*pls names* - show the characters names\n\n*pls ficha name* - show the character information\n*pls stats name* - status do personagem\n*pls spell name* - spells do personagem\n\n*pls peixe* - summon a fish\n*pls funny* - summon laughs\n*pls say something* - trick a dumb");
                 break;
             default:
                 //message.channel.send('You need to enter a valid command!');
