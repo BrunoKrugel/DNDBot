@@ -219,6 +219,9 @@ client.on('message', (message) => {
                     case "sauer":
                         message.channel.send({ embed: ficha.Sauer });
                         break;
+                    case "djohn":
+                        message.channel.send({ embed: ficha.Djohn });
+                        break;
                     //============ outro RPG
                     case "randal":
                         message.channel.send({ embed: ficha.Randal });
@@ -242,6 +245,9 @@ client.on('message', (message) => {
                     case "sauer":
                         message.channel.send({ embed: ficha.StatSauer });
                         break;
+                    case "djohn":
+                        message.channel.send({ embed: ficha.StatDjohn });
+                        break;
                     //============ outro RPG
                     case "randal":
                         message.channel.send({ embed: ficha.Randal });
@@ -264,6 +270,9 @@ client.on('message', (message) => {
                         break;
                     case "sauer":
                         message.channel.send({ embed: ficha.SpellSauer });
+                        break;
+                    case "djohn":
+                        message.channel.send({ embed: ficha.SpellDjohn });
                         break;
                     //============ outro RPG
                     case "randal":

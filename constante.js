@@ -25,9 +25,14 @@ exports.Bruce = {
         },
         {
             name: 'HP',
-            value: '11',
+            value: '18',
             inline: true,
         },
+        {
+            name: 'Proficiencia',
+            value: '+2',
+            inline: true,
+        },        
         {
             name: '\u200b',
             value: '\u200b',
@@ -78,7 +83,6 @@ exports.Bruce = {
         icon_url: 'https://pm1.narvii.com/6669/0c88a7486c374d9f02fed57780c60872aabad9da_00.jpg',
     },
 };
-
 
 exports.StatBruce = {
     color: 0xFF9900,
@@ -238,6 +242,10 @@ exports.SpellBruce = {
     },
     fields: [
         {
+            name: 'Slots',
+            value: '4 magias lvl 1 e 2 magia lvl 2',
+        },        
+        {
             name: 'Criar chamas 🔥',
             value: 'Faça um ataque à distância com magia. Se atingir, o alvo sofre 1d8 de dano de fogo.',
             inline: true,
@@ -264,6 +272,18 @@ exports.SpellBruce = {
             name: 'Onda trovejante 🌩️',
             value: 'Cada criatura deve realizar um teste de resistência de Constituição. Se falhar na resistência, uma criatura sofrerá 2d8 de dano trovejante e será empurrada. Se obtive sucesso na resistência, a criatura sofrerá metade desse dano e não será empurrada.',
         },
+        {
+            name: 'Palavra curativa',
+            value: 'Uma criatura, à sua escolha, que você possa ver dentro do alcance recupera uma quantidade de pontos de vida igual a 1d4 + seu modificador de habilidade de conjuração.',
+        },    
+        {
+            name: 'Esfera flamejante n2',
+            value: 'A criatura sofre 2d6 de dano de fogo se falhar na resistência, ou metade desse dano se obtiver sucesso.',
+        },   
+        {
+            name: 'Raio lunar n2',
+            value: 'Realizar um teste de resistência de Constituição. Ela sofre 2d10 de dano radiante se falhar na resistência ou metade desse dano se passar.',
+        },                   
     ],
     timestamp: new Date(),
     footer: {
@@ -296,9 +316,14 @@ exports.Seph = {
         },
         {
             name: 'HP',
-            value: '15',
+            value: '19',
             inline: true,
         },
+        {
+            name: 'Proficiencia',
+            value: '+2',
+            inline: true,
+        },        
         {
             name: '\u200b',
             value: '\u200b',
@@ -508,6 +533,11 @@ exports.SpellSeph = {
     },
     fields: [
         {
+            name: 'Slots',
+            value: '4 magia lvl 1 e 2 lvl 2',
+            inline: true,
+        },        
+        {
             name: 'Inspiração (açao extra)',
             value: '1d6 para um aliado em testes de ataque, resistencia ou atributo',
             inline: true,
@@ -548,6 +578,14 @@ exports.SpellSeph = {
             name: 'Sussuros',
             value: ' O alvo deve realizar um teste de resistência de Sabedoria. Se falhar na resistência, ele sofrerá 3d6 de dano psíquico e deve, imediatamente, usar sua reação, se disponível, para se mover para o mais longe possível de você. ',
         },
+        {
+            name: 'Detectar pensamento',
+            value: 'Se a criatura escolhida possuir Inteligência 3 ou inferior ou não falar nenhum tipo de idioma, a criatura não poderá ser afetada.',
+        },   
+        {
+            name: 'Invisibilidade',
+            value: 'Uma criatura que você tocar, se torna invisível até a magia acabar. Qualquer coisa que o alvo esteja vestindo ou carregando fica invisível enquanto estiver de posse do alvo. A magia termina para o alvo caso ele ataque ou conjure uma magia.',
+        },              
     ],
     timestamp: new Date(),
     footer: {
@@ -563,7 +601,7 @@ exports.Max = {
     author: {
         name: 'Stats information for Max',
     },
-    description: 'Elfo Mago, level ' + level.toString(),
+    description: 'Elfo Mago (Necromantico), level ' + level.toString(),
     thumbnail: {
         url: 'https://unshavedmouse.files.wordpress.com/2014/01/gandalf.jpg?w=300&h=218',
     },
@@ -580,9 +618,14 @@ exports.Max = {
         },
         {
             name: 'HP',
-            value: '16',
+            value: '20',
             inline: true,
         },
+        {
+            name: 'Proficiencia',
+            value: '+2',
+            inline: true,
+        },        
         {
             name: '\u200b',
             value: '\u200b',
@@ -788,6 +831,10 @@ exports.SpellMax = {
     },
     fields: [
         {
+            name: 'Slots',
+            value: '4 magia lvl 1 e 2 lvl 2',
+        },        
+        {
             name: 'Enfeitiçar',
             value: 'Faça um ataque à distância com magia contra o alvo. Se atingir, o alvo sofre 1d10 de dano de fogo.',
             inline: true,
@@ -827,6 +874,14 @@ exports.SpellMax = {
             name: 'Enfeitiçar',
             value: 'A criatura enfeitiçada reconhece você como um conhecido amigável. Quando a magia acabar, a criatura saberá que foi enfeitiçada por você.',
         },
+        {
+            name: 'Alterar-se n2',
+            value: 'Você assume uma forma diferente: Adaptação Aquática, Mudar Aparência, Armas Naturais (1d6 de dano +2)',
+        },   
+        {
+            name: 'Necromancia',
+            value: 'Um vez por turno ao matar uma ou mais criatura com uma magia de 1o nível ou maior, você recupera pontos de vida igual a duas vezes o nível da magia ou três vezes se a magia pertencer a Escola da Necromancia.',
+        },              
     ],
     timestamp: new Date(),
     footer: {
@@ -859,9 +914,14 @@ exports.Sauer = {
         },
         {
             name: 'HP',
-            value: '26',
+            value: '32',
             inline: true,
         },
+        {
+            name: 'Proficiencia',
+            value: '+2',
+            inline: true,
+        },        
         {
             name: '\u200b',
             value: '\u200b',
@@ -908,7 +968,7 @@ exports.Sauer = {
     ],
     timestamp: new Date(),
     footer: {
-        text: updated.toString(),
+        text: 'Critical with 19 or 20',
         icon_url: 'https://pm1.narvii.com/6669/0c88a7486c374d9f02fed57780c60872aabad9da_00.jpg',
     },
 };
@@ -1060,8 +1120,6 @@ exports.StatSauer = {
     },
 };
 
-
-
 exports.SpellSauer = {
     color: 0xFF0000,
     title: 'Sauer, the bald',
@@ -1089,6 +1147,287 @@ exports.SpellSauer = {
             value: '1x ao dia',
             inline: true,
         },        
+    ],
+    timestamp: new Date(),
+    footer: {
+        text: updated.toString(),
+        icon_url: 'https://pm1.narvii.com/6669/0c88a7486c374d9f02fed57780c60872aabad9da_00.jpg',
+    },
+};
+
+exports.Djohn = {
+    color: 0x00FF00,
+    title: 'Djohnson, the shivering',
+    url: 'https://avribacki.gitlab.io/magias5e/',
+    author: {
+        name: 'Stats information for Djohnson',
+    },
+    description: 'Draconato barbaro, level ' + level.toString(),
+    thumbnail: {
+        url: 'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/9686ff89-c3f0-4a86-b227-b169b672a761/d3f17mn-fb1acac6-94c3-4b3e-98db-42e326279487.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwic3ViIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsImF1ZCI6WyJ1cm46c2VydmljZTpmaWxlLmRvd25sb2FkIl0sIm9iaiI6W1t7InBhdGgiOiIvZi85Njg2ZmY4OS1jM2YwLTRhODYtYjIyNy1iMTY5YjY3MmE3NjEvZDNmMTdtbi1mYjFhY2FjNi05NGMzLTRiM2UtOThkYi00MmUzMjYyNzk0ODcuanBnIn1dXX0.3J7FR8rm2DksjUhWNm5cddmHKZ0vSO7gFxOI_i4o_Q0',
+    },
+    fields: [
+        {
+            name: 'AC',
+            value: '16',
+            inline: true,
+        },
+        {
+            name: 'Iniciative',
+            value: '+1',
+            inline: true,
+        },
+        {
+            name: 'HP',
+            value: '24',
+            inline: true,
+        },
+        {
+            name: 'Proficiencia',
+            value: '+2',
+            inline: true,
+        },        
+        {
+            name: '\u200b',
+            value: '\u200b',
+            inline: false,
+        },
+        {
+            name: 'Força',
+            value: '+5',
+            inline: true,
+        },
+        {
+            name: 'Destreza',
+            value: '+1',
+            inline: true,
+        },
+        {
+            name: 'Constituição',
+            value: '+1',
+            inline: true,
+        },
+        {
+            name: 'Inteligencia',
+            value: '+0',
+            inline: true,
+        },
+        {
+            name: 'Sabedoria',
+            value: '-1',
+            inline: true,
+        },
+        {
+            name: 'Carisma',
+            value: '+1',
+            inline: true,
+        },
+        {
+            name: 'Espada',
+            value: '+6 2d6+5',
+        },
+        {
+            name: 'Sopro de fogo',
+            value: '2d6 (1x day)',
+        },
+        {
+            name: 'Furia',
+            value: '3x dia +2 de dano vantgem em testes',
+        },        
+    ],
+    timestamp: new Date(),
+    footer: {
+        text: updated.toString(),
+        icon_url: 'https://pm1.narvii.com/6669/0c88a7486c374d9f02fed57780c60872aabad9da_00.jpg',
+    },
+};
+
+exports.StatDjohn = {
+    color: 0x00FF00,
+    title: 'Djohnson, the shivering',
+    url: 'https://avribacki.gitlab.io/magias5e/',
+    author: {
+        name: 'Stats information for Djohnson',
+    },
+    description: 'Draconato barbaro, level ' + level.toString(),
+    thumbnail: {
+        url: 'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/9686ff89-c3f0-4a86-b227-b169b672a761/d3f17mn-fb1acac6-94c3-4b3e-98db-42e326279487.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwic3ViIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsImF1ZCI6WyJ1cm46c2VydmljZTpmaWxlLmRvd25sb2FkIl0sIm9iaiI6W1t7InBhdGgiOiIvZi85Njg2ZmY4OS1jM2YwLTRhODYtYjIyNy1iMTY5YjY3MmE3NjEvZDNmMTdtbi1mYjFhY2FjNi05NGMzLTRiM2UtOThkYi00MmUzMjYyNzk0ODcuanBnIn1dXX0.3J7FR8rm2DksjUhWNm5cddmHKZ0vSO7gFxOI_i4o_Q0',
+    },
+    fields: [
+        {
+            name: '*Força',
+            value: '+7',
+            inline: true,
+        },
+        {
+            name: 'Destreza',
+            value: '+1',
+            inline: true,
+        },
+        {
+            name: '*Constituição',
+            value: '+3',
+            inline: true,
+        },
+        {
+            name: 'Inteligencia',
+            value: '+0',
+            inline: true,
+        },
+        {
+            name: 'Sabedoria',
+            value: '+3',
+            inline: true,
+        },
+        {
+            name: 'Carisma',
+            value: '+5',
+            inline: true,
+        },
+        {
+            name: '\u200b',
+            value: '\u200b',
+            inline: false,
+        },
+        {
+            name: 'Acrobacia',
+            value: '+3',
+            inline: true,
+        },
+        {
+            name: 'Arcanismo',
+            value: '+0',
+            inline: true,
+        },
+        {
+            name: 'Atletismo',
+            value: '+5',
+            inline: true,
+        },
+        {
+            name: 'Atuação',
+            value: '+1',
+            inline: true,
+        },
+        {
+            name: 'Blefar',
+            value: '+1',
+            inline: true,
+        },
+        {
+            name: 'Furtividade',
+            value: '+1',
+            inline: true,
+        },
+        {
+            name: 'Historia',
+            value: '+0',
+            inline: true,
+        },
+        {
+            name: 'Intimidação',
+            value: '+2',
+            inline: true,
+        },
+        {
+            name: 'Intuição',
+            value: '-1',
+            inline: true,
+        },
+        {
+            name: 'Investigação',
+            value: '+0',
+            inline: true,
+        },
+        {
+            name: 'Lidar com animais',
+            value: '-1',
+            inline: true,
+        },
+        {
+            name: 'Medicina',
+            value: '+0',
+            inline: true,
+        },
+        {
+            name: 'Natureza',
+            value: '+0',
+            inline: true,
+        },
+        {
+            name: 'Percepção',
+            value: '-1',
+            inline: true,
+        },
+        {
+            name: 'Persuasão',
+            value: '+1',
+            inline: true,
+        },
+        {
+            name: 'Prestidigitação',
+            value: '+1',
+            inline: true,
+        },
+        {
+            name: 'Religião',
+            value: '+0',
+            inline: true,
+        },
+        {
+            name: 'Sobrevivência',
+            value: '-1',
+            inline: true,
+        },
+    ],
+    timestamp: new Date(),
+    footer: {
+        text: updated.toString(),
+        icon_url: 'https://pm1.narvii.com/6669/0c88a7486c374d9f02fed57780c60872aabad9da_00.jpg',
+    },
+};
+
+exports.SpellDjohn = {
+    color: 0x00FF00,
+    title: 'Djohnson, the shivering',
+    url: 'https://avribacki.gitlab.io/magias5e/',
+    author: {
+        name: 'Spell information for Djohnson',
+    },
+    description: 'Draconato barbaro, level ' + level.toString(),
+    thumbnail: {
+        url: 'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/9686ff89-c3f0-4a86-b227-b169b672a761/d3f17mn-fb1acac6-94c3-4b3e-98db-42e326279487.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwic3ViIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsImF1ZCI6WyJ1cm46c2VydmljZTpmaWxlLmRvd25sb2FkIl0sIm9iaiI6W1t7InBhdGgiOiIvZi85Njg2ZmY4OS1jM2YwLTRhODYtYjIyNy1iMTY5YjY3MmE3NjEvZDNmMTdtbi1mYjFhY2FjNi05NGMzLTRiM2UtOThkYi00MmUzMjYyNzk0ODcuanBnIn1dXX0.3J7FR8rm2DksjUhWNm5cddmHKZ0vSO7gFxOI_i4o_Q0',
+    },
+    fields: [
+        {
+            name: 'Falar com animais 🐑',
+            value: 'Você adquire a habilidade de compreender e se comunicar verbalmente com bestas, pela duração.',
+        },
+        {
+            name: '\u200b',
+            value: '\u200b',
+            inline: false,
+        },
+        {
+            name: 'Sentido animal',
+            value: 'Através de um ritual escolha um dos animais a seguir:',
+            inline: true,
+        },
+        {
+            name: 'Urso',
+            value: 'Quando em fúria fica resistente a todos os tipos de dano, exceto psíquico.',
+            inline: true,
+        },
+        {
+            name: 'Aguia',
+            value: 'Quando em fúria e sem usar armadura pesada, criaturas tem desvantagem em ataques de oportunidade contra você e você pode usar ação corrida como ação bônus.',
+            inline: true,
+        },     
+        {
+            name: 'Lobo',
+            value: 'Quando em fúria, seus aliados têm vantagem em ataque corpo a corpo contra criaturas inimigas a 1,5 m de você.',
+            inline: true,
+        },            
     ],
     timestamp: new Date(),
     footer: {
