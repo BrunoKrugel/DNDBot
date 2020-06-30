@@ -1,6 +1,45 @@
-const updated = 'Updated for 3 session';
-const level = 3;
-
+const updated = 'Updated for 4 session';
+const level = 4;
+//Seph
+const SephFor = '-1'; //8
+const SephDes = '+4'; //18
+const SephCon = '+2'; //14
+const SephInt = '+1'; //13
+const SephSab = '+1'; //13
+const SephCar = '+3'; //16
+//--------------------//
+//Bruce
+const BruceFor = '-1'; //8
+const BruceDes = '+4'; //18
+const BruceCon = '+2'; //14
+const BruceInt = '+1'; //13
+const BruceSab = '+1'; //13
+const BruceCar = '+3'; //16
+//---------------------//
+//Max
+const MaxFor = '-1'; //8
+const MaxDes = '+4'; //18
+const MaxCon = '+2'; //14
+const MaxInt = '+1'; //13
+const MaxSab = '+1'; //13
+const MaxCar = '+3'; //16
+//-------------------//
+//Sauer
+const SauerFor = '-1'; //8
+const SauerDes = '+4'; //18
+const SauerCon = '+2'; //14
+const SauerInt = '+1'; //13
+const SauerSab = '+1'; //13
+const SauerCar = '+3'; //16
+//---------------------//
+//Ixpexi
+const IxpexiFor = '-1'; //8
+const IxpexiDes = '+4'; //18
+const IxpexiCon = '+2'; //14
+const IxpexiInt = '+1'; //13
+const IxpexiSab = '+1'; //13
+const IxpexiCar = '+3'; //16
+//-------------------//
 exports.Bruce = {
     color: 0xFF9900,
     title: 'Bruce, the drunk',
@@ -243,7 +282,7 @@ exports.SpellBruce = {
     fields: [
         {
             name: 'Slots',
-            value: '4 magias lvl 1 e 2 magia lvl 2',
+            value: '4 magias lvl 1 e 3 magia lvl 2',
         },        
         {
             name: 'Criar chamas 🔥',
@@ -331,32 +370,32 @@ exports.Seph = {
         },
         {
             name: 'Força',
-            value: '-1',
+            value: SephFor,
             inline: true,
         },
         {
             name: 'Destreza',
-            value: '+4',
+            value: SephDes,
             inline: true,
         },
         {
             name: 'Constituição',
-            value: '+2',
+            value: SephCon,
             inline: true,
         },
         {
             name: 'Inteligencia',
-            value: '+1',
+            value: SephInt,
             inline: true,
         },
         {
             name: 'Sabedoria',
-            value: '+1',
+            value: SephSab,
             inline: true,
         },
         {
             name: 'Carisma',
-            value: '+3',
+            value: SephCar,
             inline: true,
         },
         {
@@ -534,7 +573,7 @@ exports.SpellSeph = {
     fields: [
         {
             name: 'Slots',
-            value: '4 magia lvl 1 e 2 lvl 2',
+            value: '4 magia lvl 1 e 3 lvl 2',
             inline: true,
         },        
         {
@@ -832,10 +871,10 @@ exports.SpellMax = {
     fields: [
         {
             name: 'Slots',
-            value: '4 magia lvl 1 e 2 lvl 2',
+            value: '4 magia lvl 1 e 3 lvl 2',
         },        
         {
-            name: 'Enfeitiçar',
+            name: 'Seta de fogo',
             value: 'Faça um ataque à distância com magia contra o alvo. Se atingir, o alvo sofre 1d10 de dano de fogo.',
             inline: true,
         },
@@ -1435,6 +1474,278 @@ exports.SpellDjohn = {
         icon_url: 'https://pm1.narvii.com/6669/0c88a7486c374d9f02fed57780c60872aabad9da_00.jpg',
     },
 };
+
+
+
+exports.Ixpexi = {
+    color: 0xFF0000,
+    title: 'Ixpexi, the missing one',
+    url: 'https://avribacki.gitlab.io/magias5e/',
+    author: {
+        name: 'Stats information for Ixpexi',
+    },
+    description: 'Humano Paladino, level ' + level.toString(),
+    thumbnail: {
+        url: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.j2knNDoG4XFq0Ovk7zoIPgHaKl%26pid%3DApi&f=1',
+    },
+    fields: [
+        {
+            name: 'AC',
+            value: '16',
+            inline: true,
+        },
+        {
+            name: 'Iniciative',
+            value: '+1',
+            inline: true,
+        },
+        {
+            name: 'HP',
+            value: '32',
+            inline: true,
+        },
+        {
+            name: 'Proficiencia',
+            value: '+2',
+            inline: true,
+        },        
+        {
+            name: '\u200b',
+            value: '\u200b',
+            inline: false,
+        },
+        {
+            name: 'Força',
+            value: '+4',
+            inline: true,
+        },
+        {
+            name: 'Destreza',
+            value: '+1',
+            inline: true,
+        },
+        {
+            name: 'Constituição',
+            value: '+1',
+            inline: true,
+        },
+        {
+            name: 'Inteligencia',
+            value: '+0',
+            inline: true,
+        },
+        {
+            name: 'Sabedoria',
+            value: '+1',
+            inline: true,
+        },
+        {
+            name: 'Carisma',
+            value: '+3',
+            inline: true,
+        },
+        {
+            name: 'Machado',
+            value: '+4 1d8+2',
+        },
+        {
+            name: 'Pa',
+            value: '+2 1d10+2 (Mold earth 3x day)',
+        },
+    ],
+    timestamp: new Date(),
+    footer: {
+        text: 'Critical with 19 or 20',
+        icon_url: 'https://pm1.narvii.com/6669/0c88a7486c374d9f02fed57780c60872aabad9da_00.jpg',
+    },
+};
+
+
+
+exports.StatIxpexi = {
+    color: 0xFF0000,
+    title: 'Ixpexi, the missing one',
+    url: 'https://avribacki.gitlab.io/magias5e/',
+    author: {
+        name: 'Stats information for Ixpexi',
+    },
+    description: 'Humano Paladino, level ' + level.toString(),
+    thumbnail: {
+        url: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.j2knNDoG4XFq0Ovk7zoIPgHaKl%26pid%3DApi&f=1',
+    },
+    fields: [
+        {
+            name: 'Força',
+            value: '+4',
+            inline: true,
+        },
+        {
+            name: 'Destreza',
+            value: '+1',
+            inline: true,
+        },
+        {
+            name: 'Constituição',
+            value: '+1',
+            inline: true,
+        },
+        {
+            name: 'Inteligencia',
+            value: '+0',
+            inline: true,
+        },
+        {
+            name: '*Sabedoria',
+            value: '+3',
+            inline: true,
+        },
+        {
+            name: '*Carisma',
+            value: '+5',
+            inline: true,
+        },
+        {
+            name: '\u200b',
+            value: '\u200b',
+            inline: false,
+        },
+        {
+            name: 'Acrobacia',
+            value: '+2',
+            inline: true,
+        },
+        {
+            name: 'Arcanismo',
+            value: '+0',
+            inline: true,
+        },
+        {
+            name: 'Atletismo',
+            value: '+4',
+            inline: true,
+        },
+        {
+            name: 'Atuação',
+            value: '+1',
+            inline: true,
+        },
+        {
+            name: 'Blefar',
+            value: '+1',
+            inline: true,
+        },
+        {
+            name: 'Furtividade',
+            value: '+2',
+            inline: true,
+        },
+        {
+            name: 'Historia',
+            value: '+0',
+            inline: true,
+        },
+        {
+            name: 'Intimidação',
+            value: '+3',
+            inline: true,
+        },
+        {
+            name: 'Intuição',
+            value: '+0',
+            inline: true,
+        },
+        {
+            name: 'Investigação',
+            value: '+0',
+            inline: true,
+        },
+        {
+            name: 'Lidar com animais',
+            value: '+0',
+            inline: true,
+        },
+        {
+            name: 'Medicina',
+            value: '+0',
+            inline: true,
+        },
+        {
+            name: 'Natureza',
+            value: '+0',
+            inline: true,
+        },
+        {
+            name: 'Percepção',
+            value: '+0',
+            inline: true,
+        },
+        {
+            name: 'Persuasão',
+            value: '+1',
+            inline: true,
+        },
+        {
+            name: 'Prestidigitação',
+            value: '+2',
+            inline: true,
+        },
+        {
+            name: 'Religião',
+            value: '+0',
+            inline: true,
+        },
+        {
+            name: 'Sobrevivência',
+            value: '+0',
+            inline: true,
+        },
+    ],
+    timestamp: new Date(),
+    footer: {
+        text: updated.toString(),
+        icon_url: 'https://pm1.narvii.com/6669/0c88a7486c374d9f02fed57780c60872aabad9da_00.jpg',
+    },
+};
+
+exports.SpellIxpexi = {
+    color: 0xFF0000,
+    title: 'Sauer, the bald',
+    url: 'https://avribacki.gitlab.io/magias5e/',
+    author: {
+        name: 'Stats information for Sauer',
+    },
+    description: 'Anao Guerreiro, level ' + level.toString(),
+    thumbnail: {
+        url: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.j2knNDoG4XFq0Ovk7zoIPgHaKl%26pid%3DApi&f=1',
+    },
+    fields: [
+        {
+            name: 'Slots',
+            value: '3 magia lvl 1',
+        },         
+        {
+            name: 'Retomar folego',
+            value: '1d10 + lvl para recuperar vida (1x dia)',
+            inline: true,
+        },
+        {
+            name: 'Proteção',
+            value: 'Quando uma criatura que você possa ver atacar um alvo, impoe desvantagens nos ataques.',
+            inline: true,
+        },
+        {
+            name: 'Ação extra',
+            value: '1x ao dia',
+            inline: true,
+        },        
+    ],
+    timestamp: new Date(),
+    footer: {
+        text: updated.toString(),
+        icon_url: 'https://pm1.narvii.com/6669/0c88a7486c374d9f02fed57780c60872aabad9da_00.jpg',
+    },
+};
+
 
 exports.Randal = {
     color: 0xFF0000,

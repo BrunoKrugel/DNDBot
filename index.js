@@ -222,7 +222,10 @@ client.on('message', (message) => {
                     case "djohn":
                         message.channel.send({ embed: ficha.Djohn });
                         break;
-                    //============ outro RPG
+                    case "ixpexi":
+                        message.channel.send({ embed: ficha.Ixpexi });
+                        break;
+                        //============ outro RPG
                     case "randal":
                         message.channel.send({ embed: ficha.Randal });
                         break;
@@ -248,7 +251,10 @@ client.on('message', (message) => {
                     case "djohn":
                         message.channel.send({ embed: ficha.StatDjohn });
                         break;
-                    //============ outro RPG
+                    case "ixpexi":
+                        message.channel.send({ embed: ficha.StatIxpexi });
+                        break;
+                        //============ outro RPG
                     case "randal":
                         message.channel.send({ embed: ficha.Randal });
                         break;
@@ -274,6 +280,9 @@ client.on('message', (message) => {
                     case "djohn":
                         message.channel.send({ embed: ficha.SpellDjohn });
                         break;
+                    case "ixpexi":
+                        message.channel.send({ embed: ficha.SpellIxpexi });
+                        break;                        
                     //============ outro RPG
                     case "randal":
                         message.channel.send({ embed: ficha.Randal });
@@ -299,6 +308,7 @@ client.on('message', (message) => {
                 message.channel.send("Bruce, um druida alcoolatra");
                 message.channel.send("Max, o veio ranzinza 🧙‍♂️");
                 message.channel.send("Djohnson, o cara que a gente tocou fogo na casa 🔥");
+                message.channel.send("Ixpexi, o sumido");
                 break;
             //============== Fun Section
             case "say":
