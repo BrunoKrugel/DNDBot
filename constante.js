@@ -9,37 +9,43 @@ const SephSab = '+1'; //13
 const SephCar = '+3'; //16
 //--------------------//
 //Bruce
-const BruceFor = '-1'; //8
-const BruceDes = '+4'; //18
-const BruceCon = '+2'; //14
-const BruceInt = '+1'; //13
-const BruceSab = '+1'; //13
+const BruceFor = '+0'; //8
+const BruceDes = '+0'; //18
+const BruceCon = '+1'; //14
+const BruceInt = '+3'; //13
+const BruceSab = '+3'; //13
 const BruceCar = '+3'; //16
 //---------------------//
 //Max
 const MaxFor = '-1'; //8
-const MaxDes = '+4'; //18
-const MaxCon = '+2'; //14
-const MaxInt = '+1'; //13
-const MaxSab = '+1'; //13
-const MaxCar = '+3'; //16
+const MaxDes = '+3'; //18
+const MaxCon = '+3'; //14
+const MaxInt = '+4'; //13
+const MaxSab = '+2'; //13
+const MaxCar = '+1'; //16
 //-------------------//
 //Sauer
-const SauerFor = '-1'; //8
-const SauerDes = '+4'; //18
-const SauerCon = '+2'; //14
-const SauerInt = '+1'; //13
-const SauerSab = '+1'; //13
-const SauerCar = '+3'; //16
+const SauerFor = '+2'; //8
+const SauerDes = '+2'; //18
+const SauerCon = '+5'; //14
+const SauerInt = '+0'; //13
+const SauerSab = '+0'; //13
+const SauerCar = '+1'; //16
 //---------------------//
 //Ixpexi
-const IxpexiFor = '-1'; //8
-const IxpexiDes = '+4'; //18
-const IxpexiCon = '+2'; //14
-const IxpexiInt = '+1'; //13
+const IxpexiFor = '+4'; //8
+const IxpexiDes = '+1'; //18
+const IxpexiCon = '+1'; //14
+const IxpexiInt = '+0'; //13
 const IxpexiSab = '+1'; //13
 const IxpexiCar = '+3'; //16
 //-------------------//
+const DjohnFor = '+5'; //20
+const DjohnDes = '+1'; //12
+const DjohnCon = '+1'; //13
+const DjohnInt = '+0'; //9
+const DjohnSab = '-1'; //8
+const DjohnCar = '+1'; //12
 exports.Bruce = {
     color: 0xFF9900,
     title: 'Bruce, the drunk',
@@ -79,32 +85,32 @@ exports.Bruce = {
         },
         {
             name: 'Força',
-            value: '+0',
+            value: BruceFor,
             inline: true,
         },
         {
             name: 'Destreza',
-            value: '+0',
+            value: BruceDes,
             inline: true,
         },
         {
             name: 'Constituição',
-            value: '+1',
+            value: BruceCon,
             inline: true,
         },
         {
             name: 'Inteligencia',
-            value: '+3',
+            value: BruceInt,
             inline: true,
         },
         {
             name: 'Sabedoria',
-            value: '+3',
+            value: BruceSab,
             inline: true,
         },
         {
             name: 'Carisma',
-            value: '+3',
+            value: BruceCar,
             inline: true,
         },
         {
@@ -672,32 +678,32 @@ exports.Max = {
         },
         {
             name: 'Força',
-            value: '-1',
+            value: MaxFor,
             inline: true,
         },
         {
             name: 'Destreza',
-            value: '+3',
+            value: MaxDes,
             inline: true,
         },
         {
             name: 'Constituição',
-            value: '+3',
+            value: MaxCon,
             inline: true,
         },
         {
             name: 'Inteligencia',
-            value: '+4',
+            value: MaxInt,
             inline: true,
         },
         {
             name: 'Sabedoria',
-            value: '+2',
+            value: MaxSab,
             inline: true,
         },
         {
             name: 'Carisma',
-            value: '+1',
+            value: MaxCar,
             inline: true,
         },
         {
@@ -968,32 +974,32 @@ exports.Sauer = {
         },
         {
             name: 'Força',
-            value: '+2',
+            value: SauerFor,
             inline: true,
         },
         {
             name: 'Destreza',
-            value: '+2',
+            value: SauerDes,
             inline: true,
         },
         {
             name: 'Constituição',
-            value: '+5',
+            value: SauerCon,
             inline: true,
         },
         {
             name: 'Inteligencia',
-            value: '+0',
+            value: SauerInt,
             inline: true,
         },
         {
             name: 'Sabedoria',
-            value: '+0',
+            value: SauerSab,
             inline: true,
         },
         {
             name: 'Carisma',
-            value: '+1',
+            value: SauerCar,
             inline: true,
         },
         {
@@ -1233,32 +1239,32 @@ exports.Djohn = {
         },
         {
             name: 'Força',
-            value: '+5',
+            value: DjohnFor,
             inline: true,
         },
         {
             name: 'Destreza',
-            value: '+1',
+            value: DjohnDes,
             inline: true,
         },
         {
             name: 'Constituição',
-            value: '+1',
+            value: DjohnCon,
             inline: true,
         },
         {
             name: 'Inteligencia',
-            value: '+0',
+            value: DjohnInt,
             inline: true,
         },
         {
             name: 'Sabedoria',
-            value: '-1',
+            value: DjohnSab,
             inline: true,
         },
         {
             name: 'Carisma',
-            value: '+1',
+            value: DjohnCar,
             inline: true,
         },
         {
@@ -1479,29 +1485,29 @@ exports.SpellDjohn = {
 
 exports.Ixpexi = {
     color: 0xFF0000,
-    title: 'Ixpexi, the missing one',
+    title: 'Ixpexi, the sharked',
     url: 'https://avribacki.gitlab.io/magias5e/',
     author: {
         name: 'Stats information for Ixpexi',
     },
     description: 'Humano Paladino, level ' + level.toString(),
     thumbnail: {
-        url: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.j2knNDoG4XFq0Ovk7zoIPgHaKl%26pid%3DApi&f=1',
+        url: 'https://i.pinimg.com/originals/50/b5/fc/50b5fcadab01b9c6e5d741402f1b4c06.jpg',
     },
     fields: [
         {
             name: 'AC',
-            value: '16',
+            value: '18',
             inline: true,
         },
         {
-            name: 'Iniciative',
+            name: 'Iniciativa',
             value: '+1',
             inline: true,
         },
         {
             name: 'HP',
-            value: '32',
+            value: '11',
             inline: true,
         },
         {
@@ -1516,32 +1522,32 @@ exports.Ixpexi = {
         },
         {
             name: 'Força',
-            value: '+4',
+            value: IxpexiFor,
             inline: true,
         },
         {
             name: 'Destreza',
-            value: '+1',
+            value: IxpexiDes,
             inline: true,
         },
         {
             name: 'Constituição',
-            value: '+1',
+            value: IxpexiCon,
             inline: true,
         },
         {
             name: 'Inteligencia',
-            value: '+0',
+            value: IxpexiInt,
             inline: true,
         },
         {
             name: 'Sabedoria',
-            value: '+1',
+            value: IxpexiSab,
             inline: true,
         },
         {
             name: 'Carisma',
-            value: '+3',
+            value: IxpexiCar,
             inline: true,
         },
         {
@@ -1564,14 +1570,14 @@ exports.Ixpexi = {
 
 exports.StatIxpexi = {
     color: 0xFF0000,
-    title: 'Ixpexi, the missing one',
+    title: 'Ixpexi, the sharked',
     url: 'https://avribacki.gitlab.io/magias5e/',
     author: {
         name: 'Stats information for Ixpexi',
     },
     description: 'Humano Paladino, level ' + level.toString(),
     thumbnail: {
-        url: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.j2knNDoG4XFq0Ovk7zoIPgHaKl%26pid%3DApi&f=1',
+        url: 'https://i.pinimg.com/originals/50/b5/fc/50b5fcadab01b9c6e5d741402f1b4c06.jpg',
     },
     fields: [
         {
@@ -1611,92 +1617,92 @@ exports.StatIxpexi = {
         },
         {
             name: 'Acrobacia',
-            value: '+2',
+            value: IxpexiDes,
             inline: true,
         },
         {
             name: 'Arcanismo',
-            value: '+0',
+            value: IxpexiInt,
             inline: true,
         },
         {
             name: 'Atletismo',
-            value: '+4',
+            value: IxpexiFor,
             inline: true,
         },
         {
             name: 'Atuação',
-            value: '+1',
+            value: IxpexiCar,
             inline: true,
         },
         {
             name: 'Blefar',
-            value: '+1',
+            value: IxpexiCar,
             inline: true,
         },
         {
             name: 'Furtividade',
-            value: '+2',
+            value: IxpexiDes,
             inline: true,
         },
         {
             name: 'Historia',
-            value: '+0',
+            value: IxpexiInt,
             inline: true,
         },
         {
             name: 'Intimidação',
-            value: '+3',
+            value: IxpexiCar,
             inline: true,
         },
         {
             name: 'Intuição',
-            value: '+0',
+            value: IxpexiSab,
             inline: true,
         },
         {
             name: 'Investigação',
-            value: '+0',
+            value: IxpexiInt,
             inline: true,
         },
         {
             name: 'Lidar com animais',
-            value: '+0',
+            value: IxpexiSab,
             inline: true,
         },
         {
             name: 'Medicina',
-            value: '+0',
+            value: '+3',
             inline: true,
         },
         {
             name: 'Natureza',
-            value: '+0',
+            value: IxpexiInt,
             inline: true,
         },
         {
             name: 'Percepção',
-            value: '+0',
+            value: '+3',
             inline: true,
         },
         {
             name: 'Persuasão',
-            value: '+1',
+            value: IxpexiCar,
             inline: true,
         },
         {
             name: 'Prestidigitação',
-            value: '+2',
+            value: IxpexiDes,
             inline: true,
         },
         {
             name: 'Religião',
-            value: '+0',
+            value: IxpexiInt,
             inline: true,
         },
         {
             name: 'Sobrevivência',
-            value: '+0',
+            value: IxpexiSab,
             inline: true,
         },
     ],
@@ -1709,14 +1715,14 @@ exports.StatIxpexi = {
 
 exports.SpellIxpexi = {
     color: 0xFF0000,
-    title: 'Sauer, the bald',
+    title: 'Ixpexi, the sharked',
     url: 'https://avribacki.gitlab.io/magias5e/',
     author: {
-        name: 'Stats information for Sauer',
+        name: 'Stats information for Ixpexi',
     },
-    description: 'Anao Guerreiro, level ' + level.toString(),
+    description: 'Humano Paladino, level ' + level.toString(),
     thumbnail: {
-        url: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.j2knNDoG4XFq0Ovk7zoIPgHaKl%26pid%3DApi&f=1',
+        url: 'https://i.pinimg.com/originals/50/b5/fc/50b5fcadab01b9c6e5d741402f1b4c06.jpg',
     },
     fields: [
         {
@@ -1724,18 +1730,18 @@ exports.SpellIxpexi = {
             value: '3 magia lvl 1',
         },         
         {
-            name: 'Retomar folego',
-            value: '1d10 + lvl para recuperar vida (1x dia)',
+            name: 'Cura pelas mãos',
+            value: 'Pode curar vida igual seu nivel x5',
             inline: true,
         },
         {
-            name: 'Proteção',
-            value: 'Quando uma criatura que você possa ver atacar um alvo, impoe desvantagens nos ataques.',
+            name: 'Sentido divino',
+            value: 'Com uma ação pode detectar a localizaçao de celestial, infernal ou morto vivo',
             inline: true,
         },
         {
-            name: 'Ação extra',
-            value: '1x ao dia',
+            name: 'Imune a doenças',
+            value: 'Passivo',
             inline: true,
         },        
     ],
