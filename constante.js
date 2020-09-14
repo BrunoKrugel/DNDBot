@@ -7,6 +7,7 @@ const SephCon = '+2'; //14
 const SephInt = '+1'; //13
 const SephSab = '+1'; //13
 const SephCar = '+3'; //16
+const SephPro = '+2'; 
 //--------------------//
 //Bruce
 const BruceFor = '+0'; //8
@@ -15,6 +16,7 @@ const BruceCon = '+1'; //14
 const BruceInt = '+3'; //13
 const BruceSab = '+3'; //13
 const BruceCar = '+3'; //16
+const BrucePro = '+2'; 
 //---------------------//
 //Max
 const MaxFor = '-1'; //8
@@ -23,6 +25,7 @@ const MaxCon = '+3'; //14
 const MaxInt = '+4'; //13
 const MaxSab = '+2'; //13
 const MaxCar = '+1'; //16
+const MaxPro = '+2'; 
 //-------------------//
 //Sauer
 const SauerFor = '+2'; //8
@@ -31,6 +34,7 @@ const SauerCon = '+5'; //14
 const SauerInt = '+0'; //13
 const SauerSab = '+0'; //13
 const SauerCar = '+1'; //16
+const SauerPro = '+2'; 
 //---------------------//
 //Ixpexi
 const IxpexiFor = '+4'; //8
@@ -39,6 +43,7 @@ const IxpexiCon = '+1'; //14
 const IxpexiInt = '+0'; //13
 const IxpexiSab = '+1'; //13
 const IxpexiCar = '+3'; //16
+const IxpexiPro = '+2'; 
 //-------------------//
 const DjohnFor = '+5'; //20
 const DjohnDes = '+1'; //12
@@ -46,6 +51,9 @@ const DjohnCon = '+1'; //13
 const DjohnInt = '+0'; //9
 const DjohnSab = '-1'; //8
 const DjohnCar = '+1'; //12
+const DjohnPro = '+2'; 
+
+
 exports.Bruce = {
     color: 0xFF9900,
     title: 'Bruce, the drunk',
@@ -121,6 +129,10 @@ exports.Bruce = {
             name: 'Open bar',
             value: '+2 1d10 +1d6 (if drunk)',
         },
+        {
+            name: 'Magia',
+            value: BrucePro + BruceSab,
+        },        
     ],
     timestamp: new Date(),
     footer: {
@@ -288,7 +300,7 @@ exports.SpellBruce = {
     fields: [
         {
             name: 'Slots',
-            value: '4 magias lvl 1 e 3 magia lvl 2',
+            value: '4 magias lvl 1 + 3 magia lvl 2 + 2 magia lvl 3',
         },        
         {
             name: 'Criar chamas 🔥',
@@ -412,6 +424,10 @@ exports.Seph = {
             name: 'Trompete',
             value: '+2 1d10+4',
         },
+        {
+            name: 'Magia',
+            value: SephPro + SephCar,
+        },        
     ],
     timestamp: new Date(),
     footer: {
@@ -583,8 +599,8 @@ exports.SpellSeph = {
             inline: true,
         },        
         {
-            name: 'Inspiração (açao extra)',
-            value: '1d6 para um aliado em testes de ataque, resistencia ou atributo',
+            name: 'Inspiração (açao extra) (Carisma)',
+            value: '1d8 para um aliado em testes de ataque, resistencia ou atributo',
             inline: true,
         },
         {
@@ -877,8 +893,13 @@ exports.SpellMax = {
     fields: [
         {
             name: 'Slots',
-            value: '4 magia lvl 1 e 3 lvl 2',
-        },        
+            value: '4 magia lvl 1 + 3 lvl 2 + 2 lvl 3',
+        }, 
+        {
+            name: 'Colheita Macabra',
+            value: 'Uma vez por turno ao matar uma criatura, recupera HP igual a 3x o nivel da magia',
+            inline: false,
+        },               
         {
             name: 'Seta de fogo',
             value: 'Faça um ataque à distância com magia contra o alvo. Se atingir, o alvo sofre 1d10 de dano de fogo.',
@@ -942,7 +963,7 @@ exports.Sauer = {
     author: {
         name: 'Stats information for Sauer',
     },
-    description: 'Anao Guerreiro, level ' + level.toString(),
+    description: 'Anao Guerreiro Campeão, level ' + level.toString(),
     thumbnail: {
         url: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.j2knNDoG4XFq0Ovk7zoIPgHaKl%26pid%3DApi&f=1',
     },
@@ -1027,7 +1048,7 @@ exports.StatSauer = {
     author: {
         name: 'Stats information for Sauer',
     },
-    description: 'Anao Guerreiro, level ' + level.toString(),
+    description: 'Anao Guerreiro Campeão, level ' + level.toString(),
     thumbnail: {
         url: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.j2knNDoG4XFq0Ovk7zoIPgHaKl%26pid%3DApi&f=1',
     },
@@ -1172,7 +1193,7 @@ exports.SpellSauer = {
     author: {
         name: 'Stats information for Sauer',
     },
-    description: 'Anao Guerreiro, level ' + level.toString(),
+    description: 'Anao Guerreiro Campeão, level ' + level.toString(),
     thumbnail: {
         url: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.j2knNDoG4XFq0Ovk7zoIPgHaKl%26pid%3DApi&f=1',
     },
@@ -1191,7 +1212,17 @@ exports.SpellSauer = {
             name: 'Ação extra',
             value: '1x ao dia',
             inline: true,
-        },        
+        }, 
+        {
+            name: 'Ataque extra',
+            value: 'Quando usar ação Atacar, pode atacar duas vezes.',
+            inline: true,
+        },    
+        {
+            name: 'Critico Aprimorado',
+            value: 'Seus ataques com arma tem critico com 19 e 20',
+            inline: true,
+        },                     
     ],
     timestamp: new Date(),
     footer: {
@@ -1490,7 +1521,7 @@ exports.Ixpexi = {
     author: {
         name: 'Stats information for Ixpexi',
     },
-    description: 'Humano Paladino, level ' + level.toString(),
+    description: 'Humano Paladino Defesa, level ' + level.toString(),
     thumbnail: {
         url: 'https://i.pinimg.com/originals/50/b5/fc/50b5fcadab01b9c6e5d741402f1b4c06.jpg',
     },
@@ -1575,7 +1606,7 @@ exports.StatIxpexi = {
     author: {
         name: 'Stats information for Ixpexi',
     },
-    description: 'Humano Paladino, level ' + level.toString(),
+    description: 'Humano Paladino Defesa, level ' + level.toString(),
     thumbnail: {
         url: 'https://i.pinimg.com/originals/50/b5/fc/50b5fcadab01b9c6e5d741402f1b4c06.jpg',
     },
@@ -1720,14 +1751,14 @@ exports.SpellIxpexi = {
     author: {
         name: 'Stats information for Ixpexi',
     },
-    description: 'Humano Paladino, level ' + level.toString(),
+    description: 'Humano Paladino Defesa, level ' + level.toString(),
     thumbnail: {
         url: 'https://i.pinimg.com/originals/50/b5/fc/50b5fcadab01b9c6e5d741402f1b4c06.jpg',
     },
     fields: [
         {
             name: 'Slots',
-            value: '3 magia lvl 1',
+            value: '4 magia lvl 1 + 2 magia lvl 2',
         },         
         {
             name: 'Cura pelas mãos',
@@ -1743,7 +1774,12 @@ exports.SpellIxpexi = {
             name: 'Imune a doenças',
             value: 'Passivo',
             inline: true,
-        },        
+        },      
+        {
+            name: 'Ataque Extra',
+            value: 'Quando usar ação Atacar, pode atacar duas vezes.',
+            inline: true,
+        },            
     ],
     timestamp: new Date(),
     footer: {
