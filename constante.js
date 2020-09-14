@@ -332,7 +332,12 @@ exports.SpellBruce = {
         {
             name: 'Palavra curativa',
             value: 'Uma criatura, à sua escolha, que você possa ver dentro do alcance recupera uma quantidade de pontos de vida igual a 1d4 + seu modificador de habilidade de conjuração.',
-        },    
+        },
+        {
+            name: '\u200b',
+            value: '\u200b',
+            inline: false,
+        },            
         {
             name: 'Esfera flamejante n2',
             value: 'A criatura sofre 2d6 de dano de fogo se falhar na resistência, ou metade desse dano se obtiver sucesso.',
@@ -340,7 +345,60 @@ exports.SpellBruce = {
         {
             name: 'Raio lunar n2',
             value: 'Realizar um teste de resistência de Constituição. Ela sofre 2d10 de dano radiante se falhar na resistência ou metade desse dano se passar.',
-        },                   
+        }, 
+        {
+            name: '\u200b',
+            value: '\u200b',
+            inline: false,
+        },
+        {
+            name: 'Aprimorar Habilidade n2',
+            value: 'Você toca uma criatura e a agracia com aprimoramento mágico. Escolha um dos efeitos a seguir; o alvo ganha esse efeito até o fim da magia.',
+            inline: false,
+        },        
+        {
+            name: 'Agilidade do Gato',
+            value: 'O alvo tem vantagem em testes de Destreza. Ele também não sofre dano ao cair de 6 metros ou menos, se não estiver incapacitado.',
+            inline: true,
+        },
+        {
+            name: 'Esperteza da Raposa',
+            value: 'O alvo tem vantagem em testes de Inteligência.',
+            inline: true,
+        },
+        {
+            name: 'Esplendor da Águia',
+            value: 'O alvo tem vantagem em testes de Carisma.',
+            inline: true,
+        },
+        {
+            name: 'Força do Touro',
+            value: 'O alvo tem vantagem em testes de Força e sua capacidade de carga é dobrada.',
+            inline: true,
+        },
+        {
+            name: 'Sabedoria da Coruja',
+            value: 'O alvo tem vantagem em testes de Sabedoria.',
+            inline: true,
+        },
+        {
+            name: 'Vigor do Urso',
+            value: 'O alvo tem vantagem em testes de Constituição. Ele também recebe 2d6 pontos de vida temporários, que são perdidos quando a magia termina.',
+            inline: true,
+        },
+        {
+            name: '\u200b',
+            value: '\u200b',
+            inline: false,
+        },       
+        {
+            name: 'Convocar Relâmpagos n3',
+            value: 'Cada criatura deve realizar um teste de resistência de Destreza. Uma criatura sofre 3d10 de dano elétrico se falhar no teste, ou metade desse dano se passar.',
+        }, 
+        {
+            name: 'Invocar animal n3',
+            value: 'Você invoca espíritos feéricos, que assumem formas de bestas, que aparecem em espaços desocupados, que você possa ver dentro do alcance',
+        },                                  
     ],
     timestamp: new Date(),
     footer: {
@@ -596,7 +654,6 @@ exports.SpellSeph = {
         {
             name: 'Slots',
             value: '4 magia lvl 1 e 3 lvl 2',
-            inline: true,
         },        
         {
             name: 'Inspiração (açao extra) (Carisma)',
