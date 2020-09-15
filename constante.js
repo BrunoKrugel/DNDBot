@@ -7,7 +7,7 @@ const SephCon = '+2'; //14
 const SephInt = '+1'; //13
 const SephSab = '+1'; //13
 const SephCar = '+3'; //16
-const SephPro = '+2'; 
+const SephPro = '+2';
 //--------------------//
 //Bruce
 const BruceFor = '+0'; //8
@@ -16,7 +16,7 @@ const BruceCon = '+1'; //14
 const BruceInt = '+3'; //13
 const BruceSab = '+3'; //13
 const BruceCar = '+3'; //16
-const BrucePro = '+2'; 
+const BrucePro = '+2';
 //---------------------//
 //Max
 const MaxFor = '-1'; //8
@@ -25,7 +25,7 @@ const MaxCon = '+3'; //14
 const MaxInt = '+4'; //13
 const MaxSab = '+2'; //13
 const MaxCar = '+1'; //16
-const MaxPro = '+2'; 
+const MaxPro = '+2';
 //-------------------//
 //Sauer
 const SauerFor = '+2'; //8
@@ -34,7 +34,7 @@ const SauerCon = '+5'; //14
 const SauerInt = '+0'; //13
 const SauerSab = '+0'; //13
 const SauerCar = '+1'; //16
-const SauerPro = '+2'; 
+const SauerPro = '+2';
 //---------------------//
 //Ixpexi
 const IxpexiFor = '+4'; //8
@@ -43,7 +43,7 @@ const IxpexiCon = '+1'; //14
 const IxpexiInt = '+0'; //13
 const IxpexiSab = '+1'; //13
 const IxpexiCar = '+3'; //16
-const IxpexiPro = '+2'; 
+const IxpexiPro = '+2';
 //-------------------//
 const DjohnFor = '+5'; //20
 const DjohnDes = '+1'; //12
@@ -51,7 +51,7 @@ const DjohnCon = '+1'; //13
 const DjohnInt = '+0'; //9
 const DjohnSab = '-1'; //8
 const DjohnCar = '+1'; //12
-const DjohnPro = '+2'; 
+const DjohnPro = '+2';
 
 
 exports.Bruce = {
@@ -85,7 +85,7 @@ exports.Bruce = {
             name: 'Proficiencia',
             value: BrucePro,
             inline: true,
-        },        
+        },
         {
             name: '\u200b',
             value: '\u200b',
@@ -123,16 +123,16 @@ exports.Bruce = {
         },
         {
             name: 'Adaga',
-            value: BrucePro +' 1d4',
+            value: BrucePro + ' 1d4',
         },
         {
             name: 'Open bar',
-            value: BrucePro +' 1d10 +1d6 (if drunk)',
+            value: BrucePro + ' 1d10 +1d6 (if drunk)',
         },
         {
             name: 'Magia',
             value: BrucePro + BruceSab,
-        },        
+        },
     ],
     timestamp: new Date(),
     footer: {
@@ -301,7 +301,7 @@ exports.SpellBruce = {
         {
             name: 'Slots',
             value: '4 magias lvl 1 + 3 magia lvl 2 + 2 magia lvl 3',
-        },        
+        },
         {
             name: 'Criar chamas 🔥',
             value: 'Faça um ataque à distância com magia. Se atingir, o alvo sofre 1d8 de dano de fogo.',
@@ -337,15 +337,15 @@ exports.SpellBruce = {
             name: '\u200b',
             value: '\u200b',
             inline: false,
-        },            
+        },
         {
             name: 'Esfera flamejante n2',
             value: 'A criatura sofre 2d6 de dano de fogo se falhar na resistência, ou metade desse dano se obtiver sucesso.',
-        },   
+        },
         {
             name: 'Raio lunar n2',
             value: 'Realizar um teste de resistência de Constituição. Ela sofre 2d10 de dano radiante se falhar na resistência ou metade desse dano se passar.',
-        }, 
+        },
         {
             name: '\u200b',
             value: '\u200b',
@@ -355,7 +355,7 @@ exports.SpellBruce = {
             name: 'Aprimorar Habilidade n2',
             value: 'Você toca uma criatura e a agracia com aprimoramento mágico. Escolha um dos efeitos a seguir; o alvo ganha esse efeito até o fim da magia.',
             inline: false,
-        },        
+        },
         {
             name: 'Agilidade do Gato',
             value: 'O alvo tem vantagem em testes de Destreza. Ele também não sofre dano ao cair de 6 metros ou menos, se não estiver incapacitado.',
@@ -390,15 +390,15 @@ exports.SpellBruce = {
             name: '\u200b',
             value: '\u200b',
             inline: false,
-        },       
+        },
         {
             name: 'Convocar Relâmpagos n3',
             value: 'Cada criatura deve realizar um teste de resistência de Destreza. Uma criatura sofre 3d10 de dano elétrico se falhar no teste, ou metade desse dano se passar.',
-        }, 
+        },
         {
             name: 'Invocar animal n3',
             value: 'Você invoca espíritos feéricos, que assumem formas de bestas, que aparecem em espaços desocupados, que você possa ver dentro do alcance',
-        },                                  
+        },
     ],
     timestamp: new Date(),
     footer: {
@@ -438,7 +438,7 @@ exports.Seph = {
             name: 'Proficiencia',
             value: SephPro,
             inline: true,
-        },        
+        },
         {
             name: '\u200b',
             value: '\u200b',
@@ -476,16 +476,16 @@ exports.Seph = {
         },
         {
             name: 'Martelo',
-            value: SephPro +' 1d4+4',
+            value: SephPro + ' 1d4+4',
         },
         {
             name: 'Trompete',
-            value: SephPro +' 1d10+4',
+            value: SephPro + ' 1d10+4',
         },
         {
             name: 'Magia',
             value: SephPro + SephCar,
-        },        
+        },
     ],
     timestamp: new Date(),
     footer: {
@@ -654,7 +654,7 @@ exports.SpellSeph = {
         {
             name: 'Slots',
             value: '4 magia lvl 1 e 3 lvl 2',
-        },        
+        },
         {
             name: 'Inspiração (açao extra) (Carisma)',
             value: '1d8 para um aliado em testes de ataque, resistencia ou atributo',
@@ -699,11 +699,11 @@ exports.SpellSeph = {
         {
             name: 'Detectar pensamento',
             value: 'Se a criatura escolhida possuir Inteligência 3 ou inferior ou não falar nenhum tipo de idioma, a criatura não poderá ser afetada.',
-        },   
+        },
         {
             name: 'Invisibilidade',
             value: 'Uma criatura que você tocar, se torna invisível até a magia acabar. Qualquer coisa que o alvo esteja vestindo ou carregando fica invisível enquanto estiver de posse do alvo. A magia termina para o alvo caso ele ataque ou conjure uma magia.',
-        },              
+        },
     ],
     timestamp: new Date(),
     footer: {
@@ -743,7 +743,7 @@ exports.Max = {
             name: 'Proficiencia',
             value: MaxPro,
             inline: true,
-        },        
+        },
         {
             name: '\u200b',
             value: '\u200b',
@@ -951,12 +951,12 @@ exports.SpellMax = {
         {
             name: 'Slots',
             value: '4 magia lvl 1 + 3 lvl 2 + 2 lvl 3',
-        }, 
+        },
         {
             name: 'Colheita Macabra',
             value: 'Uma vez por turno ao matar uma criatura, recupera HP igual a 3x o nivel da magia',
             inline: false,
-        },               
+        },
         {
             name: 'Seta de fogo',
             value: 'Faça um ataque à distância com magia contra o alvo. Se atingir, o alvo sofre 1d10 de dano de fogo.',
@@ -1000,11 +1000,11 @@ exports.SpellMax = {
         {
             name: 'Alterar-se n2',
             value: 'Você assume uma forma diferente: Adaptação Aquática, Mudar Aparência, Armas Naturais (1d6 de dano +2)',
-        },   
+        },
         {
             name: 'Necromancia',
             value: 'Um vez por turno ao matar uma ou mais criatura com uma magia de 1o nível ou maior, você recupera pontos de vida igual a duas vezes o nível da magia ou três vezes se a magia pertencer a Escola da Necromancia.',
-        },              
+        },
     ],
     timestamp: new Date(),
     footer: {
@@ -1044,7 +1044,7 @@ exports.Sauer = {
             name: 'Proficiencia',
             value: SauerPro,
             inline: true,
-        },        
+        },
         {
             name: '\u200b',
             value: '\u200b',
@@ -1269,17 +1269,17 @@ exports.SpellSauer = {
             name: 'Ação extra',
             value: '1x ao dia',
             inline: true,
-        }, 
+        },
         {
             name: 'Ataque extra',
             value: 'Quando usar ação Atacar, pode atacar duas vezes.',
             inline: true,
-        },    
+        },
         {
             name: 'Critico Aprimorado',
             value: 'Seus ataques com arma tem critico com 19 e 20',
             inline: true,
-        },                     
+        },
     ],
     timestamp: new Date(),
     footer: {
@@ -1319,7 +1319,7 @@ exports.Djohn = {
             name: 'Proficiencia',
             value: DjohnPro,
             inline: true,
-        },        
+        },
         {
             name: '\u200b',
             value: '\u200b',
@@ -1366,7 +1366,7 @@ exports.Djohn = {
         {
             name: 'Furia',
             value: '3x dia +2 de dano vantgem em testes',
-        },        
+        },
     ],
     timestamp: new Date(),
     footer: {
@@ -1555,12 +1555,12 @@ exports.SpellDjohn = {
             name: 'Aguia',
             value: 'Quando em fúria e sem usar armadura pesada, criaturas tem desvantagem em ataques de oportunidade contra você e você pode usar ação corrida como ação bônus.',
             inline: true,
-        },     
+        },
         {
             name: 'Lobo',
             value: 'Quando em fúria, seus aliados têm vantagem em ataque corpo a corpo contra criaturas inimigas a 1,5 m de você.',
             inline: true,
-        },            
+        },
     ],
     timestamp: new Date(),
     footer: {
@@ -1602,7 +1602,7 @@ exports.Ixpexi = {
             name: 'Proficiencia',
             value: IxpexiPro,
             inline: true,
-        },        
+        },
         {
             name: '\u200b',
             value: '\u200b',
@@ -1816,7 +1816,7 @@ exports.SpellIxpexi = {
         {
             name: 'Slots',
             value: '4 magia lvl 1 + 2 magia lvl 2',
-        },         
+        },
         {
             name: 'Cura pelas mãos',
             value: 'Pode curar vida igual seu nivel x5',
@@ -1831,12 +1831,67 @@ exports.SpellIxpexi = {
             name: 'Imune a doenças',
             value: 'Passivo',
             inline: true,
-        },      
+        },
         {
             name: 'Ataque Extra',
             value: 'Quando usar ação Atacar, pode atacar duas vezes.',
             inline: true,
-        },            
+        },
+        {
+            name: 'Punição Divina',
+            value: 'Quando acertar uma criatura com uma arma corpo a corpo, pode gastar um espaço de magia de paladino para causar 2d8 de dano radiante extra com magia de 1o nível. Cada nível acima do 1o adiciona 1d8, ao máximo de 5d8.',
+            inline: false,
+        },  
+        {
+            name: '\u200b',
+            value: '\u200b',
+            inline: false,
+        },
+        {
+            name: 'Juramento: Raio Lunar',
+            value: 'A criatura é engolfada por chamas fantasmagóricas que causam dores lancinantes e ela deve realizar um teste de resistência de Constituição. Ela sofre 2d10 de dano radiante se falhar na resistência ou metade desse dano se passar.',
+            inline: false,
+        },                       
+        {
+            name: '\u200b',
+            value: '\u200b',
+            inline: false,
+        },
+        {
+            name: 'Destruição Trovejante',
+            value: 'Sua arma é rodeada por trovões que são audíveis a até 90 metros e ausa 2d6 de dano trovejante extra no alvo. Além disso, se o alvo deve ser bem sucedido num teste de resistência de Força ou será empurrado 3 metros para longe.',
+            inline: false,
+        },
+        {
+            name: 'Destruição Lancinante',
+            value: 'Sua arma flameja com intensas chamas brancas e o ataque causa 1d6 de dano de fogo extra ao alvo, fazendo-o incendiar pelas chamas. No início de cada turno dele, até a arma acabar, o alvo deve realizar um teste de resistência de Constituição. Se falhar na resistência, ele sofre 1d6 de dano de fogo. Se passar na resistência, a magia acaba',
+            inline: false,
+        },          
+        {
+            name: 'Detectar o Bem e Mal',
+            value: 'Você sabe se existe uma aberração, celestial, corruptor, elemental, fada ou morto-vivo, a até 9 metros de você, assim como onde a criatura está localizada. Similarmente, você sabe se existe um local ou objeto que tenha sido consagrado ou profanado magicamente.',
+            inline: false,
+        },
+        {
+            name: 'Marca da Punição',
+            value: 'O ataque causa 2d6 de dano radiante extra ao alvo, que se torna visível.',
+            inline: false,
+        }, 
+        {
+            name: '\u200b',
+            value: '\u200b',
+            inline: false,
+        },    
+        {
+            name: 'Convocar Montaria n2',
+            value: 'Quando a montaria cair a 0 pontos de vida, ela desaparece, não deixando qualquer corpo físico para trás. Você também pode dispensar sua montaria a qualquer momento, com uma ação, fazendo-a desaparecer. Em ambos os casos, conjurar essa magia novamente convocará a mesma montaria, restaurando-a ao seu máximo de pontos de vida.',
+            inline: false,
+        },     
+        {
+            name: 'Localizar Objeto n2',
+            value: 'Descreva ou nomeie um objeto que seja familiar a você. Você sente a direção da localização do objeto.',
+            inline: false,
+        },                  
     ],
     timestamp: new Date(),
     footer: {
