@@ -83,7 +83,7 @@ exports.Bruce = {
         },
         {
             name: 'Proficiencia',
-            value: '+2',
+            value: BrucePro,
             inline: true,
         },        
         {
@@ -123,11 +123,11 @@ exports.Bruce = {
         },
         {
             name: 'Adaga',
-            value: '+2 1d4',
+            value: BrucePro +' 1d4',
         },
         {
             name: 'Open bar',
-            value: '+2 1d10 +1d6 (if drunk)',
+            value: BrucePro +' 1d10 +1d6 (if drunk)',
         },
         {
             name: 'Magia',
@@ -436,7 +436,7 @@ exports.Seph = {
         },
         {
             name: 'Proficiencia',
-            value: '+2',
+            value: SephPro,
             inline: true,
         },        
         {
@@ -476,11 +476,11 @@ exports.Seph = {
         },
         {
             name: 'Martelo',
-            value: '+1 1d4+4',
+            value: SephPro +' 1d4+4',
         },
         {
             name: 'Trompete',
-            value: '+2 1d10+4',
+            value: SephPro +' 1d10+4',
         },
         {
             name: 'Magia',
@@ -741,7 +741,7 @@ exports.Max = {
         },
         {
             name: 'Proficiencia',
-            value: '+2',
+            value: MaxPro,
             inline: true,
         },        
         {
@@ -1042,7 +1042,7 @@ exports.Sauer = {
         },
         {
             name: 'Proficiencia',
-            value: '+2',
+            value: SauerPro,
             inline: true,
         },        
         {
@@ -1082,11 +1082,11 @@ exports.Sauer = {
         },
         {
             name: 'Machado',
-            value: '+4 1d8+2',
+            value: SauerPro + SauerFor + ' 1d8 ' + SauerFor,
         },
         {
-            name: 'Pa',
-            value: '+2 1d10+2 (Mold earth 3x day)',
+            name: 'Thornblight',
+            value: SauerPro + SauerFor + ' 1d6 ' + SauerFor + ' (Constitution DC 17 3 Dano)',
         },
     ],
     timestamp: new Date(),
@@ -1317,7 +1317,7 @@ exports.Djohn = {
         },
         {
             name: 'Proficiencia',
-            value: '+2',
+            value: DjohnPro,
             inline: true,
         },        
         {
@@ -1357,7 +1357,7 @@ exports.Djohn = {
         },
         {
             name: 'Espada',
-            value: '+6 2d6+5',
+            value: DjohnPro + DjohnFor + ' 2d6 ' + DjohnFor,
         },
         {
             name: 'Sopro de fogo',
@@ -1600,7 +1600,7 @@ exports.Ixpexi = {
         },
         {
             name: 'Proficiencia',
-            value: '+2',
+            value: IxpexiPro,
             inline: true,
         },        
         {
