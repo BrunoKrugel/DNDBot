@@ -1,5 +1,5 @@
-const updated = 'Updated for 4 session';
-const level = 4;
+const updated = 'Updated for 5 session';
+const level = 5;
 //Seph
 const SephFor = '-1'; //8
 const SephDes = '+4'; //18
@@ -78,7 +78,7 @@ exports.Bruce = {
         },
         {
             name: 'HP',
-            value: '18',
+            value: '32',
             inline: true,
         },
         {
@@ -431,7 +431,7 @@ exports.Seph = {
         },
         {
             name: 'HP',
-            value: '19',
+            value: '34',
             inline: true,
         },
         {
@@ -736,7 +736,7 @@ exports.Max = {
         },
         {
             name: 'HP',
-            value: '20',
+            value: '37',
             inline: true,
         },
         {
@@ -1037,7 +1037,7 @@ exports.Sauer = {
         },
         {
             name: 'HP',
-            value: '32',
+            value: '57',
             inline: true,
         },
         {
@@ -1312,7 +1312,7 @@ exports.Djohn = {
         },
         {
             name: 'HP',
-            value: '24',
+            value: '42',
             inline: true,
         },
         {
@@ -1595,7 +1595,7 @@ exports.Ixpexi = {
         },
         {
             name: 'HP',
-            value: '11',
+            value: '42',
             inline: true,
         },
         {
@@ -1639,11 +1639,11 @@ exports.Ixpexi = {
             inline: true,
         },
         {
-            name: 'Machado',
-            value: '+4 1d8+2',
+            name: 'Espada longa',
+            value: '+6 1d8+4',
         },
         {
-            name: 'Pa',
+            name: 'Espada curta',
             value: '+2 1d10+2 (Mold earth 3x day)',
         },
     ],
