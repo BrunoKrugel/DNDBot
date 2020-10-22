@@ -2,11 +2,11 @@ const updated = 'Updated for 5 session';
 const level = 5;
 //Seph
 const SephFor = '-1'; //8
-const SephDes = '+4'; //18
+const SephDes = '+3'; //16
 const SephCon = '+2'; //14
 const SephInt = '+1'; //13
 const SephSab = '+1'; //13
-const SephCar = '+3'; //16
+const SephCar = '+4'; //18
 const SephPro = '+2';
 //--------------------//
 //Bruce
