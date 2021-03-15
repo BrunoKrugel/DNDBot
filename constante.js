@@ -7,7 +7,7 @@ const SephCon = '+2'; //14
 const SephInt = '+1'; //13
 const SephSab = '+1'; //13
 const SephCar = '+4'; //18
-const SephPro = '+2';
+const SephPro = '+3';
 //--------------------//
 //Bruce
 const BruceFor = '+0'; //8
@@ -16,7 +16,7 @@ const BruceCon = '+1'; //14
 const BruceInt = '+3'; //13
 const BruceSab = '+3'; //13
 const BruceCar = '+3'; //16
-const BrucePro = '+2';
+const BrucePro = '+3';
 //---------------------//
 //Max
 const MaxFor = '-1'; //8
@@ -78,7 +78,7 @@ exports.Bruce = {
         },
         {
             name: 'HP',
-            value: '32',
+            value: '41',
             inline: true,
         },
         {
@@ -431,7 +431,7 @@ exports.Seph = {
         },
         {
             name: 'HP',
-            value: '34',
+            value: '42',
             inline: true,
         },
         {
@@ -653,7 +653,7 @@ exports.SpellSeph = {
     fields: [
         {
             name: 'Slots',
-            value: '4 magia lvl 1 e 3 lvl 2',
+            value: '4 magia lvl 1 e 3 lvl 2 e 2 lvl 3',
         },
         {
             name: 'Inspiração (açao extra) (Carisma)',
@@ -704,6 +704,16 @@ exports.SpellSeph = {
             name: 'Invisibilidade',
             value: 'Uma criatura que você tocar, se torna invisível até a magia acabar. Qualquer coisa que o alvo esteja vestindo ou carregando fica invisível enquanto estiver de posse do alvo. A magia termina para o alvo caso ele ataque ou conjure uma magia.',
         },
+        {
+            name: '\u200b',
+            value: '\u200b',
+            inline: false,
+        },
+        {
+            name: 'Falar com os mortos',
+            value: 'Você concede o aspecto de vida e inteligência a um corpo, à sua escolha, dentro do alcance, permitindo que ele responda a 5 perguntas que você fizer, as respostas serão breves e enigmaticas. ',
+        },
+
     ],
     timestamp: new Date(),
     footer: {
