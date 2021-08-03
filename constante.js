@@ -1,5 +1,5 @@
 const updated = 'Updated for 5 session';
-const level = 5;
+const level = 6;
 //Seph
 const SephFor = '-1'; //8
 const SephDes = '+3'; //16
@@ -25,7 +25,7 @@ const MaxCon = '+3'; //14
 const MaxInt = '+4'; //13
 const MaxSab = '+2'; //13
 const MaxCar = '+1'; //16
-const MaxPro = '+2';
+const MaxPro = '+3';
 //-------------------//
 //Sauer
 const SauerFor = '+2'; //8
@@ -34,7 +34,7 @@ const SauerCon = '+5'; //14
 const SauerInt = '+0'; //13
 const SauerSab = '+0'; //13
 const SauerCar = '+1'; //16
-const SauerPro = '+2';
+const SauerPro = '+3';
 //---------------------//
 //Ixpexi
 const IxpexiFor = '+4'; //8
@@ -43,15 +43,16 @@ const IxpexiCon = '+1'; //14
 const IxpexiInt = '+0'; //13
 const IxpexiSab = '+1'; //13
 const IxpexiCar = '+3'; //16
-const IxpexiPro = '+2';
+const IxpexiPro = '+3';
 //-------------------//
+//Djohn
 const DjohnFor = '+5'; //20
 const DjohnDes = '+1'; //12
 const DjohnCon = '+1'; //13
 const DjohnInt = '+0'; //9
 const DjohnSab = '-1'; //8
 const DjohnCar = '+1'; //12
-const DjohnPro = '+2';
+const DjohnPro = '+3';
 
 
 exports.Bruce = {
@@ -300,10 +301,10 @@ exports.SpellBruce = {
     fields: [
         {
             name: 'Slots',
-            value: '4 magias lvl 1 + 3 magia lvl 2 + 2 magia lvl 3',
+            value: '4 magias lvl 1 + 3 magia lvl 2 + 3 magia lvl 3',
         },
         {
-            name: 'Criar chamas 🔥',
+            name: 'Criar chamas',
             value: 'Faça um ataque à distância com magia. Se atingir, o alvo sofre 1d8 de dano de fogo.',
             inline: true,
         },
@@ -318,15 +319,15 @@ exports.SpellBruce = {
             inline: false,
         },
         {
-            name: 'Curar ferimento 🚑',
+            name: 'Curar ferimento',
             value: 'Uma criatura que você tocar recupera uma quantidade de pontos de vida igual a 1d8 + seu modificador de habilidade de conjuração.',
         },
         {
-            name: 'Falar com animais 🐑',
+            name: 'Falar com animais',
             value: 'Você adquire a habilidade de compreender e se comunicar verbalmente com bestas, pela duração.',
         },
         {
-            name: 'Onda trovejante 🌩️',
+            name: 'Onda trovejante',
             value: 'Cada criatura deve realizar um teste de resistência de Constituição. Se falhar na resistência, uma criatura sofrerá 2d8 de dano trovejante e será empurrada. Se obtive sucesso na resistência, a criatura sofrerá metade desse dano e não será empurrada.',
         },
         {
@@ -653,7 +654,7 @@ exports.SpellSeph = {
     fields: [
         {
             name: 'Slots',
-            value: '4 magia lvl 1 e 3 lvl 2 e 2 lvl 3',
+            value: '4 magia lvl 1 e 3 lvl 2 e 3 lvl 3',
         },
         {
             name: 'Inspiração (açao extra) (Carisma)',
@@ -665,6 +666,11 @@ exports.SpellSeph = {
             value: 'Soma proficiencia/2 nos atributos',
             inline: true,
         },
+        {
+            name: 'Desencantador',
+            value: 'Começa uma atuaçao que dura ate o fim do seu proximo turno, dando resistencia a Encantamento e Amedrontado aos seus aliados',
+            inline: true,
+        },        
         {
             name: 'Prestidigitação',
             value: 'Cria uma ilusão palpavel (acende ou apaga velas, suja objetos, muda o gosto)',
@@ -681,27 +687,27 @@ exports.SpellSeph = {
             inline: false,
         },
         {
-            name: 'Perdição',
+            name: 'Perdição n2',
             value: 'A criatura deve realizar um CD Carisma. Sempre que um alvo que falhou nessa resistência realizar uma jogada de ataque ou um teste de resistência antes da magia acabar, o alvo deve rolar um d4 e subtrair o valor rolado da jogada de ataque ou teste de resistência.',
         },
         {
-            name: 'Sono',
+            name: 'Sono n2',
             value: 'Essa magia põem as criaturas num entorpecimento mágico. Jogue 5d8; o total é a quantidade de pontos de vida de criaturas afetados pela magia.',
         },
         {
-            name: 'Fogo ferreo',
+            name: 'Fogo ferreo n2',
             value: 'Qualquer jogada de ataque contra uma criatura afetada ou objeto tem vantagem, se o atacante puder ver o alvo e, a criatura afetada ou objeto não recebe benefício por estar invisível.',
         },
         {
-            name: 'Sussuros',
+            name: 'Sussuros n2',
             value: ' O alvo deve realizar um teste de resistência de Sabedoria. Se falhar na resistência, ele sofrerá 3d6 de dano psíquico e deve, imediatamente, usar sua reação, se disponível, para se mover para o mais longe possível de você. ',
         },
         {
-            name: 'Detectar pensamento',
+            name: 'Detectar pensamento n2',
             value: 'Se a criatura escolhida possuir Inteligência 3 ou inferior ou não falar nenhum tipo de idioma, a criatura não poderá ser afetada.',
         },
         {
-            name: 'Invisibilidade',
+            name: 'Invisibilidade n2',
             value: 'Uma criatura que você tocar, se torna invisível até a magia acabar. Qualquer coisa que o alvo esteja vestindo ou carregando fica invisível enquanto estiver de posse do alvo. A magia termina para o alvo caso ele ataque ou conjure uma magia.',
         },
         {
@@ -710,7 +716,7 @@ exports.SpellSeph = {
             inline: false,
         },
         {
-            name: 'Falar com os mortos',
+            name: 'Falar com os mortos n3',
             value: 'Você concede o aspecto de vida e inteligência a um corpo, à sua escolha, dentro do alcance, permitindo que ele responda a 5 perguntas que você fizer, as respostas serão breves e enigmaticas. ',
         },
 
@@ -960,13 +966,18 @@ exports.SpellMax = {
     fields: [
         {
             name: 'Slots',
-            value: '4 magia lvl 1 + 3 lvl 2 + 2 lvl 3',
+            value: '4 magia lvl 1 + 3 lvl 2 + 3 lvl 3',
         },
         {
             name: 'Colheita Macabra',
             value: 'Uma vez por turno ao matar uma criatura, recupera HP igual a 3x o nivel da magia',
             inline: false,
         },
+        {
+            name: 'Vassalos mortos vivos',
+            value: 'Ao animar um corpo, pode ter dois corpos como alvo, invocando dois zumbis.',
+            inline: false,
+        },        
         {
             name: 'Seta de fogo',
             value: 'Faça um ataque à distância com magia contra o alvo. Se atingir, o alvo sofre 1d10 de dano de fogo.',
@@ -1000,10 +1011,6 @@ exports.SpellMax = {
             value: 'Você faz com que você mesmo – incluindo suas roupas, armadura, armas e outros pertences no seu personagem – pareça diferente até a magia acabar ou até você usar sua ação para dispensa-la.',
         },
         {
-            name: 'Detectar magia',
-            value: 'Pela duração, você sente a presença de magia a até 9 metros de você.',
-        },
-        {
             name: 'Enfeitiçar',
             value: 'A criatura enfeitiçada reconhece você como um conhecido amigável. Quando a magia acabar, a criatura saberá que foi enfeitiçada por você.',
         },
@@ -1012,8 +1019,8 @@ exports.SpellMax = {
             value: 'Você assume uma forma diferente: Adaptação Aquática, Mudar Aparência, Armas Naturais (1d6 de dano +2)',
         },
         {
-            name: 'Necromancia',
-            value: 'Um vez por turno ao matar uma ou mais criatura com uma magia de 1o nível ou maior, você recupera pontos de vida igual a duas vezes o nível da magia ou três vezes se a magia pertencer a Escola da Necromancia.',
+            name: 'Animar os mortos n3',
+            value: 'Escolha uma pilha de ossos ou corpo de um humanoide do alcance, erguendo-o como uma criatura morta-viva. O alvo se torna um esqueleto, se você escolheu ossos, ou um zumbi, se você escolheu um corpo',
         },
     ],
     timestamp: new Date(),
@@ -1305,7 +1312,7 @@ exports.Djohn = {
     author: {
         name: 'Stats information for Djohnson',
     },
-    description: 'Draconato barbaro, level ' + level.toString(),
+    description: 'Draconato barbaro totemico, level ' + level.toString(),
     thumbnail: {
         url: 'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/9686ff89-c3f0-4a86-b227-b169b672a761/d3f17mn-fb1acac6-94c3-4b3e-98db-42e326279487.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwic3ViIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsImF1ZCI6WyJ1cm46c2VydmljZTpmaWxlLmRvd25sb2FkIl0sIm9iaiI6W1t7InBhdGgiOiIvZi85Njg2ZmY4OS1jM2YwLTRhODYtYjIyNy1iMTY5YjY3MmE3NjEvZDNmMTdtbi1mYjFhY2FjNi05NGMzLTRiM2UtOThkYi00MmUzMjYyNzk0ODcuanBnIn1dXX0.3J7FR8rm2DksjUhWNm5cddmHKZ0vSO7gFxOI_i4o_Q0',
     },
@@ -1375,7 +1382,7 @@ exports.Djohn = {
         },
         {
             name: 'Furia',
-            value: '3x dia +2 de dano vantgem em testes',
+            value: '4x dia +2 de dano vantgem em testes',
         },
     ],
     timestamp: new Date(),
@@ -1392,7 +1399,7 @@ exports.StatDjohn = {
     author: {
         name: 'Stats information for Djohnson',
     },
-    description: 'Draconato barbaro, level ' + level.toString(),
+    description: 'Draconato barbaro totemico, level ' + level.toString(),
     thumbnail: {
         url: 'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/9686ff89-c3f0-4a86-b227-b169b672a761/d3f17mn-fb1acac6-94c3-4b3e-98db-42e326279487.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwic3ViIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsImF1ZCI6WyJ1cm46c2VydmljZTpmaWxlLmRvd25sb2FkIl0sIm9iaiI6W1t7InBhdGgiOiIvZi85Njg2ZmY4OS1jM2YwLTRhODYtYjIyNy1iMTY5YjY3MmE3NjEvZDNmMTdtbi1mYjFhY2FjNi05NGMzLTRiM2UtOThkYi00MmUzMjYyNzk0ODcuanBnIn1dXX0.3J7FR8rm2DksjUhWNm5cddmHKZ0vSO7gFxOI_i4o_Q0',
     },
@@ -1537,13 +1544,13 @@ exports.SpellDjohn = {
     author: {
         name: 'Spell information for Djohnson',
     },
-    description: 'Draconato barbaro, level ' + level.toString(),
+    description: 'Draconato barbaro totemico, level ' + level.toString(),
     thumbnail: {
         url: 'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/9686ff89-c3f0-4a86-b227-b169b672a761/d3f17mn-fb1acac6-94c3-4b3e-98db-42e326279487.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwic3ViIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsImF1ZCI6WyJ1cm46c2VydmljZTpmaWxlLmRvd25sb2FkIl0sIm9iaiI6W1t7InBhdGgiOiIvZi85Njg2ZmY4OS1jM2YwLTRhODYtYjIyNy1iMTY5YjY3MmE3NjEvZDNmMTdtbi1mYjFhY2FjNi05NGMzLTRiM2UtOThkYi00MmUzMjYyNzk0ODcuanBnIn1dXX0.3J7FR8rm2DksjUhWNm5cddmHKZ0vSO7gFxOI_i4o_Q0',
     },
     fields: [
         {
-            name: 'Falar com animais 🐑',
+            name: 'Falar com animais',
             value: 'Você adquire a habilidade de compreender e se comunicar verbalmente com bestas, pela duração.',
         },
         {
@@ -1571,6 +1578,36 @@ exports.SpellDjohn = {
             value: 'Quando em fúria, seus aliados têm vantagem em ataque corpo a corpo contra criaturas inimigas a 1,5 m de você.',
             inline: true,
         },
+        {
+            name: '\u200b',
+            value: '\u200b',
+            inline: false,
+        },
+        {
+            name: 'Aspecto da fera',
+            value: 'Através de um ritual escolha um dos animais a seguir:',
+            inline: true,
+        },      
+        {
+            name: 'Urso',
+            value: 'Você tem vantagem nos testes de Força feitos para empurrar, puxar, erguer ou quebrar objetos',
+            inline: true,
+        },
+        {
+            name: 'Aguia',
+            value: 'Consegue enxergar 1,6km sem dificuldade, podendo ver detalhes como se estiver olhando a 30 m. A penumbra não impõe desvantagem nos testes de Sabedoria (Percepção)',
+            inline: true,
+        },
+        {
+            name: 'Lobo',
+            value: 'Consegue rastrear criaturas enquanto viaja rápido e pode se mover furtivamente enquanto viaja em ritmo normal',
+            inline: true,
+        },       
+        {
+            name: 'Ataque extra',
+            value: 'Quando usar ação Atacar, pode atacar duas vezes.',
+            inline: true,
+        },        
     ],
     timestamp: new Date(),
     footer: {
@@ -1847,6 +1884,11 @@ exports.SpellIxpexi = {
             value: 'Quando usar ação Atacar, pode atacar duas vezes.',
             inline: true,
         },
+        {
+            name: 'Aura de proteção',
+            value: 'Quando você ou um aliado até 9 metros de você for fazer um teste de resistência, a criatura ganha um bônus no teste igual seu mod de Carisma.',
+            inline: true,
+        },        
         {
             name: 'Punição Divina',
             value: 'Quando acertar uma criatura com uma arma corpo a corpo, pode gastar um espaço de magia de paladino para causar 2d8 de dano radiante extra com magia de 1o nível. Cada nível acima do 1o adiciona 1d8, ao máximo de 5d8.',
