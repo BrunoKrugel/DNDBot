@@ -226,8 +226,8 @@ client.on('message', (message) => {
                         message.channel.send({ embed: ficha.Ixpexi });
                         break;
                         //============ outro RPG
-                    case "randal":
-                        message.channel.send({ embed: ficha.Randal });
+                    case "newuser":
+                        message.channel.send({ embed: ficha.newuser });
                         break;
                     default:
                         message.channel.send("Specify a name.");
@@ -255,8 +255,8 @@ client.on('message', (message) => {
                         message.channel.send({ embed: ficha.StatIxpexi });
                         break;
                         //============ outro RPG
-                    case "randal":
-                        message.channel.send({ embed: ficha.Randal });
+                    case "newuser":
+                        message.channel.send({ embed: ficha.newuser });
                         break;
                     default:
                         message.channel.send("Specify a name.");
@@ -284,8 +284,8 @@ client.on('message', (message) => {
                         message.channel.send({ embed: ficha.SpellIxpexi });
                         break;                        
                     //============ outro RPG
-                    case "randal":
-                        message.channel.send({ embed: ficha.Randal });
+                    case "newuser":
+                        message.channel.send({ embed: ficha.newuser });
                         break;
                     default:
                         message.channel.send("Specify a name.");
