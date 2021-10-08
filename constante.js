@@ -54,13 +54,13 @@ const DjohnSab = '-1'; //8
 const DjohnCar = '+1'; //12
 const DjohnPro = '+3';
 //-------------------//
-//Newuser
-const NewuserFor = '+5'; //20
-const NewuserDes = '+1'; //12
-const NewuserCon = '+1'; //13
-const NewuserInt = '+0'; //9
-const NewuserSab = '-1'; //8
-const NewuserCar = '+1'; //12
+//Mordai Talaviel
+const NewuserFor = '+0'; //20
+const NewuserDes = '+2'; //12
+const NewuserCon = '+0'; //13
+const NewuserInt = '+2'; //9
+const NewuserSab = '+1'; //8
+const NewuserCar = '+2'; //12
 const NewuserPro = '+3';
 
 exports.Bruce = {
@@ -2058,24 +2058,24 @@ exports.Randal = {
 
 exports.Newuser = {
     color: 0xFF9900,
-    title: 'Bruce, the drunk',
+    title: 'Mordai, the barman',
     url: 'https://avribacki.gitlab.io/magias5e/',
     author: {
-        name: 'Stats information for Bruce',
+        name: 'Stats information for Mordai',
     },
-    description: 'Meio elfo druida, level ' + level.toString(),
+    description: 'Tiefling Ladino, level ' + level.toString(),
     thumbnail: {
         url: 'https://external-preview.redd.it/yZ5UVROD6_6OxAlEqsmWGUh7zmvQjozEfkgN6YMJVwc.jpg?s=034d9b98ce0837ca73cee2bf724a8e8ef7c6c987',
     },
     fields: [
         {
             name: 'AC',
-            value: '11',
+            value: '13',
             inline: true,
         },
         {
             name: 'Iniciative',
-            value: '+0',
+            value: '+2',
             inline: true,
         },
         {
