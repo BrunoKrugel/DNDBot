@@ -225,9 +225,8 @@ client.on('message', (message) => {
                     case "ixpexi":
                         message.channel.send({ embed: ficha.Ixpexi });
                         break;
-                        //============ outro RPG
-                    case "newuser":
-                        message.channel.send({ embed: ficha.newuser });
+                    case "mordai":
+                        message.channel.send({ embed: ficha.mordai });
                         break;
                     default:
                         message.channel.send("Specify a name.");
@@ -254,9 +253,8 @@ client.on('message', (message) => {
                     case "ixpexi":
                         message.channel.send({ embed: ficha.StatIxpexi });
                         break;
-                        //============ outro RPG
-                    case "newuser":
-                        message.channel.send({ embed: ficha.newuser });
+                    case "mordai":
+                        message.channel.send({ embed: ficha.mordai });
                         break;
                     default:
                         message.channel.send("Specify a name.");
@@ -283,9 +281,8 @@ client.on('message', (message) => {
                     case "ixpexi":
                         message.channel.send({ embed: ficha.SpellIxpexi });
                         break;                        
-                    //============ outro RPG
-                    case "newuser":
-                        message.channel.send({ embed: ficha.newuser });
+                    case "mordai":
+                        message.channel.send({ embed: ficha.mordai });
                         break;
                     default:
                         message.channel.send("Specify a name.");
@@ -306,9 +303,10 @@ client.on('message', (message) => {
                 message.channel.send("Seph, o cara das musiquinhas");
                 message.channel.send("Sauer, o anão careca");
                 message.channel.send("Bruce, um druida alcoolatra");
-                message.channel.send("Max, o veio ranzinza 🧙‍♂️");
+                message.channel.send("Max, o velho ranzinza 🧙‍♂️");
                 message.channel.send("Djohnson, o cara que a gente tocou fogo na casa 🔥");
                 message.channel.send("Ixpexi, o sumido");
+                message.channel.send("Mordai, o caloteiro");
                 break;
             //============== Fun Section
             case "say":

@@ -55,13 +55,13 @@ const DjohnCar = '+1'; //12
 const DjohnPro = '+3';
 //-------------------//
 //Mordai Talaviel
-const NewuserFor = '+0'; //20
-const NewuserDes = '+2'; //12
-const NewuserCon = '+0'; //13
-const NewuserInt = '+2'; //9
-const NewuserSab = '+1'; //8
-const NewuserCar = '+2'; //12
-const NewuserPro = '+3';
+const MordaiFor = '+0'; //20
+const MordaiDes = '+2'; //12
+const MordaiCon = '+0'; //13
+const MordaiInt = '+2'; //9
+const MordaiSab = '+1'; //8
+const MordaiCar = '+2'; //12
+const MordaiPro = '+3';
 
 exports.Bruce = {
     color: 0xFF9900,
@@ -1281,6 +1281,11 @@ exports.SpellSauer = {
     },
     fields: [
         {
+            name: 'Ataque extra',
+            value: 'Quando usar ação Atacar, pode atacar duas vezes.',
+            inline: true,
+        },        
+        {
             name: 'Retomar folego',
             value: '1d10 + lvl para recuperar vida (1x dia)',
             inline: true,
@@ -1293,11 +1298,6 @@ exports.SpellSauer = {
         {
             name: 'Ação extra',
             value: '1x ao dia',
-            inline: true,
-        },
-        {
-            name: 'Ataque extra',
-            value: 'Quando usar ação Atacar, pode atacar duas vezes.',
             inline: true,
         },
         {
@@ -1562,6 +1562,11 @@ exports.SpellDjohn = {
             value: 'Você adquire a habilidade de compreender e se comunicar verbalmente com bestas, pela duração.',
         },
         {
+            name: 'Ataque extra',
+            value: 'Quando usar ação Atacar, pode atacar duas vezes.',
+            inline: true,
+        },        
+        {
             name: '\u200b',
             value: '\u200b',
             inline: false,
@@ -1610,12 +1615,7 @@ exports.SpellDjohn = {
             name: 'Lobo',
             value: 'Consegue rastrear criaturas enquanto viaja rápido e pode se mover furtivamente enquanto viaja em ritmo normal',
             inline: true,
-        },       
-        {
-            name: 'Ataque extra',
-            value: 'Quando usar ação Atacar, pode atacar duas vezes.',
-            inline: true,
-        },        
+        },               
     ],
     timestamp: new Date(),
     footer: {
@@ -1960,103 +1960,7 @@ exports.SpellIxpexi = {
     },
 };
 
-
-exports.Randal = {
-    color: 0xFF0000,
-    title: 'Randal, the deserter',
-    url: 'https://avribacki.gitlab.io/magias5e/',
-    author: {
-        name: 'Stats information for Randal',
-    },
-    description: 'Humano guerreiro, level 4',
-    fields: [
-        {
-            name: 'AC',
-            value: '17',
-            inline: true,
-        },
-        {
-            name: 'Iniciative',
-            value: '-1',
-            inline: true,
-        },
-        {
-            name: 'HP',
-            value: '27',
-            inline: true,
-        },
-        {
-            name: '\u200b',
-            value: '\u200b',
-            inline: false,
-        },
-        {
-            name: 'Força',
-            value: '+3',
-            inline: true,
-        },
-        {
-            name: 'Destreza',
-            value: '-1',
-            inline: true,
-        },
-        {
-            name: 'Constituição',
-            value: '+0',
-            inline: true,
-        },
-        {
-            name: 'Inteligencia',
-            value: '+3',
-            inline: true,
-        },
-        {
-            name: 'Sabedoria',
-            value: '+1',
-            inline: true,
-        },
-        {
-            name: 'Carisma',
-            value: '-2',
-            inline: true,
-        },
-        {
-            name: '\u200b',
-            value: '\u200b',
-            inline: false,
-        },
-        {
-            name: 'Espada longa',
-            value: '+5 1d8/1d10',
-        },
-        {
-            name: 'Espada curta',
-            value: '+5 1d4',
-        },
-        {
-            name: 'Besta leve',
-            value: '-2 1d6',
-        },
-        {
-            name: 'Adaga',
-            value: '+5 1d4+3',
-        },
-        {
-            name: 'Espada larga',
-            value: '+5 2d6+3',
-        },
-    ],
-    image: {
-        url: 'https://gamepedia.cursecdn.com/wowpedia/d/da/Varian_cinematic.jpg',
-    },
-    timestamp: new Date(),
-    footer: {
-        text: updated.toString(),
-        icon_url: 'https://pm1.narvii.com/6669/0c88a7486c374d9f02fed57780c60872aabad9da_00.jpg',
-    },
-};
-
-exports.Newuser = {
+exports.Mordai = {
     color: 0xFF9900,
     title: 'Mordai, the barman',
     url: 'https://avribacki.gitlab.io/magias5e/',
@@ -2074,18 +1978,18 @@ exports.Newuser = {
             inline: true,
         },
         {
-            name: 'Iniciative',
+            name: 'Iniciativa',
             value: '+2',
             inline: true,
         },
         {
             name: 'HP',
-            value: '41',
+            value: '28',
             inline: true,
         },
         {
             name: 'Proficiencia',
-            value: BrucePro,
+            value: MordaiPro,
             inline: true,
         },
         {
@@ -2095,55 +1999,59 @@ exports.Newuser = {
         },
         {
             name: 'Força',
-            value: BruceFor,
+            value: MordaiFor,
             inline: true,
         },
         {
             name: 'Destreza',
-            value: BruceDes,
+            value: MordaiDes,
             inline: true,
         },
         {
             name: 'Constituição',
-            value: BruceCon,
+            value: MordaiCon,
             inline: true,
         },
         {
             name: 'Inteligencia',
-            value: BruceInt,
+            value: MordaiInt,
             inline: true,
         },
         {
             name: 'Sabedoria',
-            value: BruceSab,
+            value: MordaiSab,
             inline: true,
         },
         {
             name: 'Carisma',
-            value: BruceCar,
+            value: MordaiCar,
             inline: true,
         },
         {
             name: 'Adaga',
-            value: BrucePro + ' 1d4',
+            value: MordaiPro + ' 1d4',
         },
         {
-            name: 'Open bar',
-            value: BrucePro + ' 1d10 +1d6 (if drunk)',
+            name: 'Arco Curto',
+            value: MordaiPro + ' 1d5',
         },
         {
-            name: 'Magia',
-            value: BrucePro + BruceSab,
+            name: 'Rapieira',
+            value: MordaiPro + ' 1d8',
+        },        
+        {
+            name: 'Ataque',
+            value: MordaiPro + MordaiDes,
         },
     ],
     timestamp: new Date(),
     footer: {
-        text: 'Vantagem contra enfeitiçamento e magias de sono',
+        text: 'Resistencia a fogo',
         icon_url: 'https://pm1.narvii.com/6669/0c88a7486c374d9f02fed57780c60872aabad9da_00.jpg',
     },
 };
 
-exports.StateNewuser = {
+exports.StateMordai = {
     color: 0xFF9900,
     title: 'Bruce, the drunk',
     url: 'https://avribacki.gitlab.io/magias5e/',
@@ -2161,13 +2069,13 @@ exports.StateNewuser = {
             inline: true,
         },
         {
-            name: 'Destreza',
-            value: '0',
+            name: '*Destreza',
+            value: '+5',
             inline: true,
         },
         {
             name: 'Constituição',
-            value: '+1',
+            value: '0',
             inline: true,
         },
         {
@@ -2176,8 +2084,8 @@ exports.StateNewuser = {
             inline: true,
         },
         {
-            name: '*Sabedoria',
-            value: '+5',
+            name: 'Sabedoria',
+            value: '+1',
             inline: true,
         },
         {
@@ -2191,13 +2099,13 @@ exports.StateNewuser = {
             inline: false,
         },
         {
-            name: 'Acrobacia',
-            value: '+0',
+            name: '*Acrobacia',
+            value: '+5',
             inline: true,
         },
         {
             name: 'Arcanismo',
-            value: '+3',
+            value: '+2',
             inline: true,
         },
         {
@@ -2207,77 +2115,77 @@ exports.StateNewuser = {
         },
         {
             name: 'Atuação',
-            value: '+3',
+            value: '+2',
             inline: true,
         },
         {
-            name: 'Blefar',
-            value: '+3',
+            name: '*Blefar',
+            value: '+5',
             inline: true,
         },
         {
-            name: 'Furtividade',
-            value: '+0',
+            name: '*Furtividade',
+            value: '+8',
             inline: true,
         },
         {
             name: 'Historia',
-            value: '+3',
+            value: '+2',
             inline: true,
         },
         {
             name: 'Intimidação',
-            value: '+3',
+            value: MordaiCar,
             inline: true,
         },
         {
             name: 'Intuição',
-            value: '+5',
+            value: '+4',
             inline: true,
         },
         {
             name: 'Investigação',
-            value: '+3',
+            value: MordaiInt,
             inline: true,
         },
         {
             name: 'Lidar com animais',
-            value: '+3',
+            value: MordaiSab,
             inline: true,
         },
         {
             name: 'Medicina',
-            value: '+3',
+            value: MordaiSab,
             inline: true,
         },
         {
             name: 'Natureza',
-            value: '+5',
+            value: MordaiInt,
             inline: true,
         },
         {
             name: 'Percepção',
-            value: '+3',
+            value: '+4',
             inline: true,
         },
         {
             name: 'Persuasão',
-            value: '+3',
+            value: '+5',
             inline: true,
         },
         {
             name: 'Prestidigitação',
-            value: '+0',
+            value: MordaiDes,
             inline: true,
         },
         {
             name: 'Religião',
-            value: '+3',
+            value: MordaiInt,
             inline: true,
         },
         {
             name: 'Sobrevivência',
-            value: '+3',
+            value: MordaiSab,
             inline: true,
         },
     ],
@@ -2288,12 +2196,12 @@ exports.StateNewuser = {
     },
 };
 
-exports.SpellNewuser = {
+exports.SpellMordai = {
     color: 0xFF9900,
-    title: 'Bruce, the drunk',
+    title: 'Mordai Talaviel, the Barman',
     url: 'https://avribacki.gitlab.io/magias5e/',
     author: {
-        name: 'Spells for Bruce',
+        name: 'Spells for Mordai',
     },
     description: 'Spells list',
     thumbnail: {
@@ -2305,101 +2213,32 @@ exports.SpellNewuser = {
             value: '4 magias lvl 1 + 3 magia lvl 2 + 3 magia lvl 3',
         },
         {
-            name: 'Criar chamas',
-            value: 'Faça um ataque à distância com magia. Se atingir, o alvo sofre 1d8 de dano de fogo.',
+            name: 'Acao Astuta',
+            value: 'Pode usar uma acao bonus no seu turno para Correr, Desengajar ou Esconder-se',
             inline: true,
         },
         {
-            name: 'Rajada de veneno',
-            value: 'A criatura deve ser bem sucedida num teste de resistência de Constituição ou sofrerá 1d12 de dano de veneno.',
+            name: 'Repreensao Infernal',
+            value: 'Reação que aponta o dedo e a criatura que causou dano é envolta por chamas infernais. A criatura realiza um teste de resistencia de Des e sofre 2d10 de dano de fogo se falhar na resistência ou metade se passar.',
             inline: true,
         },
+        {
+            name: 'Esquiva Sobrenatural',
+            value: 'Quando um inimigo que você possa ver lhe acertar um ataque, pode usar sua reação para reduzir o dano sofrido pela metade',
+            inline: true,
+        },        
         {
             name: '\u200b',
             value: '\u200b',
             inline: false,
         },
         {
-            name: 'Curar ferimento',
-            value: 'Uma criatura que você tocar recupera uma quantidade de pontos de vida igual a 1d8 + seu modificador de habilidade de conjuração.',
+            name: 'Ataque Furtivo',
+            value: 'Uma vez por turno, quando acertar alguém que tenha vantagem no ataque pode adicionar o dano do ataque furtivo',
         },
         {
-            name: 'Falar com animais',
-            value: 'Você adquire a habilidade de compreender e se comunicar verbalmente com bestas, pela duração.',
-        },
-        {
-            name: 'Onda trovejante',
-            value: 'Cada criatura deve realizar um teste de resistência de Constituição. Se falhar na resistência, uma criatura sofrerá 2d8 de dano trovejante e será empurrada. Se obtive sucesso na resistência, a criatura sofrerá metade desse dano e não será empurrada.',
-        },
-        {
-            name: 'Palavra curativa',
-            value: 'Uma criatura, à sua escolha, que você possa ver dentro do alcance recupera uma quantidade de pontos de vida igual a 1d4 + seu modificador de habilidade de conjuração.',
-        },
-        {
-            name: '\u200b',
-            value: '\u200b',
-            inline: false,
-        },
-        {
-            name: 'Esfera flamejante n2',
-            value: 'A criatura sofre 2d6 de dano de fogo se falhar na resistência, ou metade desse dano se obtiver sucesso.',
-        },
-        {
-            name: 'Raio lunar n2',
-            value: 'Realizar um teste de resistência de Constituição. Ela sofre 2d10 de dano radiante se falhar na resistência ou metade desse dano se passar.',
-        },
-        {
-            name: '\u200b',
-            value: '\u200b',
-            inline: false,
-        },
-        {
-            name: 'Aprimorar Habilidade n2',
-            value: 'Você toca uma criatura e a agracia com aprimoramento mágico. Escolha um dos efeitos a seguir; o alvo ganha esse efeito até o fim da magia.',
-            inline: false,
-        },
-        {
-            name: 'Agilidade do Gato',
-            value: 'O alvo tem vantagem em testes de Destreza. Ele também não sofre dano ao cair de 6 metros ou menos, se não estiver incapacitado.',
-            inline: true,
-        },
-        {
-            name: 'Esperteza da Raposa',
-            value: 'O alvo tem vantagem em testes de Inteligência.',
-            inline: true,
-        },
-        {
-            name: 'Esplendor da Águia',
-            value: 'O alvo tem vantagem em testes de Carisma.',
-            inline: true,
-        },
-        {
-            name: 'Força do Touro',
-            value: 'O alvo tem vantagem em testes de Força e sua capacidade de carga é dobrada.',
-            inline: true,
-        },
-        {
-            name: 'Sabedoria da Coruja',
-            value: 'O alvo tem vantagem em testes de Sabedoria.',
-            inline: true,
-        },
-        {
-            name: 'Vigor do Urso',
-            value: 'O alvo tem vantagem em testes de Constituição. Ele também recebe 2d6 pontos de vida temporários, que são perdidos quando a magia termina.',
-            inline: true,
-        },
-        {
-            name: '\u200b',
-            value: '\u200b',
-            inline: false,
-        },
-        {
-            name: 'Convocar Relâmpagos n3',
-            value: 'Cada criatura deve realizar um teste de resistência de Destreza. Uma criatura sofre 3d10 de dano elétrico se falhar no teste, ou metade desse dano se passar.',
-        },
-        {
-            name: 'Invocar animal n3',
-            value: 'Você invoca espíritos feéricos, que assumem formas de bestas, que aparecem em espaços desocupados, que você possa ver dentro do alcance',
+            name: 'Assassino',
+            value: 'Tem vantagem em ataques contra criaturas que não tiveram seu turno no combate ainda. Além disso, qualquer acerto contra uma criatura surpresa é um acerto crítico.',
         },
     ],
     timestamp: new Date(),
