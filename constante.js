@@ -82,7 +82,7 @@ exports.Bruce = {
         },
         {
             name: 'Iniciative',
-            value: '+0',
+            value: BrucePro,
             inline: true,
         },
         {
@@ -164,17 +164,17 @@ exports.StatBruce = {
     fields: [
         {
             name: 'Força',
-            value: '0',
+            value: BruceFor,
             inline: true,
         },
         {
             name: 'Destreza',
-            value: '0',
+            value: BruceDes,
             inline: true,
         },
         {
             name: 'Constituição',
-            value: '+1',
+            value: BruceCon,
             inline: true,
         },
         {
@@ -189,7 +189,7 @@ exports.StatBruce = {
         },
         {
             name: 'Carisma',
-            value: '+2',
+            value: BruceCar,
             inline: true,
         },
         {
@@ -434,8 +434,8 @@ exports.Seph = {
             inline: true,
         },
         {
-            name: 'Iniciative',
-            value: '+4',
+            name: 'Iniciativa',
+            value: SephPro,
             inline: true,
         },
         {
@@ -510,24 +510,24 @@ exports.StatSeph = {
     author: {
         name: 'Stats information for Seph',
     },
-    description: 'Resistance stats',
+    description: 'Testes de resistencia',
     thumbnail: {
         url: 'https://external-preview.redd.it/SZUEgrVG2kzDNZ1AjZ5Sj09USRyMe0OahJ-L0KKCvJ8.jpg?s=5ce115c504bb597b0bdccf1b44ac66ec2ad0f0b3',
     },
     fields: [
         {
             name: 'Força',
-            value: '+0',
+            value: SephFor,
             inline: true,
         },
         {
             name: 'Destreza',
-            value: '+0',
+            value: SephDes,
             inline: true,
         },
         {
             name: 'Constituição',
-            value: '+1',
+            value: SephCon,
             inline: true,
         },
         {
@@ -542,7 +542,7 @@ exports.StatSeph = {
         },
         {
             name: 'Carisma',
-            value: '+2',
+            value: SephCar,
             inline: true,
         },
         {
@@ -754,8 +754,8 @@ exports.Max = {
             inline: true,
         },
         {
-            name: 'Iniciative',
-            value: '+3',
+            name: 'Iniciativa',
+            value: MaxDes,
             inline: true,
         },
         {
@@ -829,17 +829,17 @@ exports.StatMax = {
     fields: [
         {
             name: 'Força',
-            value: '-1',
+            value: MaxFor,
             inline: true,
         },
         {
             name: 'Destreza',
-            value: '+3',
+            value: MaxDes,
             inline: true,
         },
         {
             name: 'Constituição',
-            value: '+3',
+            value: MaxCon,
             inline: true,
         },
         {
@@ -854,7 +854,7 @@ exports.StatMax = {
         },
         {
             name: 'Carisma',
-            value: '+1',
+            value: MaxCar,
             inline: true,
         },
         {
@@ -1056,8 +1056,8 @@ exports.Sauer = {
             inline: true,
         },
         {
-            name: 'Iniciative',
-            value: '+2',
+            name: 'Iniciativa',
+            value: SauerDes,
             inline: true,
         },
         {
@@ -1331,8 +1331,8 @@ exports.Djohn = {
             inline: true,
         },
         {
-            name: 'Iniciative',
-            value: '+1',
+            name: 'Iniciativa',
+            value: DjohnDes,
             inline: true,
         },
         {
@@ -1645,7 +1645,7 @@ exports.Ixpexi = {
         },
         {
             name: 'Iniciativa',
-            value: '+1',
+            value: IxpexiDes,
             inline: true,
         },
         {
@@ -1725,22 +1725,22 @@ exports.StatIxpexi = {
     fields: [
         {
             name: 'Força',
-            value: '+4',
+            value: IxpexiFor,
             inline: true,
         },
         {
             name: 'Destreza',
-            value: '+1',
+            value: IxpexiDes,
             inline: true,
         },
         {
             name: 'Constituição',
-            value: '+1',
+            value: IxpexiCon,
             inline: true,
         },
         {
             name: 'Inteligencia',
-            value: '+0',
+            value: IxpexiInt,
             inline: true,
         },
         {
@@ -1979,7 +1979,7 @@ exports.Mordai = {
         },
         {
             name: 'Iniciativa',
-            value: '+2',
+            value: MordaiPro,
             inline: true,
         },
         {
@@ -2051,12 +2051,12 @@ exports.Mordai = {
     },
 };
 
-exports.StateMordai = {
+exports.StatMordai = {
     color: 0xFF9900,
-    title: 'Bruce, the drunk',
+    title: 'Mordai, the Barman',
     url: 'https://avribacki.gitlab.io/magias5e/',
     author: {
-        name: 'Resistance stats for Bruce',
+        name: 'Resistance stats for Mordai',
     },
     description: 'Testes de resistencia',
     thumbnail: {
@@ -2065,7 +2065,7 @@ exports.StateMordai = {
     fields: [
         {
             name: 'Força',
-            value: '0',
+            value: MordaiFor,
             inline: true,
         },
         {
@@ -2075,7 +2075,7 @@ exports.StateMordai = {
         },
         {
             name: 'Constituição',
-            value: '0',
+            value: MordaiCon,
             inline: true,
         },
         {
@@ -2085,12 +2085,12 @@ exports.StateMordai = {
         },
         {
             name: 'Sabedoria',
-            value: '+1',
+            value: MordaiSab,
             inline: true,
         },
         {
             name: 'Carisma',
-            value: '+2',
+            value: MordaiCar,
             inline: true,
         },
         {
