@@ -1,4 +1,4 @@
-# PepegaBot
+# D&D Bot
 
 To add the bot
 

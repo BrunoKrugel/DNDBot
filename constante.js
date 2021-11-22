@@ -53,7 +53,15 @@ const DjohnInt = '+0'; //9
 const DjohnSab = '-1'; //8
 const DjohnCar = '+1'; //12
 const DjohnPro = '+3';
-
+//-------------------//
+//Mordai Talaviel
+const MordaiFor = '+0'; //20
+const MordaiDes = '+2'; //12
+const MordaiCon = '+0'; //13
+const MordaiInt = '+2'; //9
+const MordaiSab = '+1'; //8
+const MordaiCar = '+2'; //12
+const MordaiPro = '+3';
 
 exports.Bruce = {
     color: 0xFF9900,
@@ -74,7 +82,7 @@ exports.Bruce = {
         },
         {
             name: 'Iniciative',
-            value: '+0',
+            value: BrucePro,
             inline: true,
         },
         {
@@ -156,17 +164,17 @@ exports.StatBruce = {
     fields: [
         {
             name: 'Força',
-            value: '0',
+            value: BruceFor,
             inline: true,
         },
         {
             name: 'Destreza',
-            value: '0',
+            value: BruceDes,
             inline: true,
         },
         {
             name: 'Constituição',
-            value: '+1',
+            value: BruceCon,
             inline: true,
         },
         {
@@ -181,7 +189,7 @@ exports.StatBruce = {
         },
         {
             name: 'Carisma',
-            value: '+2',
+            value: BruceCar,
             inline: true,
         },
         {
@@ -426,8 +434,8 @@ exports.Seph = {
             inline: true,
         },
         {
-            name: 'Iniciative',
-            value: '+4',
+            name: 'Iniciativa',
+            value: SephPro,
             inline: true,
         },
         {
@@ -502,24 +510,24 @@ exports.StatSeph = {
     author: {
         name: 'Stats information for Seph',
     },
-    description: 'Resistance stats',
+    description: 'Testes de resistencia',
     thumbnail: {
         url: 'https://external-preview.redd.it/SZUEgrVG2kzDNZ1AjZ5Sj09USRyMe0OahJ-L0KKCvJ8.jpg?s=5ce115c504bb597b0bdccf1b44ac66ec2ad0f0b3',
     },
     fields: [
         {
             name: 'Força',
-            value: '+0',
+            value: SephFor,
             inline: true,
         },
         {
             name: 'Destreza',
-            value: '+0',
+            value: SephDes,
             inline: true,
         },
         {
             name: 'Constituição',
-            value: '+1',
+            value: SephCon,
             inline: true,
         },
         {
@@ -534,7 +542,7 @@ exports.StatSeph = {
         },
         {
             name: 'Carisma',
-            value: '+2',
+            value: SephCar,
             inline: true,
         },
         {
@@ -746,8 +754,8 @@ exports.Max = {
             inline: true,
         },
         {
-            name: 'Iniciative',
-            value: '+3',
+            name: 'Iniciativa',
+            value: MaxDes,
             inline: true,
         },
         {
@@ -821,17 +829,17 @@ exports.StatMax = {
     fields: [
         {
             name: 'Força',
-            value: '-1',
+            value: MaxFor,
             inline: true,
         },
         {
             name: 'Destreza',
-            value: '+3',
+            value: MaxDes,
             inline: true,
         },
         {
             name: 'Constituição',
-            value: '+3',
+            value: MaxCon,
             inline: true,
         },
         {
@@ -846,7 +854,7 @@ exports.StatMax = {
         },
         {
             name: 'Carisma',
-            value: '+1',
+            value: MaxCar,
             inline: true,
         },
         {
@@ -1048,8 +1056,8 @@ exports.Sauer = {
             inline: true,
         },
         {
-            name: 'Iniciative',
-            value: '+2',
+            name: 'Iniciativa',
+            value: SauerDes,
             inline: true,
         },
         {
@@ -1273,6 +1281,11 @@ exports.SpellSauer = {
     },
     fields: [
         {
+            name: 'Ataque extra',
+            value: 'Quando usar ação Atacar, pode atacar duas vezes.',
+            inline: true,
+        },        
+        {
             name: 'Retomar folego',
             value: '1d10 + lvl para recuperar vida (1x dia)',
             inline: true,
@@ -1285,11 +1298,6 @@ exports.SpellSauer = {
         {
             name: 'Ação extra',
             value: '1x ao dia',
-            inline: true,
-        },
-        {
-            name: 'Ataque extra',
-            value: 'Quando usar ação Atacar, pode atacar duas vezes.',
             inline: true,
         },
         {
@@ -1323,8 +1331,8 @@ exports.Djohn = {
             inline: true,
         },
         {
-            name: 'Iniciative',
-            value: '+1',
+            name: 'Iniciativa',
+            value: DjohnDes,
             inline: true,
         },
         {
@@ -1554,6 +1562,11 @@ exports.SpellDjohn = {
             value: 'Você adquire a habilidade de compreender e se comunicar verbalmente com bestas, pela duração.',
         },
         {
+            name: 'Ataque extra',
+            value: 'Quando usar ação Atacar, pode atacar duas vezes.',
+            inline: true,
+        },        
+        {
             name: '\u200b',
             value: '\u200b',
             inline: false,
@@ -1602,12 +1615,7 @@ exports.SpellDjohn = {
             name: 'Lobo',
             value: 'Consegue rastrear criaturas enquanto viaja rápido e pode se mover furtivamente enquanto viaja em ritmo normal',
             inline: true,
-        },       
-        {
-            name: 'Ataque extra',
-            value: 'Quando usar ação Atacar, pode atacar duas vezes.',
-            inline: true,
-        },        
+        },               
     ],
     timestamp: new Date(),
     footer: {
@@ -1637,7 +1645,7 @@ exports.Ixpexi = {
         },
         {
             name: 'Iniciativa',
-            value: '+1',
+            value: IxpexiDes,
             inline: true,
         },
         {
@@ -1717,22 +1725,22 @@ exports.StatIxpexi = {
     fields: [
         {
             name: 'Força',
-            value: '+4',
+            value: IxpexiFor,
             inline: true,
         },
         {
             name: 'Destreza',
-            value: '+1',
+            value: IxpexiDes,
             inline: true,
         },
         {
             name: 'Constituição',
-            value: '+1',
+            value: IxpexiCon,
             inline: true,
         },
         {
             name: 'Inteligencia',
-            value: '+0',
+            value: IxpexiInt,
             inline: true,
         },
         {
@@ -1952,29 +1960,36 @@ exports.SpellIxpexi = {
     },
 };
 
-
-exports.Randal = {
-    color: 0xFF0000,
-    title: 'Randal, the deserter',
+exports.Mordai = {
+    color: 0xFF9900,
+    title: 'Mordai, the barman',
     url: 'https://avribacki.gitlab.io/magias5e/',
     author: {
-        name: 'Stats information for Randal',
+        name: 'Stats information for Mordai',
     },
-    description: 'Humano guerreiro, level 4',
+    description: 'Tiefling Ladino, level ' + level.toString(),
+    thumbnail: {
+        url: 'https://external-preview.redd.it/yZ5UVROD6_6OxAlEqsmWGUh7zmvQjozEfkgN6YMJVwc.jpg?s=034d9b98ce0837ca73cee2bf724a8e8ef7c6c987',
+    },
     fields: [
         {
             name: 'AC',
-            value: '17',
+            value: '13',
             inline: true,
         },
         {
-            name: 'Iniciative',
-            value: '-1',
+            name: 'Iniciativa',
+            value: MordaiPro,
             inline: true,
         },
         {
             name: 'HP',
-            value: '27',
+            value: '28',
+            inline: true,
+        },
+        {
+            name: 'Proficiencia',
+            value: MordaiPro,
             inline: true,
         },
         {
@@ -1984,32 +1999,98 @@ exports.Randal = {
         },
         {
             name: 'Força',
-            value: '+3',
+            value: MordaiFor,
             inline: true,
         },
         {
             name: 'Destreza',
-            value: '-1',
+            value: MordaiDes,
             inline: true,
         },
         {
             name: 'Constituição',
-            value: '+0',
+            value: MordaiCon,
             inline: true,
         },
         {
             name: 'Inteligencia',
-            value: '+3',
+            value: MordaiInt,
             inline: true,
         },
         {
             name: 'Sabedoria',
-            value: '+1',
+            value: MordaiSab,
             inline: true,
         },
         {
             name: 'Carisma',
-            value: '-2',
+            value: MordaiCar,
+            inline: true,
+        },
+        {
+            name: 'Adaga',
+            value: MordaiPro + ' 1d4',
+        },
+        {
+            name: 'Arco Curto',
+            value: MordaiPro + ' 1d5',
+        },
+        {
+            name: 'Rapieira',
+            value: MordaiPro + ' 1d8',
+        },        
+        {
+            name: 'Ataque',
+            value: MordaiPro + MordaiDes,
+        },
+    ],
+    timestamp: new Date(),
+    footer: {
+        text: 'Resistencia a fogo',
+        icon_url: 'https://pm1.narvii.com/6669/0c88a7486c374d9f02fed57780c60872aabad9da_00.jpg',
+    },
+};
+
+exports.StatMordai = {
+    color: 0xFF9900,
+    title: 'Mordai, the Barman',
+    url: 'https://avribacki.gitlab.io/magias5e/',
+    author: {
+        name: 'Resistance stats for Mordai',
+    },
+    description: 'Testes de resistencia',
+    thumbnail: {
+        url: 'https://external-preview.redd.it/yZ5UVROD6_6OxAlEqsmWGUh7zmvQjozEfkgN6YMJVwc.jpg?s=034d9b98ce0837ca73cee2bf724a8e8ef7c6c987',
+    },
+    fields: [
+        {
+            name: 'Força',
+            value: MordaiFor,
+            inline: true,
+        },
+        {
+            name: '*Destreza',
+            value: '+5',
+            inline: true,
+        },
+        {
+            name: 'Constituição',
+            value: MordaiCon,
+            inline: true,
+        },
+        {
+            name: '*Inteligencia',
+            value: '+5',
+            inline: true,
+        },
+        {
+            name: 'Sabedoria',
+            value: MordaiSab,
+            inline: true,
+        },
+        {
+            name: 'Carisma',
+            value: MordaiCar,
             inline: true,
         },
         {
@@ -2018,29 +2099,148 @@ exports.Randal = {
             inline: false,
         },
         {
-            name: 'Espada longa',
-            value: '+5 1d8/1d10',
+            name: '*Acrobacia',
+            value: '+5',
+            inline: true,
         },
         {
-            name: 'Espada curta',
-            value: '+5 1d4',
+            name: 'Arcanismo',
+            value: '+2',
+            inline: true,
         },
         {
-            name: 'Besta leve',
-            value: '-2 1d6',
+            name: 'Atletismo',
+            value: '+0',
+            inline: true,
         },
         {
-            name: 'Adaga',
-            value: '+5 1d4+3',
+            name: 'Atuação',
+            value: '+2',
+            inline: true,
         },
         {
-            name: 'Espada larga',
-            value: '+5 2d6+3',
+            name: '*Blefar',
+            value: '+5',
+            inline: true,
+        },
+        {
+            name: '*Furtividade',
+            value: '+8',
+            inline: true,
+        },
+        {
+            name: 'Historia',
+            value: '+2',
+            inline: true,
+        },
+        {
+            name: 'Intimidação',
+            value: MordaiCar,
+            inline: true,
+        },
+        {
+            name: 'Intuição',
+            value: '+4',
+            inline: true,
+        },
+        {
+            name: 'Investigação',
+            value: MordaiInt,
+            inline: true,
+        },
+        {
+            name: 'Lidar com animais',
+            value: MordaiSab,
+            inline: true,
+        },
+        {
+            name: 'Medicina',
+            value: MordaiSab,
+            inline: true,
+        },
+        {
+            name: 'Natureza',
+            value: MordaiInt,
+            inline: true,
+        },
+        {
+            name: 'Percepção',
+            value: '+4',
+            inline: true,
+        },
+        {
+            name: 'Persuasão',
+            value: '+5',
+            inline: true,
+        },
+        {
+            name: 'Prestidigitação',
+            value: MordaiDes,
+            inline: true,
+        },
+        {
+            name: 'Religião',
+            value: MordaiInt,
+            inline: true,
+        },
+        {
+            name: 'Sobrevivência',
+            value: MordaiSab,
+            inline: true,
         },
     ],
-    image: {
-        url: 'https://gamepedia.cursecdn.com/wowpedia/d/da/Varian_cinematic.jpg',
+    timestamp: new Date(),
+    footer: {
+        text: updated.toString(),
+        icon_url: 'https://pm1.narvii.com/6669/0c88a7486c374d9f02fed57780c60872aabad9da_00.jpg',
     },
+};
+
+exports.SpellMordai = {
+    color: 0xFF9900,
+    title: 'Mordai Talaviel, the Barman',
+    url: 'https://avribacki.gitlab.io/magias5e/',
+    author: {
+        name: 'Spells for Mordai',
+    },
+    description: 'Spells list',
+    thumbnail: {
+        url: 'https://external-preview.redd.it/yZ5UVROD6_6OxAlEqsmWGUh7zmvQjozEfkgN6YMJVwc.jpg?s=034d9b98ce0837ca73cee2bf724a8e8ef7c6c987',
+    },
+    fields: [
+        {
+            name: 'Slots',
+            value: '4 magias lvl 1 + 3 magia lvl 2 + 3 magia lvl 3',
+        },
+        {
+            name: 'Acao Astuta',
+            value: 'Pode usar uma acao bonus no seu turno para Correr, Desengajar ou Esconder-se',
+            inline: true,
+        },
+        {
+            name: 'Repreensao Infernal',
+            value: 'Reação que aponta o dedo e a criatura que causou dano é envolta por chamas infernais. A criatura realiza um teste de resistencia de Des e sofre 2d10 de dano de fogo se falhar na resistência ou metade se passar.',
+            inline: true,
+        },
+        {
+            name: 'Esquiva Sobrenatural',
+            value: 'Quando um inimigo que você possa ver lhe acertar um ataque, pode usar sua reação para reduzir o dano sofrido pela metade',
+            inline: true,
+        },        
+        {
+            name: '\u200b',
+            value: '\u200b',
+            inline: false,
+        },
+        {
+            name: 'Ataque Furtivo',
+            value: 'Uma vez por turno, quando acertar alguém que tenha vantagem no ataque pode adicionar o dano do ataque furtivo',
+        },
+        {
+            name: 'Assassino',
+            value: 'Tem vantagem em ataques contra criaturas que não tiveram seu turno no combate ainda. Além disso, qualquer acerto contra uma criatura surpresa é um acerto crítico.',
+        },
+    ],
     timestamp: new Date(),
     footer: {
         text: updated.toString(),
