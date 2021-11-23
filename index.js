@@ -1,11 +1,9 @@
 const { Client, Intents } = require('discord.js');
 const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES] });
 
-const {
-    prefix
-} = require('./config.json');
-
-const config = require('./config.json');
+//Heroku
+// const { prefix } = require('./config.json');
+//const config = require('./config.json');
 
 var ficha = require('./Constante.js');
 
