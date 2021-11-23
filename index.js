@@ -4,7 +4,7 @@ const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_
 const dotenv = require('dotenv');
 dotenv.config();
 
-var ficha = require('./Constante.js');
+var ficha = require('./constante.js');
 
 const peixes = [
     'https://i.imgur.com/8q8tCpJ.png',
