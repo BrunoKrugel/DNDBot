@@ -1961,7 +1961,7 @@ exports.SpellIxpexi = {
 };
 
 exports.Mordai = {
-    color: 0xFF9900,
+    color: 0xFFFF00,
     title: 'Mordai, the barman',
     url: 'https://avribacki.gitlab.io/magias5e/',
     author: {
@@ -1969,7 +1969,7 @@ exports.Mordai = {
     },
     description: 'Tiefling Ladino, level ' + level.toString(),
     thumbnail: {
-        url: 'https://external-preview.redd.it/yZ5UVROD6_6OxAlEqsmWGUh7zmvQjozEfkgN6YMJVwc.jpg?s=034d9b98ce0837ca73cee2bf724a8e8ef7c6c987',
+        url: 'https://cdnb.artstation.com/p/assets/images/images/000/303/687/micro_square/Male_TieflingRogue_Shadowdancer.jpg?1416134039',
     },
     fields: [
         {
@@ -2052,7 +2052,7 @@ exports.Mordai = {
 };
 
 exports.StatMordai = {
-    color: 0xFF9900,
+    color: 0xFFFF00,
     title: 'Mordai, the Barman',
     url: 'https://avribacki.gitlab.io/magias5e/',
     author: {
@@ -2060,7 +2060,7 @@ exports.StatMordai = {
     },
     description: 'Testes de resistencia',
     thumbnail: {
-        url: 'https://external-preview.redd.it/yZ5UVROD6_6OxAlEqsmWGUh7zmvQjozEfkgN6YMJVwc.jpg?s=034d9b98ce0837ca73cee2bf724a8e8ef7c6c987',
+        url: 'https://cdnb.artstation.com/p/assets/images/images/000/303/687/micro_square/Male_TieflingRogue_Shadowdancer.jpg?1416134039',
     },
     fields: [
         {
@@ -2205,7 +2205,7 @@ exports.SpellMordai = {
     },
     description: 'Spells list',
     thumbnail: {
-        url: 'https://external-preview.redd.it/yZ5UVROD6_6OxAlEqsmWGUh7zmvQjozEfkgN6YMJVwc.jpg?s=034d9b98ce0837ca73cee2bf724a8e8ef7c6c987',
+        url: 'https://cdnb.artstation.com/p/assets/images/images/000/303/687/micro_square/Male_TieflingRogue_Shadowdancer.jpg?1416134039',
     },
     fields: [
         {
@@ -2215,17 +2215,14 @@ exports.SpellMordai = {
         {
             name: 'Acao Astuta',
             value: 'Pode usar uma acao bonus no seu turno para Correr, Desengajar ou Esconder-se',
-            inline: true,
         },
         {
             name: 'Repreensao Infernal',
             value: 'Reação que aponta o dedo e a criatura que causou dano é envolta por chamas infernais. A criatura realiza um teste de resistencia de Des e sofre 2d10 de dano de fogo se falhar na resistência ou metade se passar.',
-            inline: true,
         },
         {
             name: 'Esquiva Sobrenatural',
             value: 'Quando um inimigo que você possa ver lhe acertar um ataque, pode usar sua reação para reduzir o dano sofrido pela metade',
-            inline: true,
         },        
         {
             name: '\u200b',
