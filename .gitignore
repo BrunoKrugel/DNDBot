@@ -107,3 +107,5 @@ config.json
 auth.json
 package-lock.json
 .vscode
+
+.env

@@ -4,7 +4,8 @@
   "description": "A cool bot",
   "main": "index.js",
   "dependencies": {
-    "discord.js": "^13.3.1"
+    "discord.js": "^13.3.1",
+    "dotenv": "^10.0.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

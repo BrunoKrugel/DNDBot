@@ -1,9 +1,8 @@
 const { Client, Intents } = require('discord.js');
 const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES] });
 
-//Heroku
-// const { prefix } = require('./config.json');
-//const config = require('./config.json');
+const dotenv = require('dotenv');
+dotenv.config();
 
 var ficha = require('./Constante.js');
 
@@ -64,12 +63,12 @@ client.on('messageCreate', message => {
 //Evento de mensagens
 client.on('messageCreate', message => {
     //Ignora o proprio bot e mensagens q n sejam para o bot
-    if (!message.content.toLowerCase().startsWith(prefix)) return;
+    if (!message.content.toLowerCase().startsWith(process.env.prefix)) return;
 
     //Salva os parametros em ARGS    
     const args = message.content.split(' ');
 
-    if (message.content.toLowerCase().startsWith(prefix)) {
+    if (message.content.toLowerCase().startsWith(process.env.prefix)) {
         let primary = args[1];
         let secondary = args[2];
         switch (primary) {
@@ -269,4 +268,4 @@ client.on('messageCreate', message => {
         }
     };
 });
-client.login(config.token);
+client.login(process.env.token);
