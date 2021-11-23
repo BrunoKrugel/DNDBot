@@ -254,7 +254,7 @@ client.on('messageCreate', message => {
             case "peixe":
                 //message.channel.send({ files: [peixes[Math.floor(Math.random() * peixes.length)].toString()] });
                 message.channel.send({
-                    embeds: {
+                    embed: {
                         color: 3447003,
                         image: {
                             url: peixes[Math.floor(Math.random() * peixes.length)].toString(),
