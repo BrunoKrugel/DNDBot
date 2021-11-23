@@ -65,7 +65,6 @@ client.on('messageCreate', message => {
 
 //Evento de mensagens
 client.on('messageCreate', message => {
-    console.log("messageCreate") ;
     //Ignora o proprio bot e mensagens q n sejam para o bot
     if (!message.content.toLowerCase().startsWith(prefix)) return;
 
@@ -112,37 +111,37 @@ client.on('messageCreate', message => {
                 switch (secondary) {
                     case "bruce":
                         message.channel.send({
-                            embed: [ficha.Bruce]
+                            embeds: [ficha.Bruce]
                         });
                         break;
                     case "seph":
                         message.channel.send({
-                            embed: [ficha.Seph]
+                            embeds: [ficha.Seph]
                         });
                         break;
                     case "max":
                         message.channel.send({
-                            embed: [ficha.Max]
+                            embeds: [ficha.Max]
                         });
                         break;
                     case "sauer":
                         message.channel.send({
-                            embed: [ficha.Sauer]
+                            embeds: [ficha.Sauer]
                         });
                         break;
                     case "djohn":
                         message.channel.send({
-                            embed: [ficha.Djohn]
+                            embeds: [ficha.Djohn]
                         });
                         break;
                     case "ixpexi":
                         message.channel.send({
-                            embed: [ficha.Ixpexi]
+                            embeds: [ficha.Ixpexi]
                         });
                         break;
                     case "mordai":
                         message.channel.send({
-                            embed: [ficha.Mordai]
+                            embeds: [ficha.Mordai]
                         });
                         break;
                     default:
@@ -154,37 +153,37 @@ client.on('messageCreate', message => {
                 switch (secondary) {
                     case "bruce":
                         message.channel.send({
-                            embed: [ficha.StatBruce]
+                            embeds: [ficha.StatBruce]
                         });
                         break;
                     case "seph":
                         message.channel.send({
-                            embed: [ficha.StatSeph]
+                            embeds: [ficha.StatSeph]
                         });
                         break;
                     case "max":
                         message.channel.send({
-                            embed: [ficha.StatMax]
+                            embeds: [ficha.StatMax]
                         });
                         break;
                     case "sauer":
                         message.channel.send({
-                            embed: [ficha.StatSauer]
+                            embeds: [ficha.StatSauer]
                         });
                         break;
                     case "djohn":
                         message.channel.send({
-                            embed: [ficha.StatDjohn]
+                            embeds: [ficha.StatDjohn]
                         });
                         break;
                     case "ixpexi":
                         message.channel.send({
-                            embed: [ficha.StatIxpexi]
+                            embeds: [ficha.StatIxpexi]
                         });
                         break;
                     case "mordai":
                         message.channel.send({
-                            embed: [ficha.StatMordai]
+                            embeds: [ficha.StatMordai]
                         });
                         break;
                     default:
@@ -196,37 +195,37 @@ client.on('messageCreate', message => {
                 switch (secondary) {
                     case "bruce":
                         message.channel.send({
-                            embed: [ficha.SpellBruce]
+                            embeds: [ficha.SpellBruce]
                         });
                         break;
                     case "seph":
                         message.channel.send({
-                            embed: [ficha.SpellSeph]
+                            embeds: [ficha.SpellSeph]
                         });
                         break;
                     case "max":
                         message.channel.send({
-                            embed: [ficha.SpellMax]
+                            embeds: [ficha.SpellMax]
                         });
                         break;
                     case "sauer":
                         message.channel.send({
-                            embed: [ficha.SpellSauer]
+                            embeds: [ficha.SpellSauer]
                         });
                         break;
                     case "djohn":
                         message.channel.send({
-                            embed: [ficha.SpellDjohn]
+                            embeds: [ficha.SpellDjohn]
                         });
                         break;
                     case "ixpexi":
                         message.channel.send({
-                            embed: [ficha.SpellIxpexi]
+                            embeds: [ficha.SpellIxpexi]
                         });
                         break;
                     case "mordai":
                         message.channel.send({
-                            embed: [ficha.SpellMordai]
+                            embeds: [ficha.SpellMordai]
                         });
                         break;
                     default:
@@ -236,7 +235,7 @@ client.on('messageCreate', message => {
                 break;
             case "map":
                 message.channel.send({
-                    embed: {
+                    embeds: {
                         color: 3447003,
                         image: {
                             url: 'https://i.imgur.com/Xd0ABTq.jpg',
@@ -258,7 +257,7 @@ client.on('messageCreate', message => {
             case "peixe":
                 //message.channel.send({ files: [peixes[Math.floor(Math.random() * peixes.length)].toString()] });
                 message.channel.send({
-                    embed: {
+                    embeds: {
                         color: 3447003,
                         image: {
                             url: peixes[Math.floor(Math.random() * peixes.length)].toString(),
