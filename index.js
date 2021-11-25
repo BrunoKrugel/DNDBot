@@ -1,5 +1,10 @@
-const { Client, Intents } = require('discord.js');
-const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES] });
+const {
+    Client,
+    Intents
+} = require('discord.js');
+const client = new Client({
+    intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES]
+});
 
 const dotenv = require('dotenv');
 dotenv.config();
@@ -56,9 +61,9 @@ client.once('disconnect', () => {
 
 client.on('messageCreate', message => {
     if (message.content === 'ping') {
-      message.channel.send('pong');
+        message.channel.send('pong');
     }
-  });
+});
 
 //Evento de mensagens
 client.on('messageCreate', message => {
@@ -74,35 +79,36 @@ client.on('messageCreate', message => {
         switch (primary) {
             //============== D&D Section                
             case "roll":
+                var dado;
                 switch (secondary) {
                     case "d4":
-                        message.channel.send(message.author.toString() + ", rolled a " + secondary + " and got a " + Math.floor((Math.random() * 4) + 1));
+                        dado = Math.floor((Math.random() * 4) + 1);
                         break;
                     case "d6":
-                        message.channel.send(message.author.toString() + ", rolled a " + secondary + " and got a " + Math.floor((Math.random() * 6) + 1));
+                        dado = Math.floor((Math.random() * 6) + 1);
                         break;
                     case "d8":
-                        message.channel.send(message.author.toString() + ", rolled a " + secondary + " and got a " + Math.floor((Math.random() * 8) + 1));
+                        dado = Math.floor((Math.random() * 8) + 1);
                         break;
                     case "d10":
-                        message.channel.send(message.author.toString() + ", rolled a " + secondary + " and got a " + Math.floor((Math.random() * 10) + 1));
+                        dado = Math.floor((Math.random() * 10) + 1);
                         break;
                     case "d12":
-                        message.channel.send(message.author.toString() + ", rolled a " + secondary + " and got a " + Math.floor((Math.random() * 12) + 1));
+                        dado = Math.floor((Math.random() * 12) + 1);
                         break;
                     case "d20":
-                        var dice = Math.floor((Math.random() * 20) + 1);
-                        message.channel.send(message.author.toString() + ", rolled a " + secondary + " and got a " + dice);
-                        if (parseInt(dice) == parseInt(20)) message.channel.send("Congratulations, you got a critical hit! <:7980_joker:689262799179743257>");
-                        if (parseInt(dice) == parseInt(1)) message.channel.send("Congratulations, you fucked up <:8440_vergonha:689946168553504807>");
+                        dado = Math.floor((Math.random() * 20) + 1);
+                        if (parseInt(dado) == parseInt(20)) message.channel.send("Congratulations, you got a critical hit!");
+                        if (parseInt(dado) == parseInt(1)) message.channel.send("Congratulations, on your bad luck!");
                         break;
                     case "d100":
-                        message.channel.send(message.author.toString() + ", rolled a " + secondary + " and got a " + Math.floor((Math.random() * 100) + 1));
+                        dado = Math.floor((Math.random() * 100) + 1);
                         break;
                     default:
                         message.channel.send("Specify a dice value");
                         break;
                 }
+                message.channel.send(message.author.toString() + ", rolled a " + secondary + " and got a " + dado);
                 break;
             case "ficha":
                 switch (secondary) {
