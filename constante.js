@@ -1,5 +1,5 @@
-const updated = 'Updated for 5 session';
-const level = 6;
+const updated = 'Updated for 6 session';
+const level = 7;
 //Seph
 const SephFor = '-1'; //8
 const SephDes = '+3'; //16
@@ -408,6 +408,19 @@ exports.SpellBruce = {
             name: 'Invocar animal n3',
             value: 'Você invoca espíritos feéricos, que assumem formas de bestas, que aparecem em espaços desocupados, que você possa ver dentro do alcance',
         },
+        {
+            name: 'n3',
+            value: '.',
+        },  
+        {
+            name: '\u200b',
+            value: '\u200b',
+            inline: false,
+        },
+        {
+            name: 'n4',
+            value: '.',
+        },                      
     ],
     timestamp: new Date(),
     footer: {
@@ -1019,7 +1032,7 @@ exports.SpellMax = {
             value: 'Você faz com que você mesmo – incluindo suas roupas, armadura, armas e outros pertences no seu personagem – pareça diferente até a magia acabar ou até você usar sua ação para dispensa-la.',
         },
         {
-            name: 'Enfeitiçar',
+            name: 'Enfeitiçar Pessoa',
             value: 'A criatura enfeitiçada reconhece você como um conhecido amigável. Quando a magia acabar, a criatura saberá que foi enfeitiçada por você.',
         },
         {
@@ -1027,9 +1040,25 @@ exports.SpellMax = {
             value: 'Você assume uma forma diferente: Adaptação Aquática, Mudar Aparência, Armas Naturais (1d6 de dano +2)',
         },
         {
+            name: 'n2',
+            value: '.',
+        },
+        {
+            name: 'n2',
+            value: '.',
+        },                
+        {
             name: 'Animar os mortos n3',
             value: 'Escolha uma pilha de ossos ou corpo de um humanoide do alcance, erguendo-o como uma criatura morta-viva. O alvo se torna um esqueleto, se você escolheu ossos, ou um zumbi, se você escolheu um corpo',
         },
+        {
+            name: 'n3',
+            value: '.',
+        }, 
+        {
+            name: 'n3',
+            value: '.',
+        },                 
     ],
     timestamp: new Date(),
     footer: {
@@ -1305,6 +1334,11 @@ exports.SpellSauer = {
             value: 'Seus ataques com arma tem critico com 19 e 20',
             inline: true,
         },
+        {
+            name: 'Atleta Renomado',
+            value: 'Adiciona metade do bonus de proficiencia para qualquer teste de Força, Dextreza ou Constituição.',
+            inline: true,
+        },
     ],
     timestamp: new Date(),
     footer: {
@@ -1565,7 +1599,12 @@ exports.SpellDjohn = {
             name: 'Ataque extra',
             value: 'Quando usar ação Atacar, pode atacar duas vezes.',
             inline: true,
-        },        
+        },      
+        {
+            name: 'Instinto Selvagem',
+            value: 'Vantagem rolagens de iniciativa.',
+            inline: true,
+        },           
         {
             name: '\u200b',
             value: '\u200b',
@@ -2223,7 +2262,11 @@ exports.SpellMordai = {
         {
             name: 'Esquiva Sobrenatural',
             value: 'Quando um inimigo que você possa ver lhe acertar um ataque, pode usar sua reação para reduzir o dano sofrido pela metade',
-        },        
+        },       
+        {
+            name: 'Evasão',
+            value: 'Quando for alvo de um efeito que exija um teste de resistência de Destreza para sofrer metade do dano, não sofre dano se passar e somente metade se falhar.',
+        },         
         {
             name: '\u200b',
             value: '\u200b',
@@ -2231,7 +2274,7 @@ exports.SpellMordai = {
         },
         {
             name: 'Ataque Furtivo',
-            value: 'Uma vez por turno, quando acertar alguém que tenha vantagem no ataque pode adicionar o dano do ataque furtivo',
+            value: 'Uma vez por turno, quando acertar alguém que tenha vantagem no ataque pode adicionar o dano do ataque furtivo (4d6)',
         },
         {
             name: 'Assassino',
