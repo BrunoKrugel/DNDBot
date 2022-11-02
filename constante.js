@@ -1211,7 +1211,7 @@ exports.StatSauer = {
         },
         {
             name: 'Atletismo',
-            value: '+4',
+            value: '+5',
             inline: true,
         },
         {
@@ -1236,7 +1236,7 @@ exports.StatSauer = {
         },
         {
             name: 'Intimidação',
-            value: '+3',
+            value: '+4',
             inline: true,
         },
         {
