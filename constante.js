@@ -178,13 +178,13 @@ exports.StatBruce = {
             inline: true,
         },
         {
-            name: '*Inteligencia',
-            value: '+5',
+            name: '•Inteligencia',
+            value: BruceInt + BrucePro,
             inline: true,
         },
         {
-            name: '*Sabedoria',
-            value: '+5',
+            name: '•Sabedoria',
+            value: BruceSab + BrucePro,,
             inline: true,
         },
         {
@@ -534,7 +534,7 @@ exports.StatSeph = {
             inline: true,
         },
         {
-            name: 'Destreza',
+            name: '•Destreza',
             value: SephDes,
             inline: true,
         },
@@ -544,17 +544,17 @@ exports.StatSeph = {
             inline: true,
         },
         {
-            name: '*Inteligencia',
+            name: 'Inteligencia',
             value: '+5',
             inline: true,
         },
         {
-            name: '*Sabedoria',
+            name: 'Sabedoria',
             value: '+5',
             inline: true,
         },
         {
-            name: 'Carisma',
+            name: '•Carisma',
             value: SephCar,
             inline: true,
         },
@@ -856,12 +856,12 @@ exports.StatMax = {
             inline: true,
         },
         {
-            name: '*Inteligencia',
+            name: '•Inteligencia',
             value: '+6',
             inline: true,
         },
         {
-            name: '*Sabedoria',
+            name: '•Sabedoria',
             value: '+4',
             inline: true,
         },
@@ -1165,7 +1165,7 @@ exports.StatSauer = {
     },
     fields: [
         {
-            name: 'Força',
+            name: '•Força',
             value: '+4',
             inline: true,
         },
@@ -1175,7 +1175,7 @@ exports.StatSauer = {
             inline: true,
         },
         {
-            name: '*Constituição',
+            name: '•Constituição',
             value: '+7',
             inline: true,
         },
@@ -1447,7 +1447,7 @@ exports.StatDjohn = {
     },
     fields: [
         {
-            name: '*Força',
+            name: '•Força',
             value: '+7',
             inline: true,
         },
@@ -1457,7 +1457,7 @@ exports.StatDjohn = {
             inline: true,
         },
         {
-            name: '*Constituição',
+            name: '•Constituição',
             value: '+3',
             inline: true,
         },
@@ -1783,12 +1783,12 @@ exports.StatIxpexi = {
             inline: true,
         },
         {
-            name: '*Sabedoria',
+            name: '•Sabedoria',
             value: '+3',
             inline: true,
         },
         {
-            name: '*Carisma',
+            name: '•Carisma',
             value: '+5',
             inline: true,
         },
