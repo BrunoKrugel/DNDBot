@@ -2,7 +2,7 @@ const updated = 'Updated for 6 session';
 const level = 7;
 //Seph
 const SephFor = '-1'; //8
-const SephDes = '+3'; //16
+const SephDes = '+4'; //16 +2 (Elfo)
 const SephCon = '+2'; //14
 const SephInt = '+1'; //13
 const SephSab = '+1'; //13
@@ -10,21 +10,21 @@ const SephCar = '+4'; //18
 const SephPro = '+3';
 //--------------------//
 //Bruce
-const BruceFor = '+0'; //8
-const BruceDes = '+0'; //18
-const BruceCon = '+1'; //14
-const BruceInt = '+3'; //13
-const BruceSab = '+3'; //13
+const BruceFor = '+0'; //10
+const BruceDes = '+0'; //11
+const BruceCon = '+1'; //12
+const BruceInt = '+3'; //16
+const BruceSab = '+3'; //16
 const BruceCar = '+3'; //16
 const BrucePro = '+3';
 //---------------------//
 //Max
 const MaxFor = '-1'; //8
-const MaxDes = '+3'; //18
-const MaxCon = '+3'; //14
-const MaxInt = '+4'; //13
-const MaxSab = '+2'; //13
-const MaxCar = '+1'; //16
+const MaxDes = '+3'; //17
+const MaxCon = '+3'; //16
+const MaxInt = '+4'; //18
+const MaxSab = '+2'; //15
+const MaxCar = '+1'; //13
 const MaxPro = '+3';
 //-------------------//
 //Sauer
@@ -199,92 +199,92 @@ exports.StatBruce = {
         },
         {
             name: 'Acrobacia',
-            value: '+0',
+            value: BruceDes,
             inline: true,
         },
         {
             name: 'Arcanismo',
-            value: '+3',
+            value: BruceInt,
             inline: true,
         },
         {
             name: 'Atletismo',
-            value: '+0',
+            value: BruceFor,
             inline: true,
         },
         {
             name: 'Atuação',
-            value: '+3',
+            value: BruceCar,
             inline: true,
         },
         {
             name: 'Blefar',
-            value: '+3',
+            value: BruceCar,
             inline: true,
         },
         {
             name: 'Furtividade',
-            value: '+0',
+            value: BruceDes,
             inline: true,
         },
         {
             name: 'Historia',
-            value: '+3',
+            value: BruceInt,
             inline: true,
         },
         {
             name: 'Intimidação',
-            value: '+3',
+            value: BruceCar,
             inline: true,
         },
         {
-            name: 'Intuição',
-            value: '+5',
+            name: '•Intuição',
+            value: BruceSab + BrucePro,
             inline: true,
         },
         {
-            name: 'Investigação',
-            value: '+3',
+            name: '•Investigação',
+            value: BruceInt + BrucePro,
             inline: true,
         },
         {
-            name: 'Lidar com animais',
-            value: '+3',
+            name: '•Lidar com animais',
+            value: BruceSab + BrucePro,
             inline: true,
         },
         {
             name: 'Medicina',
-            value: '+3',
+            value: BruceSab,
             inline: true,
         },
         {
-            name: 'Natureza',
-            value: '+5',
+            name: '•Natureza',
+            value: BruceInt + BrucePro,
             inline: true,
         },
         {
             name: 'Percepção',
-            value: '+3',
+            value: BruceSab,
             inline: true,
         },
         {
             name: 'Persuasão',
-            value: '+3',
+            value: BruceCar,
             inline: true,
         },
         {
             name: 'Prestidigitação',
-            value: '+0',
+            value: BruceDes,
             inline: true,
         },
         {
             name: 'Religião',
-            value: '+3',
+            value: BruceInt,
             inline: true,
         },
         {
             name: 'Sobrevivência',
-            value: '+3',
+            value: BruceSab,
             inline: true,
         },
     ],
@@ -1017,7 +1017,7 @@ exports.SpellMax = {
     fields: [
         {
             name: 'Slots',
-            value: '4 magia lvl 1 + 3 lvl 2 + 3 lvl 3',
+            value: '4 lv1 + 3 lv2 + 3 lv3 + 1 lv4',
         },
         {
             name: 'Colheita Macabra',
