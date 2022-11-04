@@ -68,7 +68,7 @@ exports.Bruce = {
     title: 'Bruce, the drunk',
     url: 'https://avribacki.gitlab.io/magias5e/',
     author: {
-        name: 'Stats information for Bruce',
+        name: 'Status information for Bruce',
     },
     description: 'Meio elfo druida, level ' + level.toString(),
     thumbnail: {
@@ -184,7 +184,7 @@ exports.StatBruce = {
         },
         {
             name: '•Sabedoria',
-            value: BruceSab + BrucePro,,
+            value: BruceSab + BrucePro,
             inline: true,
         },
         {
@@ -309,7 +309,7 @@ exports.SpellBruce = {
     fields: [
         {
             name: 'Slots',
-            value: '4 magias lvl 1 + 3 magia lvl 2 + 3 magia lvl 3',
+            value: '4 lv1 + 4 lv2 + 4 lv3 + 1 lv4',
         },
         {
             name: 'Criar chamas',
@@ -666,7 +666,7 @@ exports.SpellSeph = {
     title: 'Seph, the one who sings',
     url: 'https://avribacki.gitlab.io/magias5e/',
     author: {
-        name: 'Stats information for Seph',
+        name: 'Spells for Seph',
     },
     description: 'Spell list',
     thumbnail: {
@@ -675,7 +675,7 @@ exports.SpellSeph = {
     fields: [
         {
             name: 'Slots',
-            value: '4 magia lvl 1 e 3 lvl 2 e 3 lvl 3',
+            value: '4 lv1 + 3 lv2 + 3 lv3 + 1 lv4',
         },
         {
             name: 'Inspiração (açao extra) (Carisma)',
@@ -708,21 +708,26 @@ exports.SpellSeph = {
             inline: false,
         },
         {
-            name: 'Perdição n2',
+            name: 'Perdição n1',
             value: 'A criatura deve realizar um CD Carisma. Sempre que um alvo que falhou nessa resistência realizar uma jogada de ataque ou um teste de resistência antes da magia acabar, o alvo deve rolar um d4 e subtrair o valor rolado da jogada de ataque ou teste de resistência.',
         },
         {
-            name: 'Sono n2',
+            name: 'Sono n1',
             value: 'Essa magia põem as criaturas num entorpecimento mágico. Jogue 5d8; o total é a quantidade de pontos de vida de criaturas afetados pela magia.',
         },
         {
-            name: 'Fogo ferreo n2',
+            name: 'Fogo das fadas n1',
             value: 'Qualquer jogada de ataque contra uma criatura afetada ou objeto tem vantagem, se o atacante puder ver o alvo e, a criatura afetada ou objeto não recebe benefício por estar invisível.',
         },
         {
-            name: 'Sussuros n2',
+            name: 'Sussuros n1',
             value: ' O alvo deve realizar um teste de resistência de Sabedoria. Se falhar na resistência, ele sofrerá 3d6 de dano psíquico e deve, imediatamente, usar sua reação, se disponível, para se mover para o mais longe possível de você. ',
         },
+        {
+            name: '\u200b',
+            value: '\u200b',
+            inline: false,
+        },        
         {
             name: 'Detectar pensamento n2',
             value: 'Se a criatura escolhida possuir Inteligência 3 ou inferior ou não falar nenhum tipo de idioma, a criatura não poderá ser afetada.',
@@ -732,6 +737,10 @@ exports.SpellSeph = {
             value: 'Uma criatura que você tocar, se torna invisível até a magia acabar. Qualquer coisa que o alvo esteja vestindo ou carregando fica invisível enquanto estiver de posse do alvo. A magia termina para o alvo caso ele ataque ou conjure uma magia.',
         },
         {
+            name: 'Sugestão n2',
+            value: 'Você sugere algo (limitado a duas sentenças) e influencia um criatura que você possa ver, dentro do alcance, e que possa ouvir e compreender você. Requer teste de sabedoria. Sugestões obviamente nocivo anulam o efeito, sofrer dano causa causa o fim da magia.',
+        },        
+        {
             name: '\u200b',
             value: '\u200b',
             inline: false,
@@ -740,7 +749,23 @@ exports.SpellSeph = {
             name: 'Falar com os mortos n3',
             value: 'Você concede o aspecto de vida e inteligência a um corpo, à sua escolha, dentro do alcance, permitindo que ele responda a 5 perguntas que você fizer, as respostas serão breves e enigmaticas. ',
         },
-
+        {
+            name: 'Névoa Fétida n3',
+            value: 'Você cria um gás amarelado nauseante, cada criatura que estiver dentro da névoa no início do seu turno deve fazer teste de resistência de Constituição contra veneno. Se falhar, a criatura gastará sua ação nesse turno tentando vomitar e cambaleando.',
+        },       
+        {
+            name: 'Rogar Maldição n3',
+            value: 'Você toca uma criatura e a criatura deve ser bem sucedida em teste de resistência de Sabedoria ou será amaldiçoada (escolha um a seguir): desvantagem em testes de habilidade, desvantagem nas jogadas de ataque contra você, teste de Sabedoria no começo dos turnos ou perde a ação, seus ataques e magias causam 1d8 de dano necrótico extra a ele.',
+        },  
+        {
+            name: '\u200b',
+            value: '\u200b',
+            inline: false,
+        },                     
+        {
+            name: 'n4',
+            value: '.',
+        }, 
     ],
     timestamp: new Date(),
     footer: {
