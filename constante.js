@@ -409,8 +409,8 @@ exports.SpellBruce = {
             value: 'Você invoca espíritos feéricos, que assumem formas de bestas, que aparecem em espaços desocupados, que você possa ver dentro do alcance',
         },
         {
-            name: 'n3',
-            value: '.',
+            name: 'Respirar na agua n3',
+            value: 'Essa magia concede a até dez criaturas voluntária que você possa ver, dentro do alcance, a habilidade de respirar embaixo d’água até a magia acabar. As criaturas afetadas também mantem sua forma normal de respiração.',
         },  
         {
             name: '\u200b',
@@ -418,8 +418,8 @@ exports.SpellBruce = {
             inline: false,
         },
         {
-            name: 'n4',
-            value: '.',
+            name: 'Malogro n4',
+            value: 'Energia necromântica inunda uma criatura drenando sua umidade e vitalidade. O alvo realiza teste de resistência de Concentração. O alvo sofre 8d8 de dano necrótico se falhar no teste, ou metade desse dano se obtiver sucesso.',
         },                      
     ],
     timestamp: new Date(),
