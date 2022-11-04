@@ -81,8 +81,8 @@ exports.Bruce = {
             inline: true,
         },
         {
-            name: 'Iniciative',
-            value: BrucePro,
+            name: 'Iniciativa',
+            value: BruceDes,
             inline: true,
         },
         {
@@ -448,7 +448,7 @@ exports.Seph = {
         },
         {
             name: 'Iniciativa',
-            value: SephPro,
+            value: SephDes,
             inline: true,
         },
         {
@@ -2048,7 +2048,7 @@ exports.Mordai = {
         },
         {
             name: 'Iniciativa',
-            value: MordaiPro,
+            value: MordaiDes,
             inline: true,
         },
         {
