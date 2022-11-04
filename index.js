@@ -152,7 +152,7 @@ client.on('messageCreate', message => {
                         break;
                 }
                 break;
-            case "stats":
+            case "status":
                 switch (secondary) {
                     case "bruce":
                         message.channel.send({
@@ -258,7 +258,7 @@ client.on('messageCreate', message => {
                 message.channel.send("Mordai, o caloteiro");
                 break;
             case "help":
-                message.channel.send("\nHere is what I can do:\n*pls map* - show the current campaign map\n*pls roll dice* - roll a dice\n*pls names* - show the characters names\n\n*pls ficha name* - show the character information\n*pls stats name* - status do personagem\n*pls spell name* - spells do personagem\n\n*pls peixe* - summon a fish");
+                message.channel.send("\nHere is what I can do:\n*!map* - show the current campaign map\n*!roll dice* - roll a dice\n*!names* - show the characters names\n\n*!ficha name* - show the character information\n*!status name* - status do personagem\n*!spell name* - spells do personagem");
                 break;
         }
     }
