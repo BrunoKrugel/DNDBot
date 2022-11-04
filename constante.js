@@ -327,19 +327,19 @@ exports.SpellBruce = {
             inline: false,
         },
         {
-            name: 'Curar ferimento',
+            name: 'Curar ferimento n1',
             value: 'Uma criatura que você tocar recupera uma quantidade de pontos de vida igual a 1d8 + seu modificador de habilidade de conjuração.',
         },
         {
-            name: 'Falar com animais',
+            name: 'Falar com animais n1',
             value: 'Você adquire a habilidade de compreender e se comunicar verbalmente com bestas, pela duração.',
         },
         {
-            name: 'Onda trovejante',
+            name: 'Onda trovejante n1',
             value: 'Cada criatura deve realizar um teste de resistência de Constituição. Se falhar na resistência, uma criatura sofrerá 2d8 de dano trovejante e será empurrada. Se obtive sucesso na resistência, a criatura sofrerá metade desse dano e não será empurrada.',
         },
         {
-            name: 'Palavra curativa',
+            name: 'Palavra curativa n1',
             value: 'Uma criatura, à sua escolha, que você possa ver dentro do alcance recupera uma quantidade de pontos de vida igual a 1d4 + seu modificador de habilidade de conjuração.',
         },
         {
