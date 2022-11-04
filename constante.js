@@ -132,11 +132,11 @@ exports.Bruce = {
         },
         {
             name: 'Adaga',
-            value: BrucePro + ' 1d4',
+            value: BrucePro + BruceDes + ' 1d4' + BruceDes,
         },
         {
             name: 'Open bar',
-            value: BrucePro + ' 1d10 +1d6 (if drunk)',
+            value: BrucePro + BruceFor + ' 1d10 +1d6 (if drunk)',
         },
         {
             name: 'Magia',
@@ -629,8 +629,8 @@ exports.StatSeph = {
             inline: true,
         },
         {
-            name: 'Percepção',
-            value: SephSab,
+            name: '•Percepção',
+            value: SephSab + SephPro,
             inline: true,
         },
         {
@@ -971,8 +971,8 @@ exports.StatMax = {
             inline: true,
         },
         {
-            name: 'Percepção',
-            value: MaxSab,
+            name: '•Percepção',
+            value: MaxSab + MaxPro,
             inline: true,
         },
         {
