@@ -579,8 +579,8 @@ exports.StatSeph = {
             inline: true,
         },
         {
-            name: '•Atuação',
-            value: SephCar + SephPro,
+            name: '••Atuação',
+            value: SephCar + SephPro + SephPro,
             inline: true,
         },
         {
@@ -634,8 +634,8 @@ exports.StatSeph = {
             inline: true,
         },
         {
-            name: '•Persuasão',
-            value: SephCar + SephCar,
+            name: '••Persuasão',
+            value: SephCar + SephCar + SephPro,
             inline: true,
         },
         {
