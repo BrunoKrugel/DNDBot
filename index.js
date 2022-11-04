@@ -9,7 +9,7 @@ const client = new Client({
 const dotenv = require('dotenv');
 dotenv.config();
 
-var ficha = require('./constante.js');
+let ficha = require('./constante.js');
 
 const peixes = [
     'https://i.imgur.com/8q8tCpJ.png',
@@ -79,7 +79,7 @@ client.on('messageCreate', message => {
         switch (primary) {
             //============== D&D Section                
             case "roll":
-                var dado;
+                let dado;
                 switch (secondary) {
                     case "d4":
                         dado = Math.floor((Math.random() * 4) + 1);
@@ -257,21 +257,10 @@ client.on('messageCreate', message => {
                 message.channel.send("Ixpexi, o sumido");
                 message.channel.send("Mordai, o caloteiro");
                 break;
-            case "peixe":
-                //message.channel.send({ files: [peixes[Math.floor(Math.random() * peixes.length)].toString()] });
-                message.channel.send({
-                    embed: {
-                        color: 3447003,
-                        image: {
-                            url: peixes[Math.floor(Math.random() * peixes.length)].toString(),
-                        },
-                    }
-                });
-                break;
             case "help":
                 message.channel.send("\nHere is what I can do:\n*pls map* - show the current campaign map\n*pls roll dice* - roll a dice\n*pls names* - show the characters names\n\n*pls ficha name* - show the character information\n*pls stats name* - status do personagem\n*pls spell name* - spells do personagem\n\n*pls peixe* - summon a fish");
                 break;
         }
-    };
+    }
 });
 client.login(process.env.token);
