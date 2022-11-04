@@ -1129,8 +1129,8 @@ exports.SpellMax = {
             value: 'Você toca uma criatura voluntária e a coloca em um estado catatônico que é indistinguível da morte.',
         },  
         {
-            name: 'n4',
-            value: '.',
+            name: 'Muralha de fogo n4',
+            value: 'Invoca uma muralha e cada criatura dentro dentro dela deve fazer um teste de resistência de Destreza. Se falhar, sofre 5d8 de dano, ou metade desse dano se passar. Um lado da muralha, escolhido no momento da conjuração da magia, causa 5d8 de dano de fogo a cada criatura que terminar o turno dela a até 3 metros desse lado ou dentro da muralha. Uma criatura sofre o mesmo dano quando entra na muralha pela primeira vez num turno ou termina seu turno nela. O outro lado da muralha não causa dano algum.',
         },                        
     ],
     timestamp: new Date(),

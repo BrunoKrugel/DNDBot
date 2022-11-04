@@ -1,3 +1,4 @@
+//Setup
 const {
     Client,
     Intents
@@ -66,7 +67,7 @@ client.on('messageCreate', message => {
 });
 
 //Evento de mensagens
-client.on('messageCreate', message => {
+client.on("messageCreate", (message) => {
     //Ignora o proprio bot e mensagens q n sejam para o bot
     if (!message.content.toLowerCase().startsWith(process.env.prefix)) return;
 
@@ -258,7 +259,7 @@ client.on('messageCreate', message => {
                 message.channel.send("Mordai, o caloteiro");
                 break;
             case "help":
-                message.channel.send("\nHere is what I can do:\n*!map* - show the current campaign map\n*!roll dice* - roll a dice\n*!names* - show the characters names\n\n*!ficha name* - show the character information\n*!status name* - status do personagem\n*!spell name* - spells do personagem");
+                message.channel.send("\nHere is what I can do:\n* pls map* - show the current campaign map\n*pls roll dice* - roll a dice\n*pls names* - show the characters names\n\n*pls ficha name* - show the character information\n*!status name* - status do personagem\n*!spell name* - spells do personagem");
                 break;
         }
     }
