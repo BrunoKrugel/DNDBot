@@ -691,7 +691,17 @@ exports.SpellSeph = {
             name: 'Desencantador',
             value: 'Começa uma atuaçao que dura ate o fim do seu proximo turno, dando resistencia a Encantamento e Amedrontado aos seus aliados',
             inline: true,
-        },        
+        },   
+        {
+            name: 'Canção de descanso',
+            value: 'Durante descanso, cura 1d6 de HP para todos aliados',
+            inline: true,
+        },  
+        {
+            name: '\u200b',
+            value: '\u200b',
+            inline: false,
+        },                    
         {
             name: 'Prestidigitação',
             value: 'Cria uma ilusão palpavel (acende ou apaga velas, suja objetos, muda o gosto)',
@@ -702,6 +712,11 @@ exports.SpellSeph = {
             value: 'Você cria um som ou uma imagem de um objeto, dentro do alcance, que permanece pela duração. A ilusão também termina se você dissipa-la usando uma ação ou conjurar essa magia novamente.',
             inline: true,
         },
+        {
+            name: 'Zombaria Viciosa',
+            value: 'Você insulta uma criatura que você possa ver, dentro do alcance. Se ele puder ouvir, deve ser bem sucedido num teste de resistência de Sabedoria ou sofrerá 1d4 de dano psíquico e terá desvantagem na próxima jogada.',
+            inline: true,
+        },        
         {
             name: '\u200b',
             value: '\u200b',
@@ -763,8 +778,8 @@ exports.SpellSeph = {
             inline: false,
         },                     
         {
-            name: 'n4',
-            value: '.',
+            name: 'Localizar criatura n4',
+            value: 'Descreva uma criatura que seja familiar a você. Você sente a direção da localização da criatura, contanto que a criatura esteja a até 300 metros de você. Se a criatura se mover, você saberá a direção do movimento dela.',
         }, 
     ],
     timestamp: new Date(),
