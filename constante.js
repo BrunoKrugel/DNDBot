@@ -683,6 +683,11 @@ exports.SpellSeph = {
             inline: true,
         },
         {
+            name: 'Inspiração (combate) (Carisma)',
+            value: 'O alvo pode adicionar a inspiração ao seu dano ou CA',
+            inline: true,
+        },        
+        {
             name: 'Pau pra toda obra (passiva)',
             value: 'Soma proficiencia/2 nos atributos',
             inline: true,
@@ -696,7 +701,12 @@ exports.SpellSeph = {
             name: 'Canção de descanso',
             value: 'Durante descanso, cura 1d6 de HP para todos aliados',
             inline: true,
-        },  
+        },
+        {
+            name: 'Ataque Extra',
+            value: 'Uma vez por turno, pode fazer um ataque extra',
+            inline: true,
+        },         
         {
             name: '\u200b',
             value: '\u200b',
@@ -781,6 +791,15 @@ exports.SpellSeph = {
             name: 'Localizar criatura n4',
             value: 'Descreva uma criatura que seja familiar a você. Você sente a direção da localização da criatura, contanto que a criatura esteja a até 300 metros de você. Se a criatura se mover, você saberá a direção do movimento dela.',
         }, 
+        {
+            name: '\u200b',
+            value: '\u200b',
+            inline: false,
+        },  
+        {
+            name: 'Colégio da Bravura',
+            value: '.',
+        },                
     ],
     timestamp: new Date(),
     footer: {
@@ -1065,45 +1084,54 @@ exports.SpellMax = {
             inline: false,
         },
         {
-            name: 'Armadura arcana',
+            name: 'Armadura arcana n1',
             value: 'Você toca uma criatura voluntária que não esteja vestindo armadura e uma energia mágica protetora a envolve até a magia acabar. A CA base do alvo se torna 13 + o modificador de Destreza dele.',
         },
         {
-            name: 'Mãos flamejantes',
+            name: 'Mãos flamejantes n1',
             value: 'Teste de resistência de Destreza. Uma criatura sofre 3d6 de dano de fogo se falhar no teste, ou metade desse dano se obtiver sucesso.',
         },
         {
-            name: 'Disfarçar-se',
+            name: 'Disfarçar-se n1',
             value: 'Você faz com que você mesmo – incluindo suas roupas, armadura, armas e outros pertences no seu personagem – pareça diferente até a magia acabar ou até você usar sua ação para dispensa-la.',
         },
         {
-            name: 'Enfeitiçar Pessoa',
+            name: 'Enfeitiçar Pessoa n1',
             value: 'A criatura enfeitiçada reconhece você como um conhecido amigável. Quando a magia acabar, a criatura saberá que foi enfeitiçada por você.',
         },
+        {
+            name: '\u200b',
+            value: '\u200b',
+            inline: false,
+        },        
         {
             name: 'Alterar-se n2',
             value: 'Você assume uma forma diferente: Adaptação Aquática, Mudar Aparência, Armas Naturais (1d6 de dano +2)',
         },
         {
-            name: 'n2',
-            value: '.',
+            name: 'Coroa da loucura n2',
+            value: 'Seu alvo humanóide deve ser passar em teste de resistência de Sabedoria ou ficará enfeitiçado por você pela duração, e pode realizar um ataque corpo-a-corpo contra uma criatura, diferente de si mesma, que você escolher mentalmente, o alvo pode realizar um teste de resistência de Sabedoria no final de cada um dos turnos dele. Se obtiver sucesso, a magia termina.',
         },
         {
-            name: 'n2',
-            value: '.',
+            name: 'Despedaçar n2',
+            value: 'Um alto som estridente, cada criatura deve fazer um teste de resistência de Constituição, e sofre 3d8 de dano trovejante se falhar na resistência ou metade desse dano se obtiver sucesso. ',
         },                
         {
             name: 'Animar os mortos n3',
             value: 'Escolha uma pilha de ossos ou corpo de um humanoide do alcance, erguendo-o como uma criatura morta-viva. O alvo se torna um esqueleto, se você escolheu ossos, ou um zumbi, se você escolheu um corpo',
         },
         {
-            name: 'n3',
-            value: '.',
+            name: 'Bola de fogo n3',
+            value: 'Cada criatura deve realizar um teste de resistência de Destreza e sofre 8d6 de dano de fogo se falhar na resistência, ou metade desse dano se obtiver sucesso.',
         }, 
         {
-            name: 'n3',
+            name: 'Forjar Morte n3',
+            value: 'Você toca uma criatura voluntária e a coloca em um estado catatônico que é indistinguível da morte.',
+        },  
+        {
+            name: 'n4',
             value: '.',
-        },                 
+        },                        
     ],
     timestamp: new Date(),
     footer: {
