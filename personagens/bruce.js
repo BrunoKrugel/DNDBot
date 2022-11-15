@@ -9,7 +9,7 @@ const BruceSab = '+3'; //16
 const BruceCar = '+3'; //16
 const BrucePro = '+3';
 
-exports.Bruce = {
+exports.Ficha = {
     color: 0xFF9900,
     title: 'Bruce, the drunk',
     url: 'https://avribacki.gitlab.io/magias5e/',
@@ -96,7 +96,7 @@ exports.Bruce = {
     },
 };
 
-exports.StatBruce = {
+exports.Status = {
     color: 0xFF9900,
     title: 'Bruce, the drunk',
     url: 'https://avribacki.gitlab.io/magias5e/',
@@ -241,7 +241,7 @@ exports.StatBruce = {
     },
 };
 
-exports.SpellBruce = {
+exports.Spell = {
     color: 0xFF9900,
     title: 'Bruce, the drunk',
     url: 'https://avribacki.gitlab.io/magias5e/',

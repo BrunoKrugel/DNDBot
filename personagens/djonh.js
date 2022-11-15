@@ -9,7 +9,7 @@ const DjohnSab = '-1'; //8
 const DjohnCar = '+1'; //12
 const DjohnPro = '+3';
 
-exports.Djohn = {
+exports.Ficha = {
     color: 0x00FF00,
     title: 'Djohnson, the shivering',
     url: 'https://avribacki.gitlab.io/magias5e/',
@@ -96,7 +96,7 @@ exports.Djohn = {
     },
 };
 
-exports.StatDjohn = {
+exports.Status = {
     color: 0x00FF00,
     title: 'Djohnson, the shivering',
     url: 'https://avribacki.gitlab.io/magias5e/',
@@ -241,7 +241,7 @@ exports.StatDjohn = {
     },
 };
 
-exports.SpellDjohn = {
+exports.Spell = {
     color: 0x00FF00,
     title: 'Djohnson, the shivering',
     url: 'https://avribacki.gitlab.io/magias5e/',

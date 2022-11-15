@@ -11,6 +11,13 @@ const dotenv = require('dotenv');
 dotenv.config();
 
 let ficha = require('./constante.js');
+let mordai = require('./personagens/mordai.js');
+let bruce = require('./personagens/bruce.js');
+let max = require('./personagens/max.js');
+let sauer = require('./personagens/sauer.js');
+let seph = require('./personagens/seph.js');
+let djohn = require('./personagens/djohn.js');
+let ixpexi = require('./personagens/ixpexi.js');
 
 //Logs
 client.once('ready', () => {

@@ -9,7 +9,7 @@ const MaxSab = '+2'; //15
 const MaxCar = '+1'; //13
 const MaxPro = '+3';
 
-exports.Max = {
+exports.Ficha = {
     color: 0x0099ff,
     title: 'Max, the grumpy',
     url: 'https://avribacki.gitlab.io/magias5e/',
@@ -93,7 +93,7 @@ exports.Max = {
     },
 };
 
-exports.StatMax = {
+exports.Status = {
     color: 0x0099ff,
     title: 'Max, the grumpy',
     url: 'https://avribacki.gitlab.io/magias5e/',
@@ -238,7 +238,7 @@ exports.StatMax = {
     },
 };
 
-exports.SpellMax = {
+exports.Spell = {
     color: 0x0099ff,
     title: 'Max, the grumpy',
     url: 'https://avribacki.gitlab.io/magias5e/',

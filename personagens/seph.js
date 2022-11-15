@@ -9,7 +9,7 @@ const SephSab = '+1'; //13
 const SephCar = '+4'; //18
 const SephPro = '+3';
 
-exports.Seph = {
+exports.Ficha = {
     color: 0xFF0099,
     title: 'Seph, the one who sings',
     url: 'https://avribacki.gitlab.io/magias5e/',
@@ -96,7 +96,7 @@ exports.Seph = {
     },
 };
 
-exports.StatSeph = {
+exports.Status = {
     color: 0xFF0099,
     title: 'Seph, the one who sings',
     url: 'https://avribacki.gitlab.io/magias5e/',
@@ -241,7 +241,7 @@ exports.StatSeph = {
     },
 };
 
-exports.SpellSeph = {
+exports.Spell = {
     color: 0xFF0099,
     title: 'Seph, the one who sings',
     url: 'https://avribacki.gitlab.io/magias5e/',

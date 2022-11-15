@@ -9,7 +9,7 @@ const IxpexiSab = '+1'; //13
 const IxpexiCar = '+3'; //16
 const IxpexiPro = '+3';
 
-exports.Ixpexi = {
+exports.Ficha = {
     color: 0xFF0000,
     title: 'Ixpexi, the sharked',
     url: 'https://avribacki.gitlab.io/magias5e/',
@@ -94,7 +94,7 @@ exports.Ixpexi = {
 
 
 
-exports.StatIxpexi = {
+exports.Status = {
     color: 0xFF0000,
     title: 'Ixpexi, the sharked',
     url: 'https://avribacki.gitlab.io/magias5e/',
@@ -239,7 +239,7 @@ exports.StatIxpexi = {
     },
 };
 
-exports.SpellIxpexi = {
+exports.Spell = {
     color: 0xFF0000,
     title: 'Ixpexi, the sharked',
     url: 'https://avribacki.gitlab.io/magias5e/',

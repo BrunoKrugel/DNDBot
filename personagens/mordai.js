@@ -9,7 +9,7 @@ const MordaiSab = '+1'; //8
 const MordaiCar = '+2'; //12
 const MordaiPro = '+3';
 
-exports.Mordai = {
+exports.Ficha = {
     color: 0xFFFF00,
     title: 'Mordai, the barman',
     url: 'https://avribacki.gitlab.io/magias5e/',
@@ -100,7 +100,7 @@ exports.Mordai = {
     },
 };
 
-exports.StatMordai = {
+exports.Status = {
     color: 0xFFFF00,
     title: 'Mordai, the Barman',
     url: 'https://avribacki.gitlab.io/magias5e/',
@@ -245,7 +245,7 @@ exports.StatMordai = {
     },
 };
 
-exports.SpellMordai = {
+exports.Spell = {
     color: 0xFF9900,
     title: 'Mordai Talaviel, the Barman',
     url: 'https://avribacki.gitlab.io/magias5e/',

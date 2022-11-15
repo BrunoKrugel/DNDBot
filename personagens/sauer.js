@@ -9,7 +9,7 @@ const SauerSab = '+0'; //13
 const SauerCar = '+1'; //16
 const SauerPro = '+3';
 
-exports.Sauer = {
+exports.Ficha = {
     color: 0xFF0000,
     title: 'Sauer, the bald',
     url: 'https://avribacki.gitlab.io/magias5e/',
@@ -94,7 +94,7 @@ exports.Sauer = {
 
 
 
-exports.StatSauer = {
+exports.Status = {
     color: 0xFF0000,
     title: 'Sauer, the bald',
     url: 'https://avribacki.gitlab.io/magias5e/',
@@ -239,7 +239,7 @@ exports.StatSauer = {
     },
 };
 
-exports.SpellSauer = {
+exports.Spell = {
     color: 0xFF0000,
     title: 'Sauer, the bald',
     url: 'https://avribacki.gitlab.io/magias5e/',
