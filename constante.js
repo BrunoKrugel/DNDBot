@@ -1736,8 +1736,6 @@ exports.SpellDjohn = {
     },
 };
 
-
-
 exports.Ixpexi = {
     color: 0xFF0000,
     title: 'Ixpexi, the sharked',
