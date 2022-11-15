@@ -33,7 +33,9 @@ client.once('disconnect', () => {
 
 //Evento de mensagens
 client.on("messageCreate", (message) => {
-    //Ignora o proprio bot e mensagens q n sejam para o bot
+
+    if (message.author.bot) return;
+    
     if (!message.content.toLowerCase().startsWith(process.env.prefix)) return;
 
     //Salva os parametros em ARGS    
