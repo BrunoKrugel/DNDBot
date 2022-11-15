@@ -119,7 +119,7 @@ exports.StatMordai = {
         },
         {
             name: '•Destreza',
-            value: '+5',
+            value: MordaiDes + MordaiPro,
             inline: true,
         },
         {
@@ -129,7 +129,7 @@ exports.StatMordai = {
         },
         {
             name: '•Inteligencia',
-            value: '+5',
+            value: MordaiInt + MordaiPro,
             inline: true,
         },
         {
@@ -149,37 +149,37 @@ exports.StatMordai = {
         },
         {
             name: '•Acrobacia',
-            value: '+5',
+            value: MordaiDes + MordaiPro,
             inline: true,
         },
         {
             name: 'Arcanismo',
-            value: '+2',
+            value: MordaiInt,
             inline: true,
         },
         {
             name: 'Atletismo',
-            value: '+0',
+            value: MordaiFor,
             inline: true,
         },
         {
             name: 'Atuação',
-            value: '+2',
+            value: MordaiCar,
             inline: true,
         },
         {
             name: '•Blefar',
-            value: '+5',
+            value: MordaiCar + MordaiPro,
             inline: true,
         },
         {
             name: '•Furtividade',
-            value: '+8',
+            value: MordaiDes + MordaiPro,
             inline: true,
         },
         {
             name: 'Historia',
-            value: '+2',
+            value: MordaiInt,
             inline: true,
         },
         {
@@ -189,7 +189,7 @@ exports.StatMordai = {
         },
         {
             name: 'Intuição',
-            value: '+4',
+            value: MordaiSab,
             inline: true,
         },
         {
@@ -219,7 +219,7 @@ exports.StatMordai = {
         },
         {
             name: 'Persuasão',
-            value: '+5',
+            value: MordaiSab,
             inline: true,
         },
         {
