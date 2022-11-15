@@ -10,14 +10,14 @@ const client = new Client({
 const dotenv = require('dotenv');
 dotenv.config();
 
-let ficha = require('./constante.js');
-let mordai = require('./personagens/mordai.js');
-let bruce = require('./personagens/bruce.js');
-let max = require('./personagens/max.js');
-let sauer = require('./personagens/sauer.js');
-let seph = require('./personagens/seph.js');
-let djohn = require('./personagens/djohn.js');
-let ixpexi = require('./personagens/ixpexi.js');
+let mordai = require('./resources/mordai.js');
+let bruce = require('./resources/bruce.js');
+let max = require('./resources/max.js');
+let sauer = require('./resources/sauer.js');
+let seph = require('./resources/seph.js');
+let djohn = require('./resources/djohn.js.js');
+let ixpexi = require('./resources/ixpexi.js');
+
 
 //Logs
 client.once('ready', () => {
@@ -47,37 +47,37 @@ client.on("messageCreate", (message) => {
                 switch (secondary) {
                     case "bruce":
                         message.channel.send({
-                            embeds: [ficha.Bruce]
+                            embeds: [bruce.Ficha]
                         });
                         break;
                     case "seph":
                         message.channel.send({
-                            embeds: [ficha.Seph]
+                            embeds: [seph.Ficha]
                         });
                         break;
                     case "max":
                         message.channel.send({
-                            embeds: [ficha.Max]
+                            embeds: [max.Ficha]
                         });
                         break;
                     case "sauer":
                         message.channel.send({
-                            embeds: [ficha.Sauer]
+                            embeds: [sauer.Ficha]
                         });
                         break;
                     case "djohn":
                         message.channel.send({
-                            embeds: [ficha.Djohn]
+                            embeds: [djohn.Ficha]
                         });
                         break;
                     case "ixpexi":
                         message.channel.send({
-                            embeds: [ficha.Ixpexi]
+                            embeds: [ixpexi.Ficha]
                         });
                         break;
                     case "mordai":
                         message.channel.send({
-                            embeds: [ficha.Mordai]
+                            embeds: [mordai.Ficha]
                         });
                         break;
                     default:
@@ -89,37 +89,37 @@ client.on("messageCreate", (message) => {
                 switch (secondary) {
                     case "bruce":
                         message.channel.send({
-                            embeds: [ficha.StatBruce]
+                            embeds: [bruce.Status]
                         });
                         break;
                     case "seph":
                         message.channel.send({
-                            embeds: [ficha.StatSeph]
+                            embeds: [seph.Status]
                         });
                         break;
                     case "max":
                         message.channel.send({
-                            embeds: [ficha.StatMax]
+                            embeds: [max.Status]
                         });
                         break;
                     case "sauer":
                         message.channel.send({
-                            embeds: [ficha.StatSauer]
+                            embeds: [sauer.Status]
                         });
                         break;
                     case "djohn":
                         message.channel.send({
-                            embeds: [ficha.StatDjohn]
+                            embeds: [djohn.Status]
                         });
                         break;
                     case "ixpexi":
                         message.channel.send({
-                            embeds: [ficha.StatIxpexi]
+                            embeds: [ixpexi.Status]
                         });
                         break;
                     case "mordai":
                         message.channel.send({
-                            embeds: [ficha.StatMordai]
+                            embeds: [mordai.Status]
                         });
                         break;
                     default:
@@ -131,37 +131,37 @@ client.on("messageCreate", (message) => {
                 switch (secondary) {
                     case "bruce":
                         message.channel.send({
-                            embeds: [ficha.SpellBruce]
+                            embeds: [bruce.Spell]
                         });
                         break;
                     case "seph":
                         message.channel.send({
-                            embeds: [ficha.SpellSeph]
+                            embeds: [seph.Spell]
                         });
                         break;
                     case "max":
                         message.channel.send({
-                            embeds: [ficha.SpellMax]
+                            embeds: [max.Spell]
                         });
                         break;
                     case "sauer":
                         message.channel.send({
-                            embeds: [ficha.SpellSauer]
+                            embeds: [sauer.Spell]
                         });
                         break;
                     case "djohn":
                         message.channel.send({
-                            embeds: [ficha.SpellDjohn]
+                            embeds: [djohn.Spell]
                         });
                         break;
                     case "ixpexi":
                         message.channel.send({
-                            embeds: [ficha.SpellIxpexi]
+                            embeds: [ixpexi.Spell]
                         });
                         break;
                     case "mordai":
                         message.channel.send({
-                            embeds: [ficha.SpellMordai]
+                            embeds: [mordai.Spell]
                         });
                         break;
                     default:
