@@ -12,41 +12,6 @@ dotenv.config();
 
 let ficha = require('./constante.js');
 
-const peixes = [
-    'https://i.imgur.com/8q8tCpJ.png',
-    'https://i.imgur.com/t7xxQvM.png',
-    'https://i.imgur.com/G44kVY7.png',
-    'https://i.imgur.com/Mxme9dt.png',
-    'https://i.imgur.com/cZdrfpF.png',
-    'https://i.imgur.com/cyP98eU.png',
-    'https://i.imgur.com/yDWzesj.png',
-    'https://i.imgur.com/hrmfOym.png',
-    'https://i.imgur.com/2a9ivW1.png',
-    'https://i.imgur.com/CfLxk0c.png',
-    'https://i.imgur.com/0UObVR1.png',
-    'https://i.imgur.com/TkJAbwN.png',
-    'https://i.imgur.com/l3svjDw.png',
-    'https://i.imgur.com/MoDTqst.png',
-    'https://i.imgur.com/EzOFO9L.png',
-    'https://i.imgur.com/zJ7naVj.png',
-    'https://i.imgur.com/q0dtE3T.png',
-    'https://i.imgur.com/f1TWTFU.png',
-    'https://i.imgur.com/mqOeipV.png',
-    'https://i.imgur.com/zQwM1tI.png',
-    'https://i.imgur.com/dXR9WTp.png',
-    'https://i.imgur.com/eLSJ0ap.png',
-    'https://i.imgur.com/QrWqbal.png',
-    'https://i.imgur.com/YSmpeXI.png',
-    'https://i.imgur.com/Cvg38Rd.png',
-    'https://i.imgur.com/pfn0jzn.png',
-    'https://i.imgur.com/IGEj1Kj.png',
-    'https://i.imgur.com/vXXmf5m.png',
-    'https://i.imgur.com/TdfbTHH.png',
-    'https://i.imgur.com/kP5WVBY.png',
-    'https://i.imgur.com/UyBQMAc.png',
-    'https://i.imgur.com/jadIWJy.png',
-];
-
 //Logs
 client.once('ready', () => {
     console.log("Bot has started.");
@@ -57,13 +22,6 @@ client.once('reconnecting', () => {
 });
 client.once('disconnect', () => {
     console.log('Disconnect!');
-});
-
-
-client.on('messageCreate', message => {
-    if (message.content === 'ping') {
-        message.channel.send('pong');
-    }
 });
 
 //Evento de mensagens
@@ -78,39 +36,6 @@ client.on("messageCreate", (message) => {
         let primary = args[1];
         let secondary = args[2];
         switch (primary) {
-            //============== D&D Section                
-            case "roll":
-                let dado;
-                switch (secondary) {
-                    case "d4":
-                        dado = Math.floor((Math.random() * 4) + 1);
-                        break;
-                    case "d6":
-                        dado = Math.floor((Math.random() * 6) + 1);
-                        break;
-                    case "d8":
-                        dado = Math.floor((Math.random() * 8) + 1);
-                        break;
-                    case "d10":
-                        dado = Math.floor((Math.random() * 10) + 1);
-                        break;
-                    case "d12":
-                        dado = Math.floor((Math.random() * 12) + 1);
-                        break;
-                    case "d20":
-                        dado = Math.floor((Math.random() * 20) + 1);
-                        if (parseInt(dado) == parseInt(20)) message.channel.send("Congratulations, you got a critical hit!");
-                        if (parseInt(dado) == parseInt(1)) message.channel.send("Congratulations, on your bad luck!");
-                        break;
-                    case "d100":
-                        dado = Math.floor((Math.random() * 100) + 1);
-                        break;
-                    default:
-                        message.channel.send("Specify a dice value");
-                        break;
-                }
-                message.channel.send(message.author.toString() + ", rolled a " + secondary + " and got a " + dado);
-                break;
             case "ficha":
                 switch (secondary) {
                     case "bruce":
@@ -259,7 +184,7 @@ client.on("messageCreate", (message) => {
                 message.channel.send("Mordai, o caloteiro");
                 break;
             case "help":
-                message.channel.send("\nHere is what I can do:\n* pls map* - show the current campaign map\n*pls roll dice* - roll a dice\n*pls names* - show the characters names\n\n*pls ficha name* - show the character information\n*!status name* - status do personagem\n*!spell name* - spells do personagem");
+                message.channel.send("\nHere is what I can do:\n*pls map* - show the current campaign map\n*pls names* - show the characters names\n\n*pls ficha name* - show the character information\n*pls status name* - status do personagem\n*pls spell name* - spells do personagem");
                 break;
         }
     }
